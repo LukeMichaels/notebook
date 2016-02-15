@@ -26,7 +26,7 @@ Use the db migrate pro type plugin to get a copy of the db and install it on you
 
 ‘
 first row is dev server (i.e. needmore.dev)
-second row is the root folder (i.e. /Users/luke/vagrant-local/www/needmore/htdocs)
+second row is the root folder (i.e. /Users/luke/vagrant-local/www/lukemichaels/htdocs)
 ‘
 visit phpMyAdmin to import the DB.
 
@@ -34,7 +34,7 @@ visit phpMyAdmin to import the DB.
 ## Step 4
 Clone the git repo into what will then be your
 `
-~/vagrant-local/www/elkcove/htdocs/wp-content/themes/elkcove
+~/vagrant-local/www/lukemichaels/htdocs/wp-content/themes/lukemichaels
 `
 folder,
 
