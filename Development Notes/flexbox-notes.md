@@ -47,8 +47,8 @@ display: inline-flex;
 
 // this is the default, items are displayed horizontally from left to right  
 .container {  
-   display: flex;  
-   flex-direction: row;  
+  display: flex;  
+  flex-direction: row;  
 }  
 
 // this will align the content horizontally, and in reverse order (right to left)  
@@ -56,6 +56,7 @@ flex-direction: row-reverse;
 
 // column will cause the content to flow vertically instead of horizontally  
 flex-direction: column;  
+
 // same as row-reverse, but from bottom to top  
 flex-direction: column-reverse;  
 
