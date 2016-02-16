@@ -27,12 +27,12 @@ Flexbox is a remarkable layout feature that's redefined how web designers build 
 ## The Flexbox Layout
 ### Establish the flex formatting context
 .container {
-  // by default this creates a block-level flex container
-  // items inside will be laid out in a row from left to right, taking up the full height of the div
+  - by default this creates a block-level flex container
+  -  items inside will be laid out in a row from left to right, taking up the full height of the div
   
   display: flex;
 }
-// a flex container can also be inline (wont fill an entire row)
+  - a flex container can also be inline (wont fill an entire row)
 display: inline-flex;
 
 ### Use `flex-direction` to establish the flow of the content
@@ -40,27 +40,27 @@ display: inline-flex;
   - Note: flex-direction applies to the flex-container only, it wont have an effect if applied to a flex-item
 .container {
   display: flex;
-  flex-direction: row; // this is the default, items are displayed horizontally from left to right
+  flex-direction: row;   - this is the default, items are displayed horizontally from left to right
 }
 
-// this will align the content horizontally, and in reverse order (right to left)
+  - this will align the content horizontally, and in reverse order (right to left)
 flex-direction: row-reverse;
 
-// column will cause the content to flow vertically instead of horizontally
+  - column will cause the content to flow vertically instead of horizontally
 flex-direction: column;
-flex-direction: column-reverse; // same as row-reverse, but from bottom to top
+flex-direction: column-reverse;   - same as row-reverse, but from bottom to top
 
 ### Control whether flex-container is a single or multi-line layout with `flex-wrap`
 [flex-wrap - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)
 .container {
   display: flex;
-  flex-wrap: wrap; // this will make content wrap to the next line when there isn't enough room to display items on one
+  flex-wrap: wrap;   - this will make content wrap to the next line when there isn't enough room to display items on one
 }
 
-// default single-line, left to right
+  - default single-line, left to right
 flex-wrap: nowrap; 
 
-// multi-line, right to left
+  - multi-line, right to left
 flex-wrap: wrap-reverse;
 
 ### Control the position and alignment of items on the main access and how space should be distributed using `justify-content`
@@ -68,23 +68,23 @@ flex-wrap: wrap-reverse;
   - Note: justify-content applies to the flex-container only
 .container {
   display: flex;
-  justify-content: flex-end; // this aligns flex items to the end of the flex line
+  justify-content: flex-end;   - this aligns flex items to the end of the flex line
 }
 
-// default - items are placed at the beginning of the flex line
+  - default - items are placed at the beginning of the flex line
 justify-content: flex-start;
 
-// items are centered along the line
+  - items are centered along the line
 justify-content: center;
 
-// items are evenly distributed in the line with the first item at the start and last item at the end of the line
+  - items are evenly distributed in the line with the first item at the start and last item at the end of the line
 justify-content: space-between;
 
-// items are evenly distributed in the line with equal space around them
+  - items are evenly distributed in the line with equal space around them
 justify-content: space-around;
 
 <img src="images/flexbox/justify-content-example.png" alt="justify-content-example" width="1020" height="76" />
-// in this example, `item-1` will be positioned all the way to the left, all other items will position to the right with equal space between them.
+  - in this example, `item-1` will be positioned all the way to the left, all other items will position to the right with equal space between them.
 .container {
   display: flex;
   flex-wrap: wrap;
