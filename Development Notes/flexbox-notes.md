@@ -3,10 +3,10 @@ Flexbox is a remarkable layout feature that's redefined how web designers build 
 
 
 ## Resources
-[A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-[A Visual Guide to CSS3 Flexbox Properties](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
-[Flexbox Playground](https://scotch.io/demos/visual-guide-to-css3-flexbox-flexbox-playground)
-[Flexbox - latest browser support](http://caniuse.com/#search=flexbox)
+[A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) 
+[A Visual Guide to CSS3 Flexbox Properties](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties) 
+[Flexbox Playground](https://scotch.io/demos/visual-guide-to-css3-flexbox-flexbox-playground) 
+[Flexbox - latest browser support](http://caniuse.com/#search=flexbox) 
 
 
 ## Terminology
@@ -26,22 +26,22 @@ Flexbox is a remarkable layout feature that's redefined how web designers build 
 
 ## The Flexbox Layout
 ### Establish the flex formatting context
-.container {
-  - by default this creates a block-level flex container
-  -  items inside will be laid out in a row from left to right, taking up the full height of the div
+.container { 
+  - by default this creates a block-level flex container 
+  -  items inside will be laid out in a row from left to right, taking up the full height of the div  
   
-  display: flex;
-}
-  - a flex container can also be inline (wont fill an entire row)
-display: inline-flex;
+  display: flex; 
+} 
+  - a flex container can also be inline (wont fill an entire row) 
+display: inline-flex;  
 
 ### Use `flex-direction` to establish the flow of the content
-[flex-direction - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)
-  - Note: flex-direction applies to the flex-container only, it wont have an effect if applied to a flex-item
-.container {
-  display: flex;
-  flex-direction: row;   - this is the default, items are displayed horizontally from left to right
-}
+[flex-direction - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) 
+  - Note: flex-direction applies to the flex-container only, it wont have an effect if applied to a flex-item 
+.container { 
+  display: flex; 
+  flex-direction: row;   - this is the default, items are displayed horizontally from left to right 
+}  
 
   - this will align the content horizontally, and in reverse order (right to left)
 flex-direction: row-reverse;
