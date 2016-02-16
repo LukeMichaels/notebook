@@ -140,7 +140,7 @@ justify-content: space-around;
 }  
 
   - you can use negative values with order  
-  - here "item-1" will be first, then "item-5", then the rest of the items in the list
+  - here "item-1" will be first, then "item-5", then the rest of the items in the list  
 .item-1 {  
   order: -2;  
 }  
@@ -181,8 +181,8 @@ justify-content: space-around;
   - The second and third values are optional in the flex shorthand.  
   - Setting only one number value for flex automatically sets the flex-basis value to 0.  
 
-  - flex-basis works with flex-grow to display even but flexible widths
-  - here flex items will display at an equal size when 200px or wider
+  - flex-basis works with flex-grow to display even but flexible widths  
+  - here flex items will display at an equal size when 200px or wider  
 .container {  
   display: flex;  
   flex-wrap: wrap;  
@@ -195,7 +195,7 @@ justify-content: space-around;
   - flex-shrink is the opposite of flex-grow  
 
   - flex is a shorthand property for flex-grow, flex-basis and flex-shrink  
-  - the first value is for flex-grow, so here the item is getting set to flex-grow: 1 and because the default is 0 and we didn't provide anything, flex-basis is set to 0
+  - the first value is for flex-grow, so here the item is getting set to flex-grow: 1 and because the default is 0 and we didn't provide anything, flex-basis is set to 0  
 .item {  
   flex: 1;  
 }  
