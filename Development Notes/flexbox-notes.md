@@ -58,8 +58,8 @@ flex-direction: column-reverse;
 
 //this will make content wrap to the next line when there isn't enough room to display items on one  
 .container {  
-  display: flex;  
-  flex-wrap: wrap;  
+   display: flex;  
+   flex-wrap: wrap;  
 }  
 
 // default single-line, left to right  
@@ -74,8 +74,8 @@ flex-wrap: wrap-reverse;
 // Note: justify-content applies to the flex-container only  
 // this aligns flex items to the end of the flex line  
 .container {  
-  display: flex;  
-  justify-content: flex-end;  
+   display: flex;  
+   justify-content: flex-end;  
 }  
 
 // default - items are placed at the beginning of the flex line  
@@ -93,12 +93,12 @@ justify-content: space-around;
 <img src="images/flexbox/justify-content-example.png" alt="justify-content-example" width="1020" height="76" /> 
 // in this example, `item-1` will be positioned all the way to the left, all other items will position to the right with equal space between them.  
 .container {  
-  display: flex;  
-  flex-wrap: wrap;  
-  justify-content: space-around;  
+   display: flex;  
+   flex-wrap: wrap;  
+   justify-content: space-around;  
 }  
 .item-1 {  
-  margin-right: auto;  
+   margin-right: auto;  
 }  
 
 ### Control the order of flex-items with `order`
