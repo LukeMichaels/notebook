@@ -28,10 +28,11 @@ Flexbox is a remarkable layout feature that's redefined how web designers build 
 ### Establish the flex formatting context
   - by default this creates a block-level flex container  
   - items inside will be laid out in a row from left to right, taking up the full height of the div  
+```
 .container {  
    display: flex;  
 } 
-
+```
   - a flex container can also be inline (wont fill an entire row)  
 display: inline-flex;  
 
