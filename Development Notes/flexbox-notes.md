@@ -29,7 +29,7 @@ Flexbox is a remarkable layout feature that's redefined how web designers build 
 // by default this creates a block-level flex container  
 // items inside will be laid out in a row from left to right, taking up the full height of the div  
 .container {  
-  display: flex;  
+   display: flex;  
 } 
 
 // a flex container can also be inline (wont fill an entire row)  
@@ -41,8 +41,8 @@ display: inline-flex;
 // Note: flex-direction applies to the flex-container only, it wont have an effect if applied to a flex-item 
 // this is the default, items are displayed horizontally from left to right
 .container {  
-  display: flex;  
-  flex-direction: row;  
+   display: flex;  
+   flex-direction: row;  
 }  
 
 // this will align the content horizontally, and in reverse order (right to left)  
