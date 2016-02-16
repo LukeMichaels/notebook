@@ -70,8 +70,8 @@ flex-direction: column-reverse;
   - With the flex-wrap property, you can control whether the flex container is a single-line or multi-line layout.  
   - The value wrap breaks the flex items into multiple lines.  
 
-//this will make content wrap to the next line when there isn't enough room to display items on one  
-.container {  
+  - this will make content wrap to the next line when there isn't enough room to display items on one  
+.container {   
    display: flex;  
    flex-wrap: wrap;  
 }  
@@ -115,9 +115,9 @@ justify-content: space-around;
 <img src="images/flexbox/justify-content-example.png" alt="justify-content-example" width="1020" height="76" /> 
   - in this example, "item-1" will be positioned all the way to the left, all other items will position to the right with equal space between them.  
 .container {  
-   display: flex;  
-   flex-wrap: wrap;  
-   justify-content: space-around;  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: space-around;  
 }  
 .item-1 {  
    margin-right: auto;  
