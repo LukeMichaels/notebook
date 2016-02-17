@@ -6,7 +6,9 @@ Flexbox is a remarkable layout feature that's redefined how web designers build 
 [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)  
 [A Visual Guide to CSS3 Flexbox Properties](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)  
 [Flexbox Playground](https://scotch.io/demos/visual-guide-to-css3-flexbox-flexbox-playground)  
-[Flexbox - latest browser support](http://caniuse.com/#search=flexbox) 
+[Flexbox - latest browser support](http://caniuse.com/#search=flexbox)  
+[Flexbox-Froggy - fun way to practice](http://flexboxfroggy.com/)  
+[Flexbugs - community curated list of flexbox issues and cross-browser workarounds](https://github.com/philipwalton/flexbugs)  
 
 
 ## Terminology
@@ -36,6 +38,7 @@ Flexbox is a remarkable layout feature that's redefined how web designers build 
 // a flex container can also be inline (wont fill an entire row) 
 display: inline-flex;  
 ```
+
 ### Use "flex-direction" to establish the flow of the content
 [flex-direction - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) 
 
@@ -62,6 +65,7 @@ flex-direction: column;
 // same as row-reverse, but from bottom to top
 flex-direction: column-reverse;  
 ```
+
 ### Control whether flex-container is a single or multi-line layout with "flex-wrap"
 [flex-wrap - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)  
 
@@ -71,6 +75,7 @@ flex-direction: column-reverse;
   - The flex container can break flex items into multiple flex lines and allow them to wrap as needed.  
   - With the flex-wrap property, you can control whether the flex container is a single-line or multi-line layout.  
   - The value wrap breaks the flex items into multiple lines.  
+
 ```
 // this will make content wrap to the next line when there isn't enough room to display items on one  
 .container {   
@@ -84,6 +89,7 @@ flex-wrap: nowrap;
 // multi-line, right to left  
 flex-wrap: wrap-reverse;  
 ```
+
 ### Control the position and alignment of items on the main access and how space should be distributed using "justify-content"
 [justify-content - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)  
 
@@ -95,6 +101,7 @@ flex-wrap: wrap-reverse;
   - The value space-between displays equal spacing between flex items.  
   - For equal spacing around every flex item, use the value space-around.  
   - A margin set to auto will absorb any extra space around a flex item and push other flex items into different positions.  
+
 ```
 // this aligns flex items to the end of the flex line  
 .container {  
@@ -128,6 +135,7 @@ justify-content: space-around;
    margin-right: auto;  
 }  
 ```
+
 ### Control the order of flex-items with "order"
 [order - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/order)  
 
@@ -138,6 +146,7 @@ justify-content: space-around;
   - order places flex items relative to the other items' order values.  
   - To place a flex item before another item, it needs to have a lower order value than the item.  
   - To place a flex item after another item, it needs to have a higher order value than the item.  
+
 ```
 // this would move "item-1" to then end of the list  
 .item-1 {  
@@ -176,6 +185,7 @@ justify-content: space-around;
   flex-grow: 3;  
 }  
 ```
+
 ### The "flex-basis" property provides further control over the size of flex items
 [flex-basis - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis)  
 [flex-shrink - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink)  
@@ -185,8 +195,7 @@ justify-content: space-around;
   - You set the initial size you want the flex items to be, then flexbox evenly distributes the free space according that size.  
   - flex is the shorthand for flex-grow, flex-basis and flex-shrink.  
   - Using only one number value for flex sets the flex-grow value of an item.  
-  - The second and third values are optional in the flex shorthand.  
-  - Setting only one number value for flex automatically sets the flex-basis value to 0.  
+
 ```
 // flex-basis works with flex-grow to display even but flexible widths  
 // here flex items will display at an equal size when 200px or wider  
@@ -199,9 +208,12 @@ justify-content: space-around;
   flex-basis: 200px;  
 }  
 ```
-  - flex-shrink is the opposite of flex-grow  
 
+  - flex-shrink is the opposite of flex-grow  
   - flex is a shorthand property for flex-grow, flex-basis and flex-shrink  
+  - The second and third values are optional in the flex shorthand.  
+  - Setting only one number value for flex automatically sets the flex-basis value to 0.  
+
 ```  
 // the first value is for flex-grow, so here the item is getting set to flex-grow: 1 and because the default is 0 and we didn't provide anything, flex-basis is set to 0  
 .item {  
@@ -214,3 +226,85 @@ item {
 }  
 ```
 
+### Align items on the cross axis with the "align-items" property
+[align-items MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)  
+
+  - The align-items property applies to flex containers only.  
+  - The align-self property applies to flex items only.  
+  - align-items aligns flex items vertically in the flex container.  
+  - To align all flex items to the start of the cross axis, use the align-items: flex-start;.  
+  - align-items: flex-end; packs the items toward the end of the cross axis.  
+  - align-items: center; perfectly centers items along the cross axis.  
+
+```
+// by default align-items is set to stretch, which makes flex-items equal height.
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 450px;
+  align-items: stretch;
+}
+
+// flex-start packs the items at the beginning of the cross axis
+align-items: flex-start;
+
+
+// flex-end packs the items at the end of the cross axis
+align-items: flex-end;
+
+
+// center aligns items in the center of the flex axis
+align-items: center;
+
+```
+
+### Align individual items (on the cross axis) with the "align-self" property
+[align-self MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)  
+
+  - align-self: flex-start; aligns a flex item to the start of the cross axis.  
+  - align-self: flex-end; aligns a flex item to the end of the cross axis.  
+  - align-self: center; aligns a flex item to the center of the cross axis.  
+
+```
+// here only ".item-1" is aligned to the start of the cross axis, other items are aligned "stretch"
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 450px;
+  align-items: stretch;
+}
+.item {
+  flex: 1;
+}
+.item-1 {
+  align-self: flex-start;
+}
+.item-2 {
+  flex: 2;
+}
+```
+
+### Vertical and Horizontal Centering with flexbox
+
+```
+// Three ways to center-align elements using flexbox
+
+// Set the flex container's justify-content and align-items values to center:
+.container {
+  justify-content: center;
+  align-items: center;
+}
+
+// Set the flex container's justify-content value to center, while setting the flex item's align-self value to center:
+.container {
+  justify-content: center;
+}
+.item {
+  align-self: center;
+}
+
+// Set the flex item's margin value to auto:
+.item {
+  margin: auto;
+}
+```
