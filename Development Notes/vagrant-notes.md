@@ -50,11 +50,7 @@ npm install
 `
 and other tools as required to get your grunt/gulp workflow going.
 
-## other notes
-
-Create a new project
-vv create
-
-vv list – Lists all local sites.
-vv create – Walks you through a wizard to create a new site.
-vv delete – Walks you through removing a site.
+## Other notes
+  - vv list – Lists all local sites.
+  - vv create – Walks you through a wizard to create a new site.
+  - vv delete – Walks you through removing a site.
