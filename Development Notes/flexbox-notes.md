@@ -13,7 +13,7 @@ Flexbox is a remarkable layout feature that's redefined how web designers build 
 [Flexbox Cheat Sheet](http://www.sketchingwithcss.com/samplechapter/cheatsheet.html)  
 [Flexbox Playground](https://scotch.io/demos/visual-guide-to-css3-flexbox-flexbox-playground)  
 [Flexbox - latest browser support](http://caniuse.com/#search=flexbox)  
-[Flexbox-Froggy - fun way to practice](http://flexboxfroggy.com/)  
+[Flexbox Froggy - fun way to practice](http://flexboxfroggy.com/)  
 [Flexbugs - community curated list of flexbox issues and cross-browser workarounds](https://github.com/philipwalton/flexbugs)  
 
 
