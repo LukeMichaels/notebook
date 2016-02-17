@@ -444,5 +444,57 @@ align-items: center;
   - A margin value of auto has an effect on flex item alignment because it absorbs any extra space around a flex item and pushes other flex items into different positions.
 
 ```
+// here the .button will line-up with the bottom of the .col no matter how much content is above it
+@media (min-width: 769px) {
+  .main-header,
+  .main-nav,
+  .row,
+  .col {
+    display: flex;
+  }
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .col {
+    flex: 1;
+    flex-direction: column;
+  }
+  .button {
+    margin-top: auto;
+  }
+}
+```
+
+### Creating a Sticky Footer with Flexbox
+[min-height - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/min-height)  
+[Sizing with vh Units](http://snook.ca/archives/html_and_css/vm-vh-units)  
+
+  - When you make body a flex container, it lays out all its direct children horizontally on a single line.
+  - Setting the flex-direction of body to column stacks its flex items vertically.
+  - 1vh is equal to 1/100th or 1% of the viewport height.
   
+```
+// this is a simple sticky footer
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.row {
+  flex: 1;
+}
+// the html
+<body>
+
+  <header class="main-header">
+  </header>
+  
+  <div class="row">
+  </div>
+
+  <footer class="main-footer">
+  </footer>
+
+</body>
 ```
