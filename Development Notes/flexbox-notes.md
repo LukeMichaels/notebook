@@ -484,17 +484,11 @@ body {
 .row {
   flex: 1;
 }
+
 // the html
 <body>
-
-  <header class="main-header">
-  </header>
-  
-  <div class="row">
-  </div>
-
-  <footer class="main-footer">
-  </footer>
-
+  <header class="main-header"></header>
+  <div class="row"></div>
+  <footer class="main-footer"></footer>
 </body>
 ```
