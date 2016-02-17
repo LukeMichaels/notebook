@@ -10,6 +10,7 @@ Flexbox is a remarkable layout feature that's redefined how web designers build 
 ## I.    Resources
 [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)  
 [A Visual Guide to CSS3 Flexbox Properties](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)  
+[Flexbox Cheat Sheet](http://www.sketchingwithcss.com/samplechapter/cheatsheet.html)  
 [Flexbox Playground](https://scotch.io/demos/visual-guide-to-css3-flexbox-flexbox-playground)  
 [Flexbox - latest browser support](http://caniuse.com/#search=flexbox)  
 [Flexbox-Froggy - fun way to practice](http://flexboxfroggy.com/)  
