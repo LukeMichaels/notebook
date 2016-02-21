@@ -251,9 +251,7 @@ function changeScene(decision) {
 }
 ```
 
-## Nested Conditionals 
-
-# Complex Conditionals
+## Complex Conditionals
   - && - binary and, returns true if both values are true
   - || - binary or, returns true if either value is true
 
