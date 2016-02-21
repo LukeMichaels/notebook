@@ -1,4 +1,5 @@
 # JavaScript
+A high-level, dynamic, untyped, and interpreted programming language.
 
 ## Operators - standard math operators
 ```
