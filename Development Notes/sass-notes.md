@@ -1,4 +1,4 @@
-# Sass
+# Sass: Syntactically Awesome Style Sheets
 An extension of CSS, adding nested rules, variables, mixins, selector inheritance, and more. It's translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.
 
 ### Variables 
