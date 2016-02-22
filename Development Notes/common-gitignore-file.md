@@ -36,4 +36,9 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# node/grunt dependencies #
+###########################
+node_modules/
 ```
+
