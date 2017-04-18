@@ -1,4 +1,4 @@
-# Operators, Variables, and Types in C#
+# Getting Started in C#
 
 ### Variables and Types
 On Mac there are a few options:  
