@@ -1,6 +1,6 @@
-# Getting Started with C#
+# Operators, Variables, and Types in C#
 
-### IDE
+### Variables and Types
 On Mac there are a few options:  
 [MonoDevelop](http://www.monodevelop.com/download/)  
 [Visual Studio Code](https://code.visualstudio.com/Download)  
@@ -22,7 +22,7 @@ ln -s /usr/local/opt/openssl/lib/libssl.1.0.0.dylib /usr/local/lib/
 
 
 ### Hello World
-'''
+```
 // Namespace Declaration
 using System;
 
@@ -36,7 +36,7 @@ class WelcomeCSS
     Console.WriteLine("Hello World"); 
   }
 }
-'''
+```
 
 
 ### Using Mono on MacOS X
