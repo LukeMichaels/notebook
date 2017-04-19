@@ -37,7 +37,7 @@ class Booleans
 An `integral` is a category of types. They are whole numbers, either signed or unsigned, and the char type. The char type is a Unicode character, as defined by the Unicode Standard. Visit [The Unicode Home Page](http://www.unicode.org/) for more info.
 
 | Type     | Size (in bits) | Range                                         |
-| -------- |:--------------:| ---------------------------------------------:|
+| -------- |:--------------:| --------------------------------------------- |
 | sbyte    | 8              | -128 to 127                                   |
 | byte     | 8              | 0 to 255                                      |
 | short    | 16             | -32768 to 32767                               |
@@ -55,7 +55,7 @@ A floating point type is either a `float` or `double`.
 Floating point types are used when you need to perform operations requiring fractional representations. However, for financial calculations, the decimal type is the best choice because you can avoid rounding errors.  
 
 | Type     | Size (in bits) | Precision            | Range                       |
-| -------- |:--------------:| :-------------------:| ---------------------------:|
+| -------- |:--------------:| :-------------------:| --------------------------- |
 | float    | 32             | 7 digits             | 1.5 x 10-45 to 3.4 x 1038   |
 | double   | 64             | 15-16 digits         | 5.0 x 10-324 to 1.7 x 10308 |
 | decimal  | 128            | 28-29 decimal places | 1.0 x 10-28 to 7.9 x 1028   |
