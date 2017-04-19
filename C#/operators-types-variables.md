@@ -66,7 +66,7 @@ A string is a sequence of text characters.
 
 #### Character Escape Sequences
 | Escape Sequence | Meaning                                 |
-| --------------- | ---------------------------------------:|
+| --------------- | --------------------------------------- |
 | \’              | Single Quote                            |
 | \”              | Double Quote                            |
 | \\              | Backslash                               |
