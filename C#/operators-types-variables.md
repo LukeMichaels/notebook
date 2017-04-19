@@ -48,3 +48,33 @@ An `integral` is a category of types. They are whole numbers, either signed or u
 | ulong    | 64             | 0 to 18446744073709551615                     |
 | char     | 16             | 0 to 65535                                    |
 
+
+### Floating Point and Decimal Types
+A floating point type is either a `float` or `double`.  
+
+Floating point types are used when you need to perform operations requiring fractional representations. However, for financial calculations, the decimal type is the best choice because you can avoid rounding errors.  
+
+| Type     | Size (in bits) | Precision            | Range                       |
+| -------- |:--------------:| :-------------------:| ---------------------------:|
+| float    | 32             | 7 digits             | 1.5 x 10-45 to 3.4 x 1038   |
+| double   | 64             | 15-16 digits         | 5.0 x 10-324 to 1.7 x 10308 |
+| decimal  | 128            | 28-29 decimal places | 1.0 x 10-28 to 7.9 x 1028   |
+
+
+### The string Type
+A string is a sequence of text characters.  
+
+#### Character Escape Sequences
+| Escape Sequence | Meaning                                 |
+| --------------- | ---------------------------------------:|
+| \’              | Single Quote                            |
+| \”              | Double Quote                            |
+| \\              | Backslash                               |
+| \0              | Null, not the same as the C# null value |
+| \a              | Bell                                    |
+| \b              | Backspace                               |
+| \f              | form Feed                               |
+| \n              | Newline                                 |
+| \r              | Carriage Return                         |
+| \t              | Horizontal Tab                          |
+| \v              | Vertical Tab                            |
