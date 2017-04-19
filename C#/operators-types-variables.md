@@ -78,3 +78,24 @@ A string is a sequence of text characters.
 | \r              | Carriage Return                         |
 | \t              | Horizontal Tab                          |
 | \v              | Vertical Tab                            |
+
+
+### C# Operators
+
+| Category (by precedence) | Operator(s)                                                                 | Associativity |
+| ------------------------ | --------------------------------------------------------------------------- | ------------- |
+| Primary                  | x.y  f(x)  a[x]  x++  x–  new  typeof  default  checked  unchecked delegate | left          |
+| Unary                    | +  –  !  ~  ++x  –x  (T)x                                                   | right         |
+| Multiplicative           | *  /  %                                                                     | left          |
+| Additive                 | +  –                                                                        | left          |
+| Shift                    | <<  >>                                                                      | left          |
+| Relational               | \| <  >  <=  >=  is as                                                       | left          |
+| Equality                 | ==  !=                                                                      | right         |
+| Logical AND              | &                                                                           | left          |
+| Logical XOR              | ^                                                                           | left          |
+| Logical OR               | \|                                                                           | left          |
+| Conditional AND          | &&                                                                          | left          |
+| Conditional OR           | \|\|                                                                          | left          |
+| Null Coalescing          | ??                                                                          | left          |
+| Ternary                  | ?:                                                                          | right         |
+| Assignment               | =  *=  /=  %=  +=  -=  <<=  >>=  &=  ^=  \|=  =>                             | right         |
