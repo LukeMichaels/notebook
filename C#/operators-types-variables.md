@@ -64,6 +64,7 @@ Floating point types are used when you need to perform operations requiring frac
 ### The string Type
 A string is a sequence of text characters.  
 
+
 #### Character Escape Sequences
 | Escape Sequence | Meaning                                 |
 | --------------- | --------------------------------------- |
@@ -99,3 +100,5 @@ A string is a sequence of text characters.
 | Null Coalescing          | ??                                                                          | left          |
 | Ternary                  | ?:                                                                          | right         |
 | Assignment               | =  *=  /=  %=  +=  -=  <<=  >>=  &=  ^=  \|=  =>                             | right         |
+
+
