@@ -1,0 +1,10 @@
+/Users/luke/Documents/notebook/C#/C# projects/ClassDemo/ClassDemo/bin/Debug/netcoreapp1.1/ClassDemo.deps.json
+/Users/luke/Documents/notebook/C#/C# projects/ClassDemo/ClassDemo/bin/Debug/netcoreapp1.1/ClassDemo.runtimeconfig.json
+/Users/luke/Documents/notebook/C#/C# projects/ClassDemo/ClassDemo/bin/Debug/netcoreapp1.1/ClassDemo.runtimeconfig.dev.json
+/Users/luke/Documents/notebook/C#/C# projects/ClassDemo/ClassDemo/bin/Debug/netcoreapp1.1/ClassDemo.dll
+/Users/luke/Documents/notebook/C#/C# projects/ClassDemo/ClassDemo/bin/Debug/netcoreapp1.1/ClassDemo.pdb
+/Users/luke/Documents/notebook/C#/C# projects/ClassDemo/ClassDemo/obj/Debug/netcoreapp1.1/ClassDemo.csprojResolveAssemblyReference.cache
+/Users/luke/Documents/notebook/C#/C# projects/ClassDemo/ClassDemo/obj/Debug/netcoreapp1.1/ClassDemo.csproj.CoreCompileInputs.cache
+/Users/luke/Documents/notebook/C#/C# projects/ClassDemo/ClassDemo/obj/Debug/netcoreapp1.1/ClassDemo.AssemblyInfo.cs
+/Users/luke/Documents/notebook/C#/C# projects/ClassDemo/ClassDemo/obj/Debug/netcoreapp1.1/ClassDemo.dll
+/Users/luke/Documents/notebook/C#/C# projects/ClassDemo/ClassDemo/obj/Debug/netcoreapp1.1/ClassDemo.pdb
