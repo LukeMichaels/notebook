@@ -1,5 +1,23 @@
 # MAMP Notes
 
+
+### Fix MySQL Issues
+Open Terminal and run this command.  
+```
+ps -ef | grep mysql
+```
+
+This will display any running mysql processes. Look for those process IDs and then run the following:  
+```
+sudo kill -9 IDNUMBERHERE
+```
+
+We can verify that the process are gone by running our grep command again.  
+```
+ps -ef | grep mysql
+```  
+
+
 ### EXPORT DATABASE FROM MAMP
 #### Step One:
   - Open a new terminal window
