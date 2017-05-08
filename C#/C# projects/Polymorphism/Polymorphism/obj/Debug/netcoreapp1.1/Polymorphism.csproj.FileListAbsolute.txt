@@ -1,0 +1,10 @@
+/Users/luke/Documents/notebook/C#/C# projects/Polymorphism/Polymorphism/bin/Debug/netcoreapp1.1/Polymorphism.deps.json
+/Users/luke/Documents/notebook/C#/C# projects/Polymorphism/Polymorphism/bin/Debug/netcoreapp1.1/Polymorphism.runtimeconfig.json
+/Users/luke/Documents/notebook/C#/C# projects/Polymorphism/Polymorphism/bin/Debug/netcoreapp1.1/Polymorphism.runtimeconfig.dev.json
+/Users/luke/Documents/notebook/C#/C# projects/Polymorphism/Polymorphism/obj/Debug/netcoreapp1.1/Polymorphism.csprojResolveAssemblyReference.cache
+/Users/luke/Documents/notebook/C#/C# projects/Polymorphism/Polymorphism/obj/Debug/netcoreapp1.1/Polymorphism.csproj.CoreCompileInputs.cache
+/Users/luke/Documents/notebook/C#/C# projects/Polymorphism/Polymorphism/obj/Debug/netcoreapp1.1/Polymorphism.AssemblyInfo.cs
+/Users/luke/Documents/notebook/C#/C# projects/Polymorphism/Polymorphism/bin/Debug/netcoreapp1.1/Polymorphism.dll
+/Users/luke/Documents/notebook/C#/C# projects/Polymorphism/Polymorphism/bin/Debug/netcoreapp1.1/Polymorphism.pdb
+/Users/luke/Documents/notebook/C#/C# projects/Polymorphism/Polymorphism/obj/Debug/netcoreapp1.1/Polymorphism.dll
+/Users/luke/Documents/notebook/C#/C# projects/Polymorphism/Polymorphism/obj/Debug/netcoreapp1.1/Polymorphism.pdb

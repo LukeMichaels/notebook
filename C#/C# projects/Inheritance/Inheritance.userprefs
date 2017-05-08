@@ -1,7 +1,7 @@
-﻿<Properties StartupConfiguration="{2A2A2C37-2E1D-4100-B99A-F34AF7B0509A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ClassDemo/Program.cs">
+﻿<Properties StartupConfiguration="{5B7D51DB-0034-4692-AB24-7ABE4B5C699B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Inheritance/Program.cs">
     <Files>
-      <File FileName="ClassDemo/Program.cs" Line="62" Column="30" />
+      <File FileName="Inheritance/Program.cs" Line="120" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -10,5 +10,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ClassDemo PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Inheritance PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

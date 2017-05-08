@@ -1,0 +1,10 @@
+/Users/luke/Documents/notebook/C#/C# projects/Inheritance/Inheritance/bin/Debug/netcoreapp1.1/Inheritance.deps.json
+/Users/luke/Documents/notebook/C#/C# projects/Inheritance/Inheritance/bin/Debug/netcoreapp1.1/Inheritance.runtimeconfig.json
+/Users/luke/Documents/notebook/C#/C# projects/Inheritance/Inheritance/bin/Debug/netcoreapp1.1/Inheritance.runtimeconfig.dev.json
+/Users/luke/Documents/notebook/C#/C# projects/Inheritance/Inheritance/obj/Debug/netcoreapp1.1/Inheritance.csprojResolveAssemblyReference.cache
+/Users/luke/Documents/notebook/C#/C# projects/Inheritance/Inheritance/obj/Debug/netcoreapp1.1/Inheritance.csproj.CoreCompileInputs.cache
+/Users/luke/Documents/notebook/C#/C# projects/Inheritance/Inheritance/obj/Debug/netcoreapp1.1/Inheritance.AssemblyInfo.cs
+/Users/luke/Documents/notebook/C#/C# projects/Inheritance/Inheritance/bin/Debug/netcoreapp1.1/Inheritance.dll
+/Users/luke/Documents/notebook/C#/C# projects/Inheritance/Inheritance/bin/Debug/netcoreapp1.1/Inheritance.pdb
+/Users/luke/Documents/notebook/C#/C# projects/Inheritance/Inheritance/obj/Debug/netcoreapp1.1/Inheritance.dll
+/Users/luke/Documents/notebook/C#/C# projects/Inheritance/Inheritance/obj/Debug/netcoreapp1.1/Inheritance.pdb

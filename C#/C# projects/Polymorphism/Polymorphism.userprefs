@@ -1,7 +1,7 @@
-﻿<Properties StartupConfiguration="{2A2A2C37-2E1D-4100-B99A-F34AF7B0509A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ClassDemo/Program.cs">
+﻿<Properties StartupConfiguration="{3B76FB4C-A123-4E11-BE26-36AC7CB5386F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Polymorphism/Program.cs">
     <Files>
-      <File FileName="ClassDemo/Program.cs" Line="62" Column="30" />
+      <File FileName="Polymorphism/Program.cs" Line="86" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -10,5 +10,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ClassDemo PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Polymorphism PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

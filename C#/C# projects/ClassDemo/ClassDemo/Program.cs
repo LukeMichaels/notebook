@@ -75,8 +75,7 @@ namespace ClassDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
+ 
             int pay;
 
             Staff staff1 = new Staff("Peter");
