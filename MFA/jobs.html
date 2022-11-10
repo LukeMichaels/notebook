@@ -1,0 +1,888 @@
+<style type='text/css'>
+	.overlay {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url(themes/mfa/images/overlay.png);
+		background-size: cover;
+	}
+</style>
+
+<section id="hero" class="hero--parallax hero--about">
+	<div class="parallax__bg" data-center="background-position: 50.000% 0px;"
+		data-top-bottom="background-position: 50.000% -100px;" data-anchor-target="#hero"
+		style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2019/10/1200x630/Hero.jpg)" ;>
+	</div>
+	<div class="parallax__bg" data-center="background-position: 50.000% 0px;"
+		data-top-bottom="background-position: 50.000% -100px;" data-anchor-target="#hero"
+		style="position:absolute;top:0px;left:0px;background-image:url(themes/mfa/images/overlay.png)">
+		<div class="parallax__container">
+			<div class="parallax__content" data-top="opacity: 0.5" data-100-top="opacity: 1" data-anchor-target="h1">
+				<h1>Join Our Team<h5>Not all superheroes wear capes.</h5>
+				</h1>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--CONTENT-START-->
+<style>
+	/* :::::::::: general */
+	.row {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 1060px;
+		padding: 0 20px;
+		margin: 0 auto;
+	}
+
+	.mfa-jobs--content h3 {
+		width: 100%;
+		color: #0666F2;
+		text-align: center;
+		line-height: 24px;
+		font-weight: 700;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	.two-up .col {
+		width: 100%;
+		margin-bottom: 30px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.education .two-up .image {
+		width: 100%;
+		height: 230px;
+		border: 5px solid #f3f3f3;
+	}
+
+	.education .copy {
+		max-width: 80%;
+		margin: 0 auto;
+		color: #393939;
+		text-align: center;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 24px;
+	}
+
+	.image {
+		display: flex;
+		justify-content: center;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	.copy-wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 75px;
+		color: #393939;
+		text-align: center;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 300;
+	}
+
+	.copy-wrap .line {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 1060px) {
+		.education .two-up {
+			margin-bottom: 30px;
+		}
+
+		.quote .line {
+			font-size: 18px;
+		}
+
+		.quote blockquote {
+			font-size: 18px;
+		}
+	}
+
+	@media (max-width: 990px) {
+		.education .two-up {
+			margin-bottom: 30px;
+		}
+
+		.hero .copy .line {
+			display: inline;
+		}
+
+		.tout .copy .line {
+			display: inline;
+		}
+
+		.quote .text-wrap {
+			width: 53.92156862745098%;
+		}
+
+		.investigations .button {
+			font-size: 18px;
+		}
+	}
+
+	@media (max-width: 900px) {
+		.education .two-up {
+			margin-bottom: 30px;
+		}
+
+		.four-up h3 {
+			font-size: 24px;
+		}
+
+		.quote .text-wrap {
+			width: 40%;
+		}
+	}
+
+	@media (max-width: 865px) {
+		.investigations h3 {
+			font-size: 24px;
+		}
+
+		.investigations .copy {
+			font-size: 16px;
+		}
+	}
+
+	@media (max-width: 700px) {
+		.interstitial--circle .circle {
+			display: none;
+			margin-bottom: none;
+		}
+
+		.education {
+			margin-bottom: 0px;
+		}
+
+		.two-up {
+			flex-wrap: wrap;
+		}
+
+		.two-up .col {
+			width: 100%;
+			margin-bottom: 40px;
+		}
+
+		.four-up {
+			flex-wrap: wrap;
+		}
+
+		.four-up .col {
+			width: 50%;
+			margin-bottom: 0px;
+		}
+
+		.row {
+			margin-top: 0px;
+		}
+	}
+
+	@media (max-width: 530px) {
+		.education .two-up {
+			margin-bottom: 0px;
+		}
+
+		.education {
+			margin-bottom: 0px;
+		}
+
+		.interstitial--circle .circle {
+			display: none;
+			margin-bottom: none;
+		}
+
+		.two-up .col {
+			width: 100%;
+			min-height: 300px;
+			margin-top: 50px;
+		}
+
+		.jobs .team-tile__name {
+			min-height: 20px;
+		}
+
+		.jobs #team-expander {
+			margin-bottom: 30px;
+		}
+
+		.job-opprotunities-abroad {
+			font-size: 18px;
+			margin-top: 1rem;
+		}
+
+		.row {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			max-width: 1060px;
+			padding: 0 20px;
+			margin: 0 auto;
+		}
+
+		/* :::::::::: benefits */
+
+		.education .two-up .image {
+			width: 100%;
+			height: 230px;
+			border: 5px solid #f3f3f3;
+		}
+
+		.background-image {
+			width: 100px;
+			background: url(https://mfa.cachefly.net/mfa/images/uploads/2018/03/Map-Jobs.png) no-repeat 50% 50%;
+		}
+	}
+</style>
+
+<!-- <section class="hero">
+	<div class="row">
+		<div class="copy-wrap">
+			<h1>Join Our Team</h1>
+				<h5 style="color: #ffffff" !important>Not all superheroes wear capes.</h5>
+			</div>
+		</div>
+</section> -->
+
+<!-- ========================= -->
+<!--           INTRO           -->
+<!-- ========================= -->
+<section class="interstitial section--large interstitial--circle">
+	<div class="container">
+		<div class="circle-descrip left" style="height: auto;">
+			<div class="inner">
+				<div class="innercontent">
+					<h3 class="mb30" style="font-size: 16px; text-align:left; !important"><br>Mercy For Animals is the
+						largest and most effective international charity focused exclusively on preventing cruelty to
+						farmed animals.</h3>
+					<p><strong>As part of an international team of innovators changing the world, you will do the most
+							meaningful work of your life at Mercy For Animals.</strong>
+					</p>
+					<p>
+						We’ve obtained unprecedented convictions of factory farms, pressured major companies to change
+						how they treat animals, inspired millions to choose more plant-based foods, and won major
+						legislative victories.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="circle circle--xlrg"
+			style="background-image:url('https://mfa.cachefly.net/mfa/images/uploads/2018/03/brown-calf.jpg');"></div>
+	</div>
+</section>
+
+<section class="education">
+	<div class="row two-up">
+		<div class="col">
+			<div class="image"
+				style="background:url('https://mfa.cachefly.net/mfa/images/uploads/2019/10/We-believe.jpg') no-repeat; background-position: top center; background-size: cover;">
+			</div>
+			<h3 class="title"></h3>
+			<p>
+				We believe each of us deserves to bring our <strong>whole self</strong> to a <strong>safe
+					environment</strong> where we can do our best work. At Mercy For Animals, we foster an inclusive
+				workplace where we lift one another up. Surveys and a <strong>staff-led culture committee</strong>
+				elevate our staff’s voices.</p>
+		</div>
+		<div class="col">
+			<div class="image"
+				style="background:url('https://mfa.cachefly.net/mfa/images/uploads/2019/10/We-provide.jpg') no-repeat; background-position: center center; background-size: cover;">
+			</div>
+			<h3 class="title"></h3>
+			<p>
+				We provide strong protections for our team members, regardless of gender, sexual orientation, age, race, religion, ability, veteran status, or origin. We extend these policies to interactions with donors, volunteers, interns, and contractors.
+				Committed to diversity, equity, and inclusion, Mercy For Animals celebrates <a href="https://mercyforanimals.org/mfa-supporters-march-in-pride-parades-across" target="_blank" rel="noopener noreferrer">LGBTQ+ pride</a>, supports <a href="https://mercyforanimals.org/this-is-why-mercy-for-animals-supports-internati" target="_blank" rel="noopener noreferrer">women’s rights</a>, and promotes the anti-racist principles of the <a href="https://mercyforanimals.org/why-mercy-for-animals-must-mean-mercy-for" target="_blank" rel="noopener noreferrer">Black
+					Lives Matter</a> movement. Join our mission to build a just and compassionate food system.
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="education">
+	<div class="row two-up">
+		<div class="col">
+			<div class="image"
+				style="background:url('https://mfa.cachefly.net/mfa/images/uploads/2019/10/we-offer.jpg') no-repeat; background-position: center center; background-size: cover;">
+			</div>
+			<h3 class="title"></h3>
+			<p>
+				We offer employees <strong>ample time off</strong>, flexible schedules, telecommuting opportunities, and
+				<strong>generous benefits</strong>. Self-care, mindfulness, and work-life balance are essential to
+				building a sustainable movement for animals. Our offices are also <strong>dog-friendly and
+					vegan</strong>.</p>
+		</div>
+		<div class="col">
+			<div class="image"
+				style="background:url('https://mfa.cachefly.net/mfa/images/uploads/2018/02/brasil-staff.png') no-repeat; background-position: center center; background-size: cover;">
+			</div>
+			<h3 class="title"></h3>
+			<p>
+				Our staff is our most valuable asset. <strong>Continual learning</strong> is part of everything we do.
+				Employees have access to a resource library with thousands of training videos. Mercy For Animals also
+				offers excellent <strong>opportunities for advancement</strong>.
+			</p>
+		</div>
+	</div>
+</section>
+
+
+<!-- ==================== -->
+<!--         JOBS         -->
+<!-- ==================== -->
+<section id="team" class="team-grid jobs">
+	<div class="container--full text-center">
+		<div class="container bg-light-links">
+			<h4 style="padding-top: 30px">Ready to join the Mercy For Animals team?</h4>
+			<p class="mb30">
+				<i>Don't see a good fit for your particular skill set? <a href="https://boards.greenhouse.io/mfainternaljobboard/jobs/601454" target="_blank" rel="noopener noreferrer">Submit an
+						application of general interest</a>.</i>
+			</p>
+			<p>
+				We appreciate your application and interest! Due to a high volume of communications and applicants, we currently lack the capacity to respond to email or phone inquiries about our open positions and internships. The hiring team will be happy to answer questions for all candidates who move forward to the interview process.
+			</p>
+			<p>
+				Check out our current openings:
+			</p>
+		</div><!-- .container -->
+		<div class="container text-left">
+
+
+			<section class="mfa-jobs-department">
+				<h6 class="mfa-jobs-department-title">International</h6>
+				<div class="mfa-jobs--item">
+					<a aria-expanded="false" aria-controls="jobsCollapse20" href="#" onclick="jQuery('#jobsCollapse20').collapse('toggle');jQuery(this).find('i').toggleClass('fa-chevron-right fa-chevron-down');return false">
+						<span class="job-title">
+							<i class="fas fa-chevron-right"></i>
+							Managing Director, Southeast/East Asia
+						</span>
+					</a>
+					<div id="jobsCollapse20" class="collapse mfa-jobs--content">
+						<h3 class="text-center hidden-xs">Managing Director, Southeast/East Asia</h3>
+		
+						<div class='jobDescription'>
+							<p style="text-align: center"><strong>Remote in Singapore</strong></p>
+							<p><em><span style="font-weight: 400">Mercy For Animals aims to end industrial animal agriculture by constructing a just and sustainable food system. We envision a world where animals are respected, protected, and free.</span></em><em><span style="font-weight: 400"><br></span></em></p>
+							<p><em><span style="font-weight: 400">As a leading farmed animal advocacy organization, we know that achieving this goal requires a diverse, inclusive, and collaborative work environment—one that welcomes and sparks new perspectives and innovative ideas. If you are passionate about our mission, driven to make a big impact for animals, and eager to be part of a dedicated team, join us!</span></em></p>
+							<p>&nbsp;</p>
+							<p><span style="font-weight: 400">We currently seek a </span><strong>managing director, Southeast/East Asia,</strong><span style="font-weight: 400"> to join our </span> team.</p>
+							<p><span style="font-weight: 400">You will</span><strong> do invaluable work</strong><span style="font-weight: 400">:</span></p>
+							<ul>
+							<li style="font-weight: 400"><span style="font-weight: 400">Lead the development and oversee the execution of the regional strategic plan and operational priorities in alignment with the organization’s global strategy and vision</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Proactively identify and explore new opportunities for the organization to maximize its impact and deliver on its mission, including creating and developing programs, campaigns, projects, and partnerships</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Lead the development and implementation of the regional annual operating plan, including defined priorities and goals, budget distribution, and analysis of results and performance</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Regularly evaluate the progress, impact, and budget outlined for each department and country and partner with departmental leaders to develop action plans, effectively manage the budget, rethink approaches when necessary, remove barriers, and maximize results</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Ensure robust operational and financial processes as well as compliance with all regulatory requirements for every country in which Mercy For Animals operates in the region</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Create executive reports and present them to the global senior leadership team</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Act as a mentor and leader, supporting alignment among departments and countries and ensuring high performance of each team and country</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Help develop Mercy For Animals’ brand and identity and position the organization as a leading voice for farmed animals in the region in alignment with its international brand</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Develop and maintain effective relationships and partnerships with external stakeholders</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Act as Mercy For Animals’ representative in the region to strengthen its brand and communicate its vision, mission, and objectives</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Adhere to all organizational policies and procedures</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Perform any other duties assigned</span></li>
+							</ul>
+							<p><span style="font-weight: 400">Your</span><strong> qualifications </strong><span style="font-weight: 400">will take our </span><strong>team</strong><span style="font-weight: 400"> to the next level:</span></p>
+							<ul>
+							<li style="font-weight: 400"><span style="font-weight: 400">Five or more years of executive management experience</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Proven ability to set and oversee the successful execution of strategy</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Experience building and managing regional, interdisciplinary, and intercultural teams</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Excellent English written and spoken communication skills</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Strong work ethic and interpersonal skills, such as emotional intelligence; active listening; assertive and persuasive communication; and ability to negotiate, inspire, build consensus, and effectively manage conflict</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Excellent organizational and delegation skills, with the ability to manage multiple projects simultaneously, prioritize effectively, and achieve results</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Strong intrapersonal skills, such as resilience and stress and change management, as well as a growth mindset and a positive can-do attitude</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Willingness to travel regionally and internationally</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Commitment to the mission and values of the organization and ability to represent Mercy For Animals’ positions effectively</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Commitment and openness to continued personal and organizational growth in diversity, equity, inclusion, and justice principles</span></li>
+							<li style="font-weight: 400"><span style="font-weight: 400">Fluency in Malay, Indonesian, Thai, Korean, or Japanese (preferred)</span></li>
+							</ul>
+							<p>&nbsp;</p>
+							<p><strong>About Your Team Leader</strong></p>
+							<p><span style="font-weight: 400">Lucas Alvarenga founded Mercy For Animals in Brazil and led the team’s growth for nearly three years before stepping into a role where he supports the work of our managing directors internationally.</span><span style="font-weight: 400"><br></span><span style="font-weight: 400"></span></p>
+							<p><span style="font-weight: 400">As a former managing director himself, Lucas believes that there is no one better than a great local leader to make the biggest impact for animals by analyzing risks and opportunities and defining the organization’s strategies and tactics. Lucas’s relationship with his team is based on trust and a great sense of ownership, promoting open communication, responsibility, and autonomy.</span></p>
+							<p><strong>Compensation and Benefits</strong></p>
+							<p><span style="font-weight: 400">Earn a monthly salary of </span><span style="font-weight: 400">S$8,000–S$10,000</span><span style="font-weight: 400">, depending on qualifications. In addition to a competitive benefits package and a collaborative and innovative work environment, you will have the ability to work from home, flexible working hours, and the opportunity to create impact for animals.</span></p>
+							<p><strong>Application Details</strong></p>
+							<p><span style="font-weight: 400">We consider traditional and nontraditional qualifications and carefully review each application, resume, and cover letter. Feel encouraged to go outside a traditional cover letter and state how you would add to our culture; what we would gain from having you on our team; and how you align with our organizational vision, mission, and values. &nbsp;</span></p>
+							<p><strong>Our Commitment to You</strong></p>
+							<p><span style="font-weight: 400">Mercy For Animals is a globally minded organization. We are committed to the principles of equity and justice, and our culture celebrates authenticity—enabling every team member to shine. All employment decisions are based solely on individual qualifications, job needs, and job requirements, and potential team members of every color, orientation, age, gender, origin, veteran status, and ability are encouraged to apply. We strive to include candidates from historically marginalized communities and those from or in communities impacted by environmental, social, and economic injustice.&nbsp;</span></p>
+							<p><span style="font-weight: 400">Come as you are, and help us transform our society and construct a truly compassionate food system.</span></p>
+						</div><!-- .job-description -->
+						<div class="text-center">
+							We are recruiting for this position through SM2 Singapore. Please <a href="https://www.sm2-consulting.com/wp-content/plugins/bullhorn-oscp/#/jobs/221" target="_blank" rel="noopener noreferrer">see here to apply</a>.<br>The selected candidate will be hired under an employer-of-record agreement.
+							<!-- <a class="mfa-jobs--btn-apply" href="https://boards.greenhouse.io/mercyforanimals/jobs/4239823" target="_blank" rel="noopener noreferrer">Apply Now!</a> -->
+						</div>
+						<!-- <div class="mfa-jobs--social-icons">
+							<a target="_blank" rel="noopener norefereer noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fboards.greenhouse.io%2Fmercyforanimals%2Fjobs%2F4239823"><i class="fab fa-facebook"></i></a>
+							<a target="_blank" rel="noopener norefereer noreferrer" href="https://twitter.com/home?url=https%3A%2F%2Fboards.greenhouse.io%2Fmercyforanimals%2Fjobs%2F4239823&#038;text=Join%20Our%20Team%20-%20Director%20of%20Data%20and%20Analytics%20-%20Mercy%20For%20Animals"><i class="fab fa-twitter"></i></a>
+							<a target="_blank" rel="noopener norefereer noreferrer" href="/cdn-cgi/l/email-protection#26194449425f1b4e525256550315670314600314604449475442550841544343484e49535543084f490314604b4354455f40495447484f4b474a550314604c4944550314601214151f1e1415"><i class="fas fa-envelope"></i></a>
+							<a target="_blank" rel="noopener norefereer noreferrer" href="https://boards.greenhouse.io/mercyforanimals/jobs/4239823"><i class="fas fa-link"></i></a>
+						</div> -->
+					</div><!-- .collapse -->
+				</div><!-- .job -->
+			</section>
+
+
+			[mfa_jobs locale="en-US" /]
+
+		</div><!-- .containter -->
+	</div><!-- .container--full -->
+	<div class="bg-light-links container text-center mt30 section--large"
+		style="background-image:url('https://mfa.cachefly.net/mfa/images/uploads/2018/03/Map-Jobs.png'); background-size: 90%; background-position: center center; background-repeat: no-repeat; height: 500px;">
+
+		<h4 style="padding-top: 100px">Jobs Around the World</h4>
+		<p class="job-opprotunities-abroad">We may also be hiring in <a href="https://mercyforanimals.mx/empleos" title="Mexico job opportunities" target="_blank" rel="noopener noreferrer">Mexico</a>, <a href="https://www.mercyforanimals.in/jobs-en-in" title="India job opportunities" target="_blank" rel="noopener noreferrer">India</a>, and <a href="https://mercyforanimals.org.br/oportunidades" title="Brazil job opportunities" target="_blank" rel="noopener noreferrer">Brazil</a>.</p>
+	</div>
+</section>
+
+
+
+<section
+	style="background:url(https://mfa.cachefly.net/mfa/images/uploads/2018/05/empleos-staff.jpg) top center no-repeat; background-size:cover;background-position-y:10%;">
+	<div class="section--large"
+		style="background-size:cover; padding:145px 0; background-image: url(themes/mfa/images/overlay.png);">
+		<div class="content text-center pl20 pr20">
+			<h3 class="text-white">Other Ways to Get Involved</h3>
+
+			<p class="text-white">Join our growing network of compassionate outreach volunteers and interns.</p>
+
+			<a class="btn btn--yellow ml30 mr30 mt20" href="/get-involved/">Volunteer!</a>
+
+			<a class="btn btn--yellow ml30 mr30 mt20" href="/internship/">Intern!</a>
+		</div>
+	</div>
+</section>
+
+<!-- ==================== -->
+<!--         STAFF        -->
+<!-- ==================== 
+<section class="section--small">
+	<div class="container text-center">
+		<h4 class="mb0" style="margin-top: 50px">Meet Your Future Team Members</h4>
+	</div>
+</section>
+<section class="interstitial section--medium interstitial--circle bg-gray">
+	<div class="container">
+		
+	<div class="staff-slider">
+
+	
+	<script type='text/javascript'>
+
+		function rotatorItem(index, data, width) {
+
+			document.write("<div class='imagerotatoritem imagerotatorheight' style='width:" + width + "'>");
+				document.write('<div class="circle circle--large" style="background-image:url(' + htmlspecialchars(data.image) + ');"></div>');
+				document.write('<div class="circle-descrip circle-descrip--large">');
+					document.write('<div class="inner">');
+						document.write('<div class="innercontent">');
+							document.write('<p>' + data.quote + '</p>');
+							document.write('<p class="text-blue weight-700 mb0"><b>' + htmlspecialchars(data.name) + '</b></p>');
+							document.write('<p>' + htmlspecialchars(data.title) + '</p>');
+						document.write("</div>");
+					document.write("</div>");
+				document.write("</div>");
+			document.write("</div>");
+		}
+
+			ImageRotator.init([{"image":"https:\/\/mfa.cachefly.net\/mfa\/images\/uploads\/2015\/10\/Alan_Headshot-white_rc02-3.jpg","quote":"<p>&nbsp;<\/p>\r\n<p>\"I love seeing the massive impact we have. MFA hears stories every day from people who cut meat consumption after chatting with one of our veg support specialists. And we&rsquo;ve seen entire cities reduce meat purchases by 20 percent in public schools.\"<\/p>","name":"Alan Darer","title":"Global Food Policy Manager"},{"image":"https:\/\/mfa.cachefly.net\/mfa\/images\/uploads\/2017\/12\/rachel-4.jpg","quote":"<p>&nbsp;<\/p>\r\n<p>\"I never thought it was possible to look forward to Mondays. Then I started working at MFA, and now I realize that amazing things happen when you actually love your job.\"<\/p>","name":"Rachel Krantz","title":"Senior Writer"}], 'imagerotator imagerotatorheight', 10, 'https://mfa.cachefly.net/mfa/images/uploads/2015/05/Learn-more-about-Mercy-For-Animals-life-saving-work.png', 'https://mfa.cachefly.net/mfa/images/uploads/2015/05/Learn-more-about-Mercy-For-Animals-life-saving-work-2.png', 30, rotatorItem);
+
+		</script>
+
+	</div>
+
+	
+	</div>
+</section> -->
+
+
+<!-- ==================== -->
+<!--      LEADERSHIP      -->
+<!-- ==================== -->
+<!--<section class="team-grid section--large" id="team">
+	<div class="container--full text-center">
+		<h4 class="mb10">Our Leadership Team</h4>
+		<p class="text-gray">Changing Hearts. Changing Minds. Changing the World.</p>
+	 
+				
+
+
+	
+			<div class="team-row">
+	
+				<div class="team-tile fifth">
+					<div class="team-tile__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2018/10/Leah-Headshot.jpg);"></div>
+					<div class="team-tile__name">
+						<p>Leah Garcés</p>
+						<span>President</span>
+					</div>
+
+					<div class="team-tile__description">
+						
+						<p><p>Leah Garc&eacute;s is president of Mercy For Animals. She has been fighting for better food and farming systems for nearly 20 years as a leader in the animal protection movement. Leah oversaw international campaigns in 14 countries at the World Society for the Protection of Animals and launched Compassion in World Farming in the United States. She is the author of <em>Grilled: Turning Adversaries into Allies to Change the Chicken Industry</em> from Bloomsbury Publishing. Leah&rsquo;s work has grabbed headlines in the <em>New York Times</em>, the <em>Washington Post</em>, BuzzFeed, <em>Vice</em> magazine, the <em>Chicago Tribune</em>, and other national media outlets. Leah also serves on the advisory councils of Encompass and Seattle Food Tech. She lives in Atlanta, Georgia, with her husband, three kids, and two cats. Learn more about her vision for the organization <a href="../vision">here</a>.</p></p>
+						
+						
+						
+						
+						<a class="btn btn--team" href="mailto:LeahG@MercyForAnimals.org"><i class="fa fa-envelope-o"></i></a>
+					</div>
+				</div>
+
+	
+
+	
+				<div class="team-tile fifth">
+					<div class="team-tile__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2020/07/susan.jpg);"></div>
+					<div class="team-tile__name">
+						<p>Susan Lane</p>
+						<span>Senior Vice President of Development</span>
+					</div>
+
+					<div class="team-tile__description">
+						
+						<p><p>Susan Lane is senior vice president of development at Mercy For Animals. She oversees and manages fundraising strategy, development, and execution. Through all channels of fundraising, including annual fund, major gifts, planned giving, corporate and foundation relations, events, donor stewardship, and development operations, her team&rsquo;s mission is to engage donors and prospects in a way that both educates and inspires them to give. Susan has served as assistant vice president of development for Florida International University, chief development officer for the College of Medicine at Michigan State University, and vice president of planned giving for Fidelity Charitable Services. She is a certified fundraising executive (CRFE) and passionate advocate for the nonprofit community. Susan is married to Tom, an estate and tax attorney, and is the proud mother of Emily, a recent law school graduate. Susan is an avid reader and enjoys traveling, music, theater, and gatherings with friends and family.</p></p>
+						
+						
+						
+						
+						<a class="btn btn--team" href="mailto:SusanL@MercyForAnimals.org"><i class="fa fa-envelope-o"></i></a>
+					</div>
+				</div>
+
+	
+
+	
+				<div class="team-tile fifth">
+					<div class="team-tile__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2018/01/lucas_alvarenga.jpg);"></div>
+					<div class="team-tile__name">
+						<p>Lucas Alvarenga</p>
+						<span>Senior Vice President, Strategy, Impact and Research</span>
+					</div>
+
+					<div class="team-tile__description">
+						
+						<p><p>Lucas Alvarenga is senior vice president of strategy, impact, and research at Mercy For Animals. Born and raised in Rio de Janeiro, Brazil, Lucas has extensive communication and marketing experience and co-founded an e-commerce company. When Lucas decided to dedicate his life to reducing suffering, he launched pro-vegan projects in Brazil, including the <a href="http://desafio21diassemcarne.com.br/">21-Day Meatless Challenge</a> in partnership with the Brazilian Vegetarian Society. Lucas joined Mercy For Animals on his 15th anniversary as a vegetarian. He led the organization&rsquo;s growth in South America&rsquo;s largest country for three years. In his current role, Lucas uses this experience to build our work internationally and oversee our impact evaluation and research programs. Lucas lives in S&atilde;o Paulo with his girlfriend and four lovely nonhuman rescued babies.</p></p>
+						
+						
+						
+						
+						<a class="btn btn--team" href="mailto:lucasa@mercyforanimals.org"><i class="fa fa-envelope-o"></i></a>
+					</div>
+				</div>
+
+	
+
+	
+				<div class="team-tile fifth">
+					<div class="team-tile__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2018/12/Melanie-Heymans-small.jpg);"></div>
+					<div class="team-tile__name">
+						<p>Melanie Heymans</p>
+						<span>Senior Vice President, People and Culture</span>
+					</div>
+
+					<div class="team-tile__description">
+						
+						<p><p>Melanie Heymans is senior vice president of people and culture at Mercy For Animals. Melanie and her team are responsible for overall administration of the people operations functions for all our offices. They drive initiatives that support and strengthen our organizational culture and ensure a diverse and inclusive work environment for all team members. Originally from Austria, Melanie moved to the United States in 2010 and has worked with several mission-driven and nonprofit organizations to build strong people operations functions and foster supportive, diverse, and inclusive cultures. Melanie lives in Santa Monica with her husband, Stijn, and their terrier mix, Poppy, and enjoys travel, good food, exploring nature, and living an active and compassionate life.</p>
+<p>&nbsp;</p></p>
+						
+						
+						
+						
+						<a class="btn btn--team" href="mailto:MelanieH@mercyforanimals.org"><i class="fa fa-envelope-o"></i></a>
+					</div>
+				</div>
+
+	
+
+	
+				<div class="team-tile fifth">
+					<div class="team-tile__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2019/06/JOHN-sm.jpg);"></div>
+					<div class="team-tile__name">
+						<p>John Seber</p>
+						<span>Senior Vice President, Advocacy</span>
+					</div>
+
+					<div class="team-tile__description">
+						
+						<p><p>John Seber is senior vice president of advocacy at Mercy For Animals. He provides strategic leadership to our government affairs, investigations, and food policy teams around the world. Previously John was our vice president of legal affairs. In his spare time, he enjoys traveling, cooking, and hiking with his wife and companion animals.</p></p>
+						
+						
+						
+						
+						<a class="btn btn--team" href="mailto:JohnS@mercyforanimals.org"><i class="fa fa-envelope-o"></i></a>
+					</div>
+				</div>
+
+	
+			</div>
+	
+
+	
+			<div class="team-row">
+	
+				<div class="team-tile fifth">
+					<div class="team-tile__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2018/12/jesse-headshot.jpg);"></div>
+					<div class="team-tile__name">
+						<p>Jesse Marks</p>
+						<span>Senior Vice President, Engagement</span>
+					</div>
+
+					<div class="team-tile__description">
+						
+						<p><p>Jesse Marks is senior vice president of engagement at Mercy For Animals. He oversees the public engagement, corporate engagement, and volunteer program teams. Part of the animal protection movement since 2002, Jesse has over a decade of professional experience in advocacy, campaigns, and communications for animals. Originally from Australia, Jesse was once the director of farmed animal advocacy at Animals Australia, where he helped pioneer corporate engagement in the region, develop innovative outreach tactics, and build cutting-edge digital advocacy tools. Having moved numerous times to be where he could best serve animals, Jesse now calls home wherever his wife, Karen, and their rescue dog, Nina, are.</p></p>
+						
+						
+						
+						
+						<a class="btn btn--team" href="mailto:JesseM@mercyforanimals.org"><i class="fa fa-envelope-o"></i></a>
+					</div>
+				</div>
+
+	
+
+	
+				<div class="team-tile fifth">
+					<div class="team-tile__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2019/06/DAINA-sm.jpg);"></div>
+					<div class="team-tile__name">
+						<p>Daina Bray</p>
+						<span>General Counsel</span>
+					</div>
+
+					<div class="team-tile__description">
+						
+						<p><p>General Counsel Daina Bray advises Mercy For Animals and its directors, management, and staff on all legal issues that arise in the organization&rsquo;s programs and operations. With 15 years in legal practice, including five years as lead attorney for a major international animal protection nonprofit, Daina brings a breadth of nonprofit, international, and animal law experience to Mercy For Animals. Daina is a past chair of the American Bar Association Animal Law Committee (2017&ndash;2018), the current vice chair of the Tennessee Bar Association Animal Law Section, and a Fulbright scholar. She received her law degree from Stanford Law School and her bachelors in international studies from the University of North Carolina at Chapel Hill as a Morehead scholar.</p></p>
+						
+						
+						
+						
+						<a class="btn btn--team" href="mailto:DainaB@mercyforanimals.org"><i class="fa fa-envelope-o"></i></a>
+					</div>
+				</div>
+
+	
+
+	
+				<div class="team-tile fifth">
+					<div class="team-tile__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2020/07/travis.jpg);"></div>
+					<div class="team-tile__name">
+						<p>Travis Sitzlar</p>
+						<span>Vice President of Technology</span>
+					</div>
+
+					<div class="team-tile__description">
+						
+						<p><p>Travis Sitzlar is vice president of technology at Mercy For Animals. He leads a team of developers and PMOs dedicated to helping Mercy For Animals achieve its vision through information technology. With over 20 years&rsquo; experience creating and managing high-performing technology teams around the globe, Travis has supported organizations ranging from local, regional, and international mission-driven nonprofits to emerging startups and multinational corporations backed by private equity. He is delighted to see technology play a role in transforming people&rsquo;s perception of plant-based foods and looks forward to a world where plant-based eating is the norm. Travis and his wife, Stephanie, live in the Tampa Bay area in a home ruled by their two dogs, rescue bird, and cat.</p></p>
+						
+						
+						
+						
+						<a class="btn btn--team" href="mailto:TravisS@mercyforanimals.org"><i class="fa fa-envelope-o"></i></a>
+					</div>
+				</div>
+
+	
+
+	
+				<div class="team-tile fifth">
+					<div class="team-tile__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2018/03/kenny-torrella-4.jpg);"></div>
+					<div class="team-tile__name">
+						<p>Kenny Torrella</p>
+						<span>Vice President of Public Engagement</span>
+					</div>
+
+					<div class="team-tile__description">
+						
+						<p><p>Kenny Torrella serves as vice president of public engagement at Mercy For Animals. He works with our talented team of video producers, social media and public relations professionals, editors, and celebrity relations managers to speak up for animals and advance Mercy For Animals campaigns. In his prior role, he managed our media relations and garnered news coverage for farmed animals from the Associated Press, the <em>Washington Post</em>, the <em>Guardian</em>, <em>Fortune</em> magazine, and many others. Kenny has been active for animals since watching undercover investigation footage from factory farms and slaughterhouses nearly 15 years ago. He lives in Maryland with his partner and their rescue dog, Rihana.</p></p>
+						
+						
+						
+						
+						<a class="btn btn--team" href="mailto:KennyT@mercyforanimals.org"><i class="fa fa-envelope-o"></i></a>
+					</div>
+				</div>
+
+	
+
+	
+				<div class="team-tile fifth">
+					<div class="team-tile__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2020/07/chris.jpg);"></div>
+					<div class="team-tile__name">
+						<p>Chris Liptrot</p>
+						<span>Vice President of Corporate Engagement</span>
+					</div>
+
+					<div class="team-tile__description">
+						
+						<p><p>Chris Liptrot is vice president of corporate engagement, providing strategic guidance for Mercy For Animals&rsquo; global teams. Chris has devised campaign strategies and led negotiations to secure animal welfare policies from hundreds of the world&rsquo;s largest companies. He lives in Philadelphia with his wife, Katie, one adopted dog, and two rescued chinchillas.</p></p>
+						
+						
+						
+						
+						<a class="btn btn--team" href="mailto:ChrisL@MercyForAnimals.org"><i class="fa fa-envelope-o"></i></a>
+					</div>
+				</div>
+
+	
+			</div>
+	
+
+	
+			<div class="team-row">
+	
+				<div class="team-tile fifth">
+					<div class="team-tile__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2019/02/sandra-lopes2.jpg);"></div>
+					<div class="team-tile__name">
+						<p>Sandra Lopes</p>
+						<span>Managing Director, Brazil</span>
+					</div>
+
+					<div class="team-tile__description">
+						
+						<p><p>Sandra Lopes is managing director of Mercy For Animals in Brazil. Sandra has over 20 years&rsquo; experience in animal protection through national and international organizations. Born and residing in S&atilde;o Paulo, Sandra is a proud mom of two daughters, four cats, and a dog.</p></p>
+						
+						
+						
+						
+						<a class="btn btn--team" href="mailto:SandraL@mercyforanimals.org"><i class="fa fa-envelope-o"></i></a>
+					</div>
+				</div>
+
+	
+
+	
+				<div class="team-tile fifth">
+					<div class="team-tile__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2015/12/kelcey.jpg);"></div>
+					<div class="team-tile__name">
+						<p>Kelcey Meadows-Lucas</p>
+						<span>Philanthropy Officer</span>
+					</div>
+
+					<div class="team-tile__description">
+						
+						<p><p>Kelcey Meadows-Lucas is a philanthropy officer at Mercy For Animals, helping our donors fulfill their dreams of ending farmed animal cruelty. Adopting a feisty terrier 18 years ago opened her heart to all animals. Kelcey soon dedicated her life to helping animals. She brings more than a decade of fundraising experience to her position. Kelcey shares her home with her husband and son, rescued dog, and&nbsp;rescued fish.</p></p>
+						
+						
+						
+						
+						<a class="btn btn--team" href="mailto:kelceyml@mercyforanimals.org"><i class="fa fa-envelope-o"></i></a>
+					</div>
+				</div>
+
+	
+
+	
+				<div class="team-tile fifth">
+					<div class="team-tile__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2018/11/tracy.jpg);"></div>
+					<div class="team-tile__name">
+						<p>Tracy Keys</p>
+						<span>Philanthropy Officer</span>
+					</div>
+
+					<div class="team-tile__description">
+						
+						<p><p>Tracy Keys is a Mercy For Animals philanthropy officer, helping donors make the greatest impact with their giving. Prior to joining our team, Tracy was executive director at the Newport Beach Public Library Foundation. She received her bachelors in comparative literature from the University of California at Irvine. Her passion for animal protection began after reading Peter Singer&rsquo;s <em>Animal Liberation</em> and participating in campus vivisection protests. She lives in Laguna Beach with her husband, two mixed-breed cats, and a Shih Tzu rescued from the local shelter where she volunteers every Sunday.</p></p>
+						
+						
+						
+						
+						<a class="btn btn--team" href="mailto:TracyK@mercyforanimals.org"><i class="fa fa-envelope-o"></i></a>
+					</div>
+				</div>
+
+	
+
+	
+				<div class="team-tile fifth">
+					<div class="team-tile__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2020/07/nikunj.jpg);"></div>
+					<div class="team-tile__name">
+						<p>Nikunj Sharma</p>
+						<span>Chief Executive Officer of Mercy For Animals in India</span>
+					</div>
+
+					<div class="team-tile__description">
+						
+						<p><p>Nikunj Sharma is chief executive officer of Mercy For Animals in India. Based in New Delhi, Nikunj provides strategic leadership and guidance for our work in India, including building and managing teams, maintaining collaborative relationships with stakeholders, setting goals, and implementing short- and long-term plans and policies to further the organization&rsquo;s mission. Nikunj has over 12 years of rich experience in strategizing and leading policy and advocacy initiatives for animal protection campaigns in India and has been part of some of the landmark victories for animals in the country. Nikunj has worked with key influencers, such as parliamentarians, bureaucrats, think tanks, corporations, senior lawyers, and civil society leaders to build strong formal networks. For his extensive work in animal protection, Nikunj has been featured by the BBC, the Newsmakers, NDTV India, Aaj Tak, Times Now, and many more top news outlets.</p></p>
+						
+						
+						
+						
+						<a class="btn btn--team" href="mailto:NikunjS@MercyForAnimals.org"><i class="fa fa-envelope-o"></i></a>
+					</div>
+				</div>
+
+	
+			</div>
+	
+
+	</div>
+</section>-->
+
+
+<!-- ==================== -->
+<!--     CTA / DONATE     -->
+<!-- ==================== -->
+<style>
+	#form--donation a {
+		font-weight: 700;
+		text-decoration: underline;
+	}
+
+	a:hover {
+		opacity: .8;
+	}
+
+	@media only screen and (max-width: 1024px) {
+		.donation-form-v2.bg-img {
+			background-position: 50% 50%;
+		}
+	}
+</style>
+
+<!--=========== Donation form section ===========-->
+<section class="donation-form-v2 bg-img">
+	<div class="gradient-overlay"></div>
+	<div id="form--donation">
+		<div class="container mini-grid-1024">
+			<div class="span6 text-center">
+				<h2 class="cta-heading toUpper">Become a Monthly Supporter</h2>
+				<h4 class="mb30">Your <a
+						href="https://give.mercyforanimals.org/page/24219/donate/1?transaction.recurrpay=Y&ea.tracking.id=19WA3DA"
+						style="color: #ffffff">monthly gift</a> will bring hope to suffering animals.</h4>
+				<div id="form--donation" class="v2-form mb30 to-en-form">
+					<div class="form--donation__container">
+						<form class="form--donation__form">
+							<div class="span12 mb15">
+								<fieldset class="input-amount">
+									<label class="gfield_label" for="input_2_1">
+										<i class="fa fa-dollar"></i>
+									</label>
+									<input name="amount" id="donationAmount" type="number" class="ginput_amount"
+										value="25">
+								</fieldset>
+							</div>
+							<div class="span12 mt15">
+								<a href="https://give.mercyforanimals.org/page/24219/donate/1?ask_monthly=25%7C50%7C75&ask_selected=25&transaction.recurrpay=Y&ea.tracking.id=19WA3DA" class="btn btn--primary donate-btn monthly" data-frequency="monthly" data-tracking="19WA3DA" target="_blank" rel="noopener noreferrer">Donate</a>
+							</div>
+						</form>
+					</div>
+				</div>
+				<h4 class="mb30">"What keeps me focused is to remember that we are their only hope."</h4>
+				<p class="toUpper quote-subtitle">—Camilla, an undercover investigator in Brazil</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!--CONTENT-END-->

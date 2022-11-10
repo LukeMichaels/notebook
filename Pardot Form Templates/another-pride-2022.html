@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+	<title></title>
+	<meta charset="utf-8"><meta content="width=device-width, initial-scale=1" name="viewport"><meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<!--[if gte mso 9]><xml>
+	 <o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+	 </o:OfficeDocumentSettings>
+	</xml><![endif]-->
+	<style>
+		body {
+			background-color: #FFFFFF;
+			margin: 0;
+			padding: 0;
+		}
+		body,
+		table,
+		td,
+		a {
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+		}
+		table,
+		td {
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+		img {
+			-ms-interpolation-mode: bicubic;
+		}
+		a {
+			text-decoration: none;
+		}
+		a[x-apple-data-detectors] {
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+		td.hoverButton:hover,
+		a.hoverButton:hover {
+			color: #ffffff !important;
+			background-color: #F5F6F6 !important;
+			border-color: #f4a000 !important;
+			transition: background-color .66s, border .66s;
+		}
+		td.hoverButton:active,
+		a.hoverButton:active {
+			color: darkgray !important;
+			background-color: lightgray !important;
+			border-color: lightgray !important;
+			transition: background-color 0s, border 0s;
+		}
+		a.hoverSocialIcon:hover {
+			position: relative !important;
+			top: -1px !important;
+		}
+		a.hoverSocialIcon:active {
+			position: relative !important;
+			top: 1px !important;
+			opacity: .5 !important;
+		}
+		td.footerLinkContainer a.hoverTextLink:hover {
+			color: #333 !important;
+		}
+		.backdrop {
+			width: 100%;
+			padding: 0;
+			margin: 0 auto;
+			background-color: #FFFFFF;
+		}
+		.width-container {
+			width: 100%;
+			max-width: 550px;
+			padding: 0;
+			margin: 0 auto;
+			background-color: #FFFFFF;
+		}
+		.width-container-margin {
+			padding: 0;
+		}
+		.email-stack {
+			width: 100%;
+			padding: 0;
+		}
+		.email-border-background {
+			padding: 0;
+			background-color: #FFFFFF;
+		}
+		.email-content-stack {
+			width: 100%;
+			padding: 0;
+		}
+
+		/* :::::::::: header :::::::::: */
+		.header-container {
+			width: 100%;
+			max-width: 550px;
+			padding: 0;
+			color: #010101;
+			background-color: #FFFFFF;
+			text-align: center;
+			font-family: verdana,sans-serif;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: normal;
+		}
+		.header-container table {
+			width: 100%;
+			max-width: 550px;
+			box-sizing: border-box;
+			padding: 5px 0;
+			margin: 0 auto;
+			border: 0;
+		}
+		.header-logo {
+			width: auto;
+			padding: 0;
+			margin: 0 auto 0 0;
+		}
+		.header-logo img {
+			width: 210.375px;
+			height: 42.0625px;
+			float: left;
+			padding: 0;
+			margin: 0 auto 0 0;
+		}
+		.header-btn {
+			float: right;
+			padding: 0 0 10px 0;
+			margin: 0 0 0 auto;
+		}
+		.header-btn a {
+			display: block;
+			box-sizing: border-box;
+			padding: 10px 10px 10px 10px;
+			margin-top: 7px;
+			color: #FFFFFF;
+			background-color: #0666F2;
+			text-align: center;
+			font-family: verdana, sans-serif;
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 24px;
+			text-decoration: none;
+			-webkit-transition: background-color 1000ms linear;
+			-ms-transition: background-color 1000ms linear;
+			transition: background-color 1000ms linear;
+		}
+		.header-btn a:hover {
+			background-color: #F99338;
+		}
+
+		/* :::::::::: featured image :::::::::: */
+		.featured-image {
+			text-align: center;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: normal;
+		}
+		.featured-image img {
+			width: 100%;
+			max-width: 550px;
+		}
+
+		/* :::::::::: content :::::::::: */
+		.content-container {
+			box-sizing: border-box;
+			padding: 0 20px;
+			margin: 0;
+			text-align: left;
+			font-family: verdana, sans-serif;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: normal;
+		}
+		.content-container p {
+			display: block;
+			width: 100%;
+			margin: 0; padding: 0; margin-bottom: 0; /* reset default styling in some email clients */
+			margin: 20px auto 20px;
+		}
+		.content-container a {
+			color: #0666F2;
+			text-decoration: none;
+			-webkit-transition: color 1000ms linear;
+			-ms-transition: color 1000ms linear;
+			transition: color 1000ms linear;
+		}
+		.content-container a:hover {
+			color: #F99338;
+		}
+		.images-container {
+			width: 100%;
+			margin: 40px auto;
+		}
+		.images-container a {
+			display: block;
+			width: 50%;
+			float: left;
+			margin: 20px 0;
+		}
+		.images-container img {
+			width: 100%;
+			border-width: 0px;
+			border-style: solid;
+		}
+		.button-container table {
+			width: 100%;
+			margin: 0 auto;
+			text-align: center; 
+			margin: 20px auto 20px;
+		}
+		.button-container table a {
+			display: inline-block;
+			width: auto;
+			padding: 10px 10px 10px 10px;
+			margin: 0 auto;
+			color: rgb(255, 255, 255);
+			background-color: rgb(6, 102, 242);
+			text-align: center;
+			font-family: verdana, sans-serif;
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 24px;
+			text-decoration: none; 
+			-webkit-transition: background-color 1000ms linear;
+			-ms-transition: background-color 1000ms linear;
+			transition: background-color 1000ms linear;
+		}
+		.button-container table a:hover {
+			background-color: #F99338;
+		}
+		.signature-container {
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+			padding: 0 20px;
+			margin: 20px auto 20px;
+		}
+
+		/* :::::::::: footer :::::::::: */
+		.footer-container {
+			display: block;
+			width: 100%;
+			max-width: 542px;
+			padding: 0; 
+			border-top: 0px solid #707070;
+		}
+		.footer-container table, .footer-container tbody {
+			display: block;
+			width: 100%;
+		}
+		.footer-top {
+			display: block;
+			width: 100%;
+			float: left;
+			box-sizing: border-box;
+			padding: 20px 20px;
+			background-color: rgb(6, 102, 242);
+		}
+		.footer-top tbody, .footer-top tr, .footer-top table, .footer-top-wrap {
+			display: block;
+			width: 100%;
+		}
+		.footer-left {
+			display: block;
+			width: 48%;
+			float: left;
+			color: #FFFFFF;
+			font-family: verdana, sans-serif;
+			font-size: 13px;
+			line-height: 24px;
+		}
+		.footer-left img {
+			margin-top: 5px;
+		}
+		.footer-right {
+			display: block;
+			width: 48%;
+			float: right;
+			text-align: right;
+			font-family: verdana, sans-serif;
+			font-size: 13px;
+			line-height: 24px;
+		}
+		.footer-right p {
+			margin: 0 0 0 0;
+			padding: 0 0 0 0;
+		}
+		.footer-right strong {
+			color: #f99338;
+		}
+		.footer-right a {
+			color: #FFFFFF;
+			-webkit-transition: color 1000ms linear;
+			-ms-transition: color 1000ms linear;
+			transition: color 1000ms linear;
+		}
+		.footer-right a:hover {
+			color: #f99338;
+		}
+		.footer-mid {
+			width: 100%;
+			padding: 20px 20px;
+			color: #babdbe;
+			background-color: #FFFFFF;
+			font-family: verdana, sans-serif;
+			text-align: center;
+			font-size: 12px;
+		}
+		.footer-bottom {
+			width: 100%;
+			color: #696969;
+			background-color: #FFFFFF;
+			font-family: verdana, sans-serif;
+			text-align: center;
+			font-size: 12px;
+		}
+		.footer-bottom a {
+			display: inline-block;
+			padding: 5px 5px;
+			color:#696969;
+		}
+
+		@media only screen and (max-width: 550px) {
+			.logoImage {
+				max-width: 170px !important;
+			}
+			td.headerLogo{
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+			.responsiveDefault {
+				width: 100%;
+			}
+			.responsiveLogo {
+				width: 75%;
+				max-width: 178px;
+			}
+			.responsiveCallout {
+				width: 100%;
+				max-width: 216px;
+			}
+			.responsiveButton {
+				width: 200px;
+			}
+			table.widthContainer {
+				width: 100%;
+			}
+			td.footerLinkContainer {
+				text-align: center;
+			}
+			td.widthContainerMargin {
+				padding-left: 0;
+				padding-right: 0;
+			}
+			td.headerContainer {
+				/* shrink the logo a bit */
+				padding-left: 1%;
+				padding-right: 1%;
+			}
+			td.headlineContainer,
+			td.contentContainer {
+				padding-left: 3%;
+				padding-right: 3%;
+			}
+			td.footerLinkContainer {
+				padding-top: 5px;
+			}
+			table.buttonContainer {
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			td.buttonContainer {
+				height: 30px;
+			}
+			div.twoUp,
+			table.twoUp,
+			td.twoUp,
+			div.twoUpGoWide,
+			table.twoUpGoWide,
+			td.twoUpGoWide {
+				float: none;
+			}
+			div.twoUpGoWide,
+			table.twoUpGoWide,
+			td.twoUpGoWide {
+				width: 100%;
+				max-width: 100%;
+				text-align: left;
+				padding-left: 0;
+				padding-right: 0;
+			}
+			td.center {
+				text-align:center;
+			}
+			td.calloutContainer {
+				padding-left: 3%;
+				padding-right: 3%;
+			}
+			table.threeUp {
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			div.threeUp {
+				float: none;
+			}
+			div.threeUpGoWide {
+				max-width: 100%;
+			}
+			div.threeUpWideOnly {
+				display: none;
+			}
+			td.threeUp,
+			td.threeUpGoWide {
+				width: 100%;
+			}
+			td.threeUpGoWide {
+				text-align: center;
+			}
+			table.calloutBtn, td.calloutBtn, div.calloutBtn {
+				/* display: block; */
+				margin: 0 auto;
+				float: none;
+			}
+			td.portrait {
+				padding-right: 12px;
+			}
+			img.portrait {
+				width: 140px;
+			}
+			td.buttonContainer {
+				height: 30px;
+			}
+			.header-logo img {
+				width: 130px;
+				height: 26px;
+			}
+			.button-container table a {
+				width: 80%;
+			}
+			.images-container {
+				margin: 20px auto;
+			}
+			.images-container a {
+				width: 100%;
+				margin: 0 auto;
+			}
+			.images-container a:first-of-type {
+				margin-top: 20px;
+			}
+			.images-container a:last-of-type {
+				margin-bottom: 20px;
+			}
+		}
+		
+		@media only screen and (max-width: 490px) {
+			.header-btn a {
+				font-size: 12px;
+			}
+		}
+	</style>
+</head>
+<body data-gr-ext-installed="" data-gramm="false" data-new-gr-c-s-check-loaded="14.1024.0">
+<!-- preheader -->
+<p><span style="font-size:0; display:none; display:none !important; color:#ffffff; overflow:hidden; height:0; max-height:0;">Happy Pride Month!</span></p>
+
+<div style="display: none; max-height:0; overflow: hidden;">‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌</div>
+<!-- BACKDROP TABLE -->
+
+<table class="backdrop">
+	<tbody>
+		<tr>
+			<td>
+			<table class="width-container responsiveDefault">
+				<tbody>
+					<tr>
+						<td class="width-container-margin"><!-- MAIN EMAIL STACK -->
+						<table class="email-stack responsiveDefault">
+							<tbody>
+								<tr>
+									<td class="email-border-background">
+									<table class="email-content-stack responsiveDefault">
+										<tbody>
+											<tr>
+												<td class="header-container">
+												<table>
+													<tbody>
+														<tr>
+															<td class="header-logo"><a data-custom-urls="[]" data-custom-urls-enabled="false" data-id="7707" href="https://mercyforanimals.org"><img alt="Mercy For Animals Logo" data-ratio-lock="true" data-unit="%" pardot-region="" pardot-region-type="“image”" src="https://go.mercyforanimals.org/l/939853/2021-09-20/2f6fg/939853/1632156660tumVfCVQ/MercyforAnimals_PrimaryLockup_RGB__2_.png"> </a></td>
+															<td class="header-btn"><a data-custom-urls="[{&quot;parameter&quot;:&quot;utm_term&quot;,&quot;value&quot;:&quot;2021-04-03_oceans_RP&quot;},{&quot;parameter&quot;:&quot;utm_campaign&quot;,&quot;value&quot;:&quot;2021Gen_2021-04-03_oceans_RP&quot;},{&quot;parameter&quot;:&quot;utm_medium&quot;,&quot;value&quot;:&quot;email&quot;},{&quot;parameter&quot;:&quot;utm_source&quot;,&quot;value&quot;:&quot;actionalert&quot;},{&quot;parameter&quot;:&quot;utm_content&quot;,&quot;value&quot;:&quot;top-button&quot;}]" data-custom-urls-enabled="true" href="https://www.youtube.com/watch?v=ygEoRk-Dxs0">Watch the Video</a></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+											<!-- FEATURE IMAGE  --><!-- BODY TEXT SECTION -->
+											<tr>
+												<td class="featured-image"><a data-custom-urls="[{&quot;parameter&quot;:&quot;utm_term&quot;,&quot;value&quot;:&quot;2021-03-06_costco&quot;},{&quot;parameter&quot;:&quot;utm_campaign&quot;,&quot;value&quot;:&quot;2021Dev_2021-03-06_costco&quot;},{&quot;parameter&quot;:&quot;utm_medium&quot;,&quot;value&quot;:&quot;email&quot;},{&quot;parameter&quot;:&quot;utm_source&quot;,&quot;value&quot;:&quot;actionalert&quot;},{&quot;parameter&quot;:&quot;utm_content&quot;,&quot;value&quot;:&quot;header&quot;}]" data-custom-urls-enabled="true" data-id="7707" href="https://www.youtube.com/watch?v=ygEoRk-Dxs0"><img alt="Be True. Be You." class="emailImage" data-ratio-lock="true" data-unit="%" pardot-height="371.01" pardot-region="" pardot-region-type="“image”" pardot-width="540" src="https://go.mercyforanimals.org/l/939853/2022-05-27/2xd96/939853/165367609778f3hBlN/2022_Pride_Header.png" style="width: 540px; max-width: 540px; height: 371.01px; max-height: 371.01px;" width="540" height="371.01"> </a></td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="content-container" pardot-region="">
+												<p>Dear {{Recipient.FirstName}},</p>
+
+												<p>Since its inception, Mercy For Animals has been dedicated to amplifying and celebrating the LGBTQ+ community. Everyone deserves to be treated with dignity and respect regardless of gender identity and expression, sexual orientation, race, religion, country of origin, age, and—of course—species.</p>
+
+												<p><span style="font-size:22px;">Thatʹs why we were one of the first animal protection organizations to march in a pride parade.</span></p>
+												</td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="images-container" pardot-region=""><a href="https://www.youtube.com/watch?v=ygEoRk-Dxs0"><img alt="" src="https://go.mercyforanimals.org/l/939853/2022-05-27/2xd99/939853/1653676097EQz06zC2/2022_Pride_CTA.png" style="width: 550px; border-width: 0px; border-style: solid; height: 241px;" width="550" height="241" border="0"></a></td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="content-container" pardot-region="">
+												<p>We will never stop fighting for a world where everyone is respected and free.</p>
+
+												<p>Join us in celebrating Pride Month by supporting a few of our favorite <strong><a href="https://chooseveg.com/blog/plant-based-lgbtq-businesses-pride-month/">plant-based LGBTQ+ businesses</a></strong> and influencers dedicated to fighting for a more compassionate world.</p>
+												</td>
+											</tr>
+											<tr>
+												<td class="content-container signature-container">
+												<table cellspacing="0" cellpadding="0">
+													<tbody>
+														<tr>
+															<td>
+															<table class="responsiveDefault" cellspacing="0" cellpadding="0">
+																<tbody>
+																	<tr>
+																		<td class="portrait" style="padding-right: 20px; line-height: 24px; vertical-align: top;" valign="middle"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="px" pardot-height="150" pardot-region="" pardot-region-type="“image”" pardot-width="150" src="https://go.mercyforanimals.org/l/939853/2021-09-23/2fjcg/939853/16324193308R2BoAve/Leah_Blue_Sig_Headshot__1_.png" style="width: 150px; max-width: 150px; height: 150px; max-height: 150px;" width="150" height="150"></td>
+																		<td class="responsiveDefault" width="130" valign="middle">
+																		<table cellspacing="0" cellpadding="0" border="0">
+																			<tbody>
+																				<tr style="">
+																					<td>With hope,<br>
+																					<br>
+																					<img alt="" src="https://go.mercyforanimals.org/l/939853/2021-09-23/2fjcd/939853/1632419217vNpTnqA7/leah_signature.png" style="width: 120px; height: 53px; border-width: 0px; border-style: solid;" width="120" height="53" border="0"></td>
+																				</tr>
+																				<tr>
+																					<td>&nbsp;</td>
+																				</tr>
+																				<tr style="">
+																					<td pardot-region=""><strong>Leah Garcés</strong><br>
+																					President</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+										<tbody><!-- Start Signature table -->
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<!-- FOOTER -->
+								<tr>
+									<td class="footer-container">
+									<table>
+										<tbody border="0" cellpadding="0" cellspacing="0" style="padding: 0 0 0 0; margin: 0 0 0 0; max-width: 540px; background-color: #0666f2;" bgcolor="#0666f2">
+											<tr border="0" cellpadding="0" cellspacing="0" pardot-repeatable="" style="display: block; padding: 0 0 0 0; margin: 0 0 0 0; max-width: 540px;">
+												<td border="0" cellpadding="0" cellspacing="0" class="images-container" pardot-data="" pardot-region="" style="background: rgb(6, 102, 242);" bgcolor="#0666f2" background="">
+												<table class="pd-table" style="" cellspacing="0" cellpadding="0" border="0">
+													<tbody style="display: block; padding: 0 0 0 0; margin: 0 0 0 0; width: 100%; max-width: 540px;">
+														<tr border="0" cellpadding="0" cellspacing="0" style="display: block; padding: 0 0 0 0; margin: 0 0 0 0; width: 100%; max-width: 540px;">
+															<td border="0" cellpadding="0" cellspacing="0" style="display: block; float: left; padding: 0 0 0 0; margin: 0 0 0 0; width: 100%; max-width: 267px;"><a href="https://store.mercyforanimals.org/?utm_campaign=2022-06-01-pride-email-public-engagement&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=link&amp;utm_term=human-happy-adult" style="padding: 0 0 0 0; margin: 0 0 0 0;"><img alt="" src="https://go.mercyforanimals.org/l/939853/2022-05-31/2xnlh/939853/1654021630ifkZ7t4z/Email_Footer_1.jpg" style="width: 267px; border-width: 0px; border-style: solid;" width="267" border="0"></a></td>
+															<td border="0" cellpadding="0" cellspacing="0" style=" display: block; float: right; padding: 0 0 0 0; margin: 0 0 0 0; max-width: 267px;"><a href="https://mercyforanimals.org/action-center/?utm_campaign=2022-06-01-pride-email-public-engagement&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=link&amp;utm_term=human-happy-adult" style="padding: 0 0 0 0; margin: 0 0 0 0;"><img alt="" src="https://go.mercyforanimals.org/l/939853/2022-05-31/2xnld/939853/1654021630tB8vbJBj/Email_Footer_2.jpg" style="width: 267px; border-width: 0px; border-style: solid;" width="267" border="0"></a></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+										<tbody style="padding: 0 0 0 0; margin: 0 0 0 0; max-width: 540px;">
+											<tr class="footer-top" style="width: 100%; max-width: 540px;">
+												<td class="footer-top-wrap" style="width: 100%; max-width: 540px;">
+												<table style="padding: 0 0 0 0; margin: 0 0 0 0; max-width: 540px;">
+													<tbody style="padding: 0 0 0 0; margin: 0 0 0 0; max-width: 540px;">
+														<tr style="padding: 0 0 0 0; margin: 0 0 0 0; max-width: 540px;">
+															<td class="footer-left"><a href="https://mercyforanimals.org"><img alt="Mercy For Animals Logo" class="emailImage" data-ratio-lock="true" data-unit="px" pardot-height="34" pardot-region="" pardot-region-type="“image”" pardot-width="175" src="https://go.mercyforanimals.org/l/939853/2021-09-20/2f6bv/939853/1632155280VtI6lGdn/MFA_LOGO_WHT__1_.png" style="height: 34px; width: 175px; max-width: 175px; max-height: 34px;" width="175" height="34"></a>
+															<p pardot-region="">8033 Sunset Blvd., Ste. 864<br>
+															Los Angeles, CA 90046<br>
+															866-632-6446</p>
+															</td>
+															<td class="footer-right">
+															<p><a href="https://act.mercyforanimals.org/page/she-needs-you/donation-form-13?&amp;utm_campaign=2022-05-28-footer-development&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=link&amp;utm_term=--"><strong>Donate Today</strong></a><br>
+															<a data-id="7707" href="https://mercyforanimals.org/impact/?utm_campaign=2021-07-21-general-emailfooter-impact-digital-marketing&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=footerlink&amp;utm_term=-">Your Impact</a><br>
+															<a data-id="7707" href="https://store.mercyforanimals.org/?utm_campaign=2021-07-21-general-emailfooter-shop-digital-marketing&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=footerlink&amp;utm_term=-">ShopMFA.com</a><br>
+															<a data-id="7707" href="https://mercyforanimals.org/action-center/?utm_campaign=2021-07-21-general-emailfooter-action-digital-marketing&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=footerlink&amp;utm_term=-">Take Action</a><br>
+															<a data-id="7707" href="https://instagram.com/mercyforanimals"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="px" pardot-height="29.9531" pardot-region="" pardot-region-type="“image”" pardot-width="30" src="https://go.mercyforanimals.org/l/939853/2021-09-20/2f72s/939853/16321586395LFhAfUG/Artboard_1.png" style="margin-left: 10px; margin-top: 5px; width: 30px; max-width: 30px; height: 29.9531px; max-height: 29.9531px;" width="30" height="29.9531"> </a> <a data-id="7707" href="https://www.facebook.com/mercyforanimals"> <img alt="" class="display:block" data-ratio-lock="true" data-unit="px" pardot-height="29.8438" pardot-region="" pardot-region-type="“image”" pardot-width="30" src="https://go.mercyforanimals.org/l/939853/2021-09-20/2f72v/939853/163215876025ZafWWN/facebook_logo.png" style="margin-left: 10px; width: 30px; max-width: 30px; height: 29.8438px; max-height: 29.8438px;" width="30" height="29.8438"> </a> <a data-id="7707" href="https://twitter.com/mercyforanimals"> <img alt="" class="display:block" data-ratio-lock="true" data-unit="px" pardot-height="30" pardot-region="" pardot-region-type="“image”" pardot-width="30" src="https://go.mercyforanimals.org/l/939853/2021-09-20/2f6h4/939853/1632157447FZo08z72/Twitter.png" style="margin-left: 10px; width: 30px; max-width: 30px; height: 30px; max-height: 30px;" width="30" height="30"> </a></p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+											<tr class="footer-mid">
+												<td>
+												<p><em>Your gift will be used where needed most to help farmed animals and support our work.</em></p>
+												</td>
+											</tr>
+											<tr class="footer-bottom">
+												<td><a class="hoverTextLink" href="{{view_online}}" target="_blank">view this email in a browser</a> <a class="hoverTextLink" href="{{{EmailPreferenceCenter_654}}}" rel="nofollow,noreferrer" target="_blank">manage subscriptions</a> <a class="hoverTextLink" href="https://mercyforanimals.org/privacy-policy" target="_blank">privacy policy</a> <a class="hoverTextLink" href="https://www.mercyforanimals.org/state-fundraising-notices" target="_blank">state fundraising notices</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- WIDTH LIMITER --><!-- BACKDROP TABLE --><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</body>
+</html>

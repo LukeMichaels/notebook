@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+	<title></title>
+	<meta charset="utf-8"><meta content="width=device-width, initial-scale=1" name="viewport"><meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<!--[if gte mso 9]><xml>
+	 <o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+	 </o:OfficeDocumentSettings>
+	</xml><![endif]-->
+	<style>
+		body {
+			background-color: #FFFFFF;
+			margin: 0;
+			padding: 0;
+		}
+		body,
+		table,
+		td,
+		a {
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+		}
+		table,
+		td {
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+		img {
+			-ms-interpolation-mode: bicubic;
+		}
+		a {
+			text-decoration: none;
+		}
+		a[x-apple-data-detectors] {
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+		td.hoverButton:hover,
+		a.hoverButton:hover {
+			color: #ffffff !important;
+			background-color: #F5F6F6 !important;
+			border-color: #f4a000 !important;
+			transition: background-color .66s, border .66s;
+		}
+		td.hoverButton:active,
+		a.hoverButton:active {
+			color: darkgray !important;
+			background-color: lightgray !important;
+			border-color: lightgray !important;
+			transition: background-color 0s, border 0s;
+		}
+		a.hoverSocialIcon:hover {
+			position: relative !important;
+			top: -1px !important;
+		}
+		a.hoverSocialIcon:active {
+			position: relative !important;
+			top: 1px !important;
+			opacity: .5 !important;
+		}
+		td.footerLinkContainer a.hoverTextLink:hover {
+			color: #333 !important;
+		}
+		.backdrop {
+			width: 100%;
+			padding: 0;
+			margin: 0 auto;
+			background-color: #FFFFFF;
+		}
+		.width-container {
+			width: 100%;
+			max-width: 550px;
+			padding: 0;
+			margin: 0 auto;
+			background-color: #FFFFFF;
+		}
+		.width-container-margin {
+			padding: 0;
+		}
+		.email-stack {
+			width: 100%;
+			padding: 0;
+		}
+		.email-border-background {
+			padding: 0;
+			background-color: #FFFFFF;
+		}
+		.email-content-stack {
+			width: 100%;
+			padding: 0;
+		}
+
+		/* :::::::::: header :::::::::: */
+		.header-container {
+			width: 100%;
+			max-width: 550px;
+			padding: 0;
+			color: #010101;
+			background-color: #FFFFFF;
+			text-align: center;
+			font-family: verdana,sans-serif;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: normal;
+		}
+		.header-container table {
+			width: 100%;
+			max-width: 550px;
+			box-sizing: border-box;
+			padding: 5px 0;
+			margin: 0 auto;
+			border: 0;
+		}
+		.header-logo {
+			width: auto;
+			padding: 0;
+			margin: 0 auto 0 0;
+		}
+		.header-logo img {
+			width: 210.375px;
+			height: 42.0625px;
+			float: left;
+			padding: 0;
+			margin: 0 auto 0 0;
+		}
+		.header-btn {
+			float: right;
+			padding: 0 0 10px 0;
+			margin: 0 0 0 auto;
+		}
+		.header-btn a {
+			display: block;
+			box-sizing: border-box;
+			padding: 10px 10px 10px 10px;
+			margin-top: 7px;
+			color: #FFFFFF;
+			background-color: #0666F2;
+			text-align: center;
+			font-family: verdana, sans-serif;
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 24px;
+			text-decoration: none;
+			-webkit-transition: background-color 1000ms linear;
+			-ms-transition: background-color 1000ms linear;
+			transition: background-color 1000ms linear;
+		}
+		.header-btn a:hover {
+			background-color: #F99338;
+		}
+
+		/* :::::::::: featured image :::::::::: */
+		.featured-image {
+			text-align: center;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: normal;
+		}
+		.featured-image img {
+			width: 100%;
+			max-width: 550px;
+		}
+
+		/* :::::::::: content :::::::::: */
+		.content-container {
+			box-sizing: border-box;
+			padding: 0 20px;
+			margin: 0;
+			text-align: left;
+			font-family: verdana, sans-serif;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: normal;
+		}
+		.content-container p {
+			display: block;
+			width: 100%;
+			margin: 0; padding: 0; margin-bottom: 0; /* reset default styling in some email clients */
+			margin: 20px auto 20px;
+		}
+		.content-container a {
+			color: #0666F2;
+			text-decoration: none;
+			-webkit-transition: color 1000ms linear;
+			-ms-transition: color 1000ms linear;
+			transition: color 1000ms linear;
+		}
+		.content-container a:hover {
+			color: #F99338;
+		}
+		.images-container {
+			width: 100%;
+			margin: 40px auto;
+		}
+		.images-container a {
+			display: block;
+			width: 50%;
+			float: left;
+			margin: 20px 0;
+		}
+		.images-container img {
+			width: 100%;
+			border-width: 0px;
+			border-style: solid;
+		}
+		.button-container table {
+			width: 100%;
+			margin: 0 auto;
+			text-align: center; 
+			margin: 20px auto 20px;
+		}
+		.button-container table a {
+			display: inline-block;
+			width: auto;
+			padding: 10px 10px 10px 10px;
+			margin: 0 auto;
+			color: rgb(255, 255, 255);
+			background-color: rgb(6, 102, 242);
+			text-align: center;
+			font-family: verdana, sans-serif;
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 24px;
+			text-decoration: none; 
+			-webkit-transition: background-color 1000ms linear;
+			-ms-transition: background-color 1000ms linear;
+			transition: background-color 1000ms linear;
+		}
+		.button-container table a:hover {
+			background-color: #F99338;
+		}
+		.signature-container {
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+			padding: 0 20px;
+			margin: 20px auto 20px;
+		}
+
+		/* :::::::::: footer :::::::::: */
+		.footer-container {
+			display: block;
+			width: 100%;
+			max-width: 542px;
+			padding: 0; 
+			border-top: 0px solid #707070;
+		}
+		.footer-container table, .footer-container tbody {
+			display: block;
+			width: 100%;
+		}
+		.footer-top {
+			display: block;
+			width: 100%;
+			float: left;
+			box-sizing: border-box;
+			padding: 20px 20px;
+			background-color: rgb(6, 102, 242);
+		}
+		.footer-top tbody, .footer-top tr, .footer-top table, .footer-top-wrap {
+			display: block;
+			width: 100%;
+		}
+		.footer-left {
+			display: block;
+			width: 48%;
+			float: left;
+			color: #FFFFFF;
+			font-family: verdana, sans-serif;
+			font-size: 13px;
+			line-height: 24px;
+		}
+		.footer-left img {
+			margin-top: 5px;
+		}
+		.footer-right {
+			display: block;
+			width: 48%;
+			float: right;
+			text-align: right;
+			font-family: verdana, sans-serif;
+			font-size: 13px;
+			line-height: 24px;
+		}
+		.footer-right p {
+			margin: 0 0 0 0;
+			padding: 0 0 0 0;
+		}
+		.footer-right strong {
+			color: #f99338;
+		}
+		.footer-right a {
+			color: #FFFFFF;
+			-webkit-transition: color 1000ms linear;
+			-ms-transition: color 1000ms linear;
+			transition: color 1000ms linear;
+		}
+		.footer-right a:hover {
+			color: #f99338;
+		}
+		.footer-mid {
+			width: 100%;
+			padding: 20px 20px;
+			color: #babdbe;
+			background-color: #FFFFFF;
+			font-family: verdana, sans-serif;
+			text-align: center;
+			font-size: 12px;
+		}
+		.footer-bottom {
+			width: 100%;
+			color: #696969;
+			background-color: #FFFFFF;
+			font-family: verdana, sans-serif;
+			text-align: center;
+			font-size: 12px;
+		}
+		.footer-bottom a {
+			display: inline-block;
+			padding: 5px 5px;
+			color:#696969;
+		}
+
+		@media only screen and (max-width: 550px) {
+			.logoImage {
+				max-width: 170px !important;
+			}
+			td.headerLogo{
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+			.responsiveDefault {
+				width: 100%;
+			}
+			.responsiveLogo {
+				width: 75%;
+				max-width: 178px;
+			}
+			.responsiveCallout {
+				width: 100%;
+				max-width: 216px;
+			}
+			.responsiveButton {
+				width: 200px;
+			}
+			table.widthContainer {
+				width: 100%;
+			}
+			td.footerLinkContainer {
+				text-align: center;
+			}
+			td.widthContainerMargin {
+				padding-left: 0;
+				padding-right: 0;
+			}
+			td.headerContainer {
+				/* shrink the logo a bit */
+				padding-left: 1%;
+				padding-right: 1%;
+			}
+			td.headlineContainer,
+			td.contentContainer {
+				padding-left: 3%;
+				padding-right: 3%;
+			}
+			td.footerLinkContainer {
+				padding-top: 5px;
+			}
+			table.buttonContainer {
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			td.buttonContainer {
+				height: 30px;
+			}
+			div.twoUp,
+			table.twoUp,
+			td.twoUp,
+			div.twoUpGoWide,
+			table.twoUpGoWide,
+			td.twoUpGoWide {
+				float: none;
+			}
+			div.twoUpGoWide,
+			table.twoUpGoWide,
+			td.twoUpGoWide {
+				width: 100%;
+				max-width: 100%;
+				text-align: left;
+				padding-left: 0;
+				padding-right: 0;
+			}
+			td.center {
+				text-align:center;
+			}
+			td.calloutContainer {
+				padding-left: 3%;
+				padding-right: 3%;
+			}
+			table.threeUp {
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			div.threeUp {
+				float: none;
+			}
+			div.threeUpGoWide {
+				max-width: 100%;
+			}
+			div.threeUpWideOnly {
+				display: none;
+			}
+			td.threeUp,
+			td.threeUpGoWide {
+				width: 100%;
+			}
+			td.threeUpGoWide {
+				text-align: center;
+			}
+			table.calloutBtn, td.calloutBtn, div.calloutBtn {
+				/* display: block; */
+				margin: 0 auto;
+				float: none;
+			}
+			td.portrait {
+				padding-right: 12px;
+			}
+			img.portrait {
+				width: 140px;
+			}
+			td.buttonContainer {
+				height: 30px;
+			}
+			.header-logo img {
+				width: 130px;
+				height: 26px;
+			}
+			.button-container table a {
+				width: 80%;
+			}
+			.images-container {
+				margin: 20px auto;
+			}
+			.images-container a {
+				width: 100%;
+				margin: 0 auto;
+			}
+			.images-container a:first-of-type {
+				margin-top: 20px;
+			}
+			.images-container a:last-of-type {
+				margin-bottom: 20px;
+			}
+		}
+		
+		@media only screen and (max-width: 490px) {
+			.header-btn a {
+				font-size: 12px;
+			}
+		}
+	</style>
+</head>
+<body data-gr-ext-installed="" data-gramm="false" data-new-gr-c-s-check-loaded="14.1024.0">
+<!-- preheader -->
+<p><span style="font-size:0; display:none; display:none !important; color:#ffffff; overflow:hidden; height:0; max-height:0;">Check out The Korean Veganʹs new video!</span></p>
+
+<div style="display: none; max-height:0; overflow: hidden;">‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌</div>
+<!-- BACKDROP TABLE -->
+
+<table class="backdrop">
+	<tbody>
+		<tr>
+			<td>
+			<table class="width-container responsiveDefault">
+				<tbody>
+					<tr>
+						<td class="width-container-margin"><!-- MAIN EMAIL STACK -->
+						<table class="email-stack responsiveDefault">
+							<tbody>
+								<tr>
+								</tr>
+								<tr>
+									<td class="theVoiceLogo" colspan="2" style="color:#0666F2; font-family:trebuchet ms,helvetica,sans-serif; font-weight:bold; font-size:18px; line-height:normal; padding: 10px 0 20px 0;text-align:center;"><a href="http://mercyforanimals.org" style="color:#0666F2; text-decoration:none;"><img alt="The Voice" class="theVoiceLogo" src="https://go.mercyforanimals.org/l/939853/2021-09-24/2fl7g/939853/1632503639jMghPtaZ/MFA_LOGO_CLR.png" style="display: block; font-size: 20px; font-weight: bold; text-align: center; margin-left: auto; margin-right: auto; color: rgb(76, 75, 71); line-height: 28px; width: 200px; border-width: 0px; border-style: solid;" width="200" border="0"></a></td>
+								</tr>
+								<tr>
+									<td class="email-border-background">
+									<table class="email-content-stack responsiveDefault">
+										<tbody>
+											<tr>
+												<td class="header-container">
+												<table>
+													<tbody>
+														<tr>
+															<td class="header-logo"><a data-custom-urls="[]" data-custom-urls-enabled="false" data-id="7707" href="https://mercyforanimals.org"><img alt="Mercy For Animals Logo" data-ratio-lock="true" data-unit="%" pardot-height="31" pardot-region="" pardot-region-type="“image”" pardot-width="220" src="https://go.mercyforanimals.org/l/939853/2021-11-08/2jcy1/939853/1636412084351V3Cg6/the_voice_new.png" style="width: 220px; max-height: 31px; max-width: 220px; height: 31px;" width="220" height="31"> </a></td>
+															<td class="header-btn"><a data-custom-urls-enabled="true" href="https://act.mercyforanimals.org/page/they-need-you/donation-form-1?utm_campaign=2022-04-23-thevoice-public-engagement&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=link&amp;utm_term=--">Give a Gift</a></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+											<tr>
+											</tr>
+											<tr><!-- EDITION DATE -------------------------------------------- --><!-- FEATURE IMAGE  --><!-- BODY TEXT SECTION -->
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="images-container" pardot-region=""><a href="http://mercyforanimals.org/blog/transport-truck/?utm_campaign=2022-04-23-thevoice-public-engagement&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=link&amp;utm_term=--"><img alt="" src="https://go.mercyforanimals.org/l/939853/2022-04-21/2sxk6/939853/16505700433FOlT5rq/1_The_Voice__1_.png" style="width: 550px; height: 271px;" width="550" height="271"></a></td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="content-container" pardot-region="">
+												<p><span style="color:#0666f2;"><strong><span style="font-size:22px;">Investigators Followed a Pig Transport Truck for 30+ Hours</span></strong></span></p>
+												</td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="content-container" pardot-region="">
+												<p>Animal protection organization Animal Outlook recently shared their experience following a pig transport truck for 32 hours straight.<br>
+												<br>
+												<strong><a href="https://mercyforanimals.org/blog/transport-truck/?utm_campaign=2022-04-23-thevoice-public-engagement&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=link&amp;utm_term=--">See what they found.</a></strong></p>
+												</td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="images-container" pardot-region=""><a href="http://chooseveg.com/blog/vegan-bed-and-breakfasts/?utm_campaign=2022-04-23-thevoice-public-engagement&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=link&amp;utm_term=--"><img alt="" src="https://go.mercyforanimals.org/l/939853/2022-04-21/2sxkd/939853/1650570921R7OVT5Zq/2_The_Voice__1_.png" style="width: 550px;" width="550"></a></td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="content-container" pardot-region="">
+												<p><span style="color:#0666f2;"><strong><span style="font-size:22px;">11 Unbeatable Vegan Bed-and-Breakfasts </span></strong></span></p>
+												</td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="content-container" pardot-region="">
+												<p>Greet farmed animals at on-site sanctuaries, take part in complimentary yoga classes, and so much more at these 11 vegan bed-and-breakfasts!<br>
+												<br>
+												<strong><a href="https://chooseveg.com/blog/vegan-bed-and-breakfasts/?utm_campaign=2022-04-23-thevoice-public-engagement&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=link&amp;utm_term=--">Start relaxing.</a></strong></p>
+												</td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="images-container" pardot-region=""><a href="http://mercyforanimals.org/blog/aldi-chicken/?utm_campaign=2022-04-23-thevoice-public-engagement&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=link&amp;utm_term=--"><img alt="" src="https://go.mercyforanimals.org/l/939853/2022-04-21/2sxkl/939853/1650570921TRLKmcYj/3_The_Voice__1_.png" style="width: 550px;" width="550"></a></td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="content-container" pardot-region="">
+												<p><span style="color:#0666f2;"><strong><span style="font-size:22px;">New Footage: Birds Left to Suffer</span></strong></span></p>
+												</td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="content-container" pardot-region="">
+												<p>New hidden-camera footage from Mercy For Animals reveals chickens suffering from open wounds at a contract farm for an ALDI chicken supplier.<br>
+												<br>
+												<a href="https://mercyforanimals.org/blog/aldi-chicken/?utm_campaign=2022-04-23-thevoice-public-engagement&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=link&amp;utm_term=--"><strong>Watch the footage.</strong></a></p>
+												</td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="images-container" pardot-region=""><a href="http://chooseveg.com/blog/vegan-sushi-recipes/?utm_campaign=2022-04-23-thevoice-public-engagement&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=link&amp;utm_term=--"><img alt="" src="https://go.mercyforanimals.org/l/939853/2022-04-21/2sxkp/939853/1650570922vLfDduzf/4_The_Voice__1_.png" style="width: 550px;" width="550"></a></td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="content-container" pardot-region="">
+												<p><span style="color:#0666f2;"><strong><span style="font-size:22px;">20 Innovative Vegan Sushi Recipes</span></strong></span></p>
+												</td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="content-container" pardot-region="">
+												<p>These 20 vegan sushi recipes use ingredients like tofu, sweet potato, and bell pepper to create unbelievable rolls and bowls.<br>
+												<br>
+												<strong><a href="https://chooseveg.com/blog/vegan-sushi-recipes/?utm_campaign=2022-04-23-thevoice-public-engagement&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=link&amp;utm_term=--">Take a bite!</a></strong></p>
+												</td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="images-container" pardot-region=""><a href="http://mercyforanimals.org/blog/animal-transport/?utm_campaign=2022-04-23-thevoice-public-engagement&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=link&amp;utm_term=--"><img alt="" src="https://go.mercyforanimals.org/l/939853/2022-04-21/2sxks/939853/16505709226vMsNY8T/5_The_Voice__1_.png" style="width: 550px;" width="550"></a></td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="content-container" pardot-region="">
+												<p><span style="color:#0666f2;"><strong><span style="font-size:22px;">Protect Animals in Transport</span></strong></span></p>
+												</td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="content-container" pardot-region="">
+												<p>Animals suffer horribly during transport. Please join us in calling on the USDA to modernize U.S. animal transport laws.<br>
+												<br>
+												<strong><a href="https://mercyforanimals.org/blog/animal-transport/?utm_campaign=2022-04-23-thevoice-public-engagement&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=link&amp;utm_term=--">Take action.&nbsp;</a></strong></p>
+												</td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="images-container" pardot-region=""><a href="https://mfasurveys.force.com/ArdiraSurvey/SurveyResponse.app?recordId=a3C8a000000EMwL&amp;logicalId=41f7224e-1fd5-78ed-9a0a-15a36e5de59f"><img alt="" src="https://go.mercyforanimals.org/l/939853/2022-04-21/2sxl6/939853/1650575874uLH7RUVw/Survey_The_Voice.png" style="width: 550px;" width="550"></a></td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="content-container" pardot-region="">
+												<p><span style="color:#0666f2;"><strong><span style="font-size:22px;">Take Our Survey and Save</span></strong></span></p>
+												</td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="content-container" pardot-region="">
+												<p>Tell us about your retail experience at the Mercy For Animals store by May 12, and upon completion of the survey, you’ll get a special discount code for 15% off your next order.<br>
+												<br>
+												<strong><a href="https://mfasurveys.force.com/ArdiraSurvey/SurveyResponse.app?recordId=a3C8a000000EMwL&amp;logicalId=41f7224e-1fd5-78ed-9a0a-15a36e5de59f">Go now.</a></strong></p>
+												</td>
+											</tr>
+											<tr pardot-repeatable="" style="width:100%;">
+												<td class="content-container" pardot-region="" style="width: 100%; padding: 0 0 0 0;">
+													<table class="pd-table" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
+														<tbody style="width:100%;">
+															<tr style="width:100%;">
+																<td style="width: 50%;"><img alt="" src="https://go.mercyforanimals.org/l/939853/2021-11-08/2jcym/939853/16364142633W7yVYon/YE_Button_Left.jpg" style="width: 100%; border-width: 0px;"></td>
+																<td style="width: 50%;"><img alt="" src="https://go.mercyforanimals.org/l/939853/2021-11-08/2jcyk/939853/1636414263GGoAWaUz/YE_Button_Right.jpg" style="width: 100%; border-width: 0px;"></td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr pardot-repeatable="" style="">
+												<td class="content-container" pardot-region="">&nbsp;</td>
+											</tr>
+										</tbody>
+										<tbody style="width:100%;">
+											<tr style="width:100%;">
+												<td class="theVoiceSection" colspan="2" style="padding-bottom:20px;" align="center">
+												<table class="lowerDonateBtn" style="width:100%; padding: 0 0 0 0; margin-left:auto; margin-right:auto;" cellspacing="0" cellpadding="0" border="0">
+													<tbody>
+														<tr>
+															<td class="lowerDonateBtn" style="background-color:#f3f3f3; padding:5px 20px; font-size:30px; font-weight:normal; font-family:trebuchet ms,helvetica,sans-serif,sans-serif;" align="center"><a class="hoverTextLink" href="https://store.mercyforanimals.org/?utm_campaign=2022_VoiceEmail&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=shop%20button&amp;utm_term=-&amp;EN_Campaign_Id=-" style="color:#0666F2; text-decoration:none;">SHOP MERCY FOR ANIMALS</a></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+										<tbody><!-- Start Signature table -->
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="theVoiceSection" colspan="2" bgcolor="#ffffff" align="center">
+									<table style="border-color: #f3f3f3;width: 100%;margin-left: auto;margin-right: auto;border-width: 5px;border-style: solid;" cellspacing="0" cellpadding="0" border="0">
+										<tbody>
+											<tr><!--image-->
+												<td style="padding-top: 10px; text-align: center;" width="30%">
+												<table style="display: inline-block; vertical-align: bottom; margin-left: 20px;" cellspacing="0" cellpadding="0" border="0">
+													<tbody>
+														<tr>
+															<td height="170"><a data-id="7707" href="https://store.mercyforanimals.org/collections/earth-day-the-kind-way/products/mercy-for-animals-organic-cap?variant=41428060045489?utm_campaign=2022-04-21_VoiceEmail&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=-&amp;utm_term=-&amp;EN_Campaign_Id=-"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="%" src="https://go.mercyforanimals.org/l/939853/2022-04-22/2szfz/939853/1650645841JwLZv1LS/organic_baseball_cap_pacific_left_front.jpg" style="width: 150px;" width="150"></a></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+												<!--end image--><!--text and price-->
+												<td style="padding: 0 10px; vertical-align: middle;" width="70%">
+												<table style="display: inline-block; vertical-align: bottom;" cellspacing="0" cellpadding="0" border="0">
+													<tbody>
+														<tr>
+															<td style="vertical-align: middle; display: block;">
+															<div style="margin: 5px 0; font-family: trebuchet ms,helvetica,sans-serif; color: #555450; font-size: 26px; width: 100%; text-align: left; word-wrap: break-word;">Mercy For Animals Organic Hat
+															<div style="margin: 10px 0; font-family: trebuchet ms,helvetica,sans-serif; color: #0666F2; font-size: 32px; text-align: left;">$50.00<span style="color: #8a8a8a;font-size: 18px;vertical-align: middle;"> + Shipping and Handling</span></div>
+
+															<div style="margin: 5px 0; font-family:trebuchet ms,helvetica,sans-serif; background-color: #0666F2; color: #ffffff; font-size: 20px; line-height: 45px; height: 45px; width: 120px; text-align: center;"><a data-id="7707" href="https://store.mercyforanimals.org/collections/earth-day-the-kind-way/products/mercy-for-animals-organic-cap?variant=41428060045489?utm_campaign=2022-04-21_VoiceEmail&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=-&amp;utm_term=-&amp;EN_Campaign_Id=-" style="color: #ffffff; text-decoration: none;">Get It Now</a></div>
+															</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+												<!--end text and price-->
+											</tr>
+											<tr>
+												<td style="padding-top: 10px; text-align: center;" width="30%">
+												<table style="text-align: center; display: inline-block; vertical-align: bottom; margin-left: 20px;" cellspacing="0" cellpadding="0" border="0">
+													<tbody>
+														<tr>
+															<td height="170"><a data-id="7707" href="https://store.mercyforanimals.org/collections/earth-day-the-kind-way/products/for-the-planet-organic-t?utm_campaign=2022-04-21_VoiceEmail&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=-&amp;utm_term=-&amp;EN_Campaign_Id=-" style="color: rgb(255, 255, 255); text-decoration-line: none;"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="%" src="https://go.mercyforanimals.org/l/939853/2022-04-22/2szg3/939853/1650645841zyiFKCWZ/Plant_Based_for_the_Planet_Unisex_T_White.jpg" style="width: 150px; height: ;" width="150" height=""></a></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+												<td style="padding: 0 10px; vertical-align: middle;" width="70%">
+												<table style="display: inline-block; vertical-align: bottom;" cellspacing="0" cellpadding="0" border="0">
+													<tbody>
+														<tr>
+															<td style="vertical-align: middle; display: block;">
+															<div style="margin: 5px 0px; font-family: trebuchet ms,helvetica,sans-serif; color: rgb(85, 84, 80); font-size: 26px; width: 347.102px; overflow-wrap: break-word;">‘For the Planet’ Organic T
+															<div style="margin: 10px 0px; color: rgb(6, 102, 242); font-size: 32px;">$32.00<span style="color: rgb(138, 138, 138); font-size: 18px; vertical-align: middle;">&nbsp;+ Shipping and Handling</span></div>
+
+															<div style="margin: 5px 0px; background-color: rgb(6, 102, 242); color: rgb(255, 255, 255); font-size: 20px; line-height: 45px; height: 45px; width: 120px; text-align: center;"><a data-id="7707" href="https://store.mercyforanimals.org/collections/earth-day-the-kind-way/products/for-the-planet-organic-t?utm_campaign=2022-04-21_VoiceEmail&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=-&amp;utm_term=-&amp;EN_Campaign_Id=-" style="color: rgb(255, 255, 255); text-decoration-line: none;">Get It Now</a></div>
+															</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+									<!-- FOOTER -->
+								</tr>
+								<tr>
+									<td class="footer-container">
+									<table>
+										<tbody>
+											<tr class="footer-top">
+												<td class="footer-top-wrap">
+												<table>
+													<tbody>
+														<tr>
+															<td class="footer-left" width="100%"><a href="mercyforanimals.org"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="px" pardot-height="34" pardot-region="" pardot-region-type="“image”" pardot-width="175" src="https://go.mercyforanimals.org/l/939853/2021-09-20/2f6bv/939853/1632155280VtI6lGdn/MFA_LOGO_WHT__1_.png" style="height: 34px; width: 175px; max-width: 175px; max-height: 34px;" width="175" height="34"> </a>
+															<p pardot-region="">8033 Sunset Blvd., Ste. 864<br>
+															Los Angeles, CA 90046<br>
+															866-632-6446</p>
+															</td>
+															<td class="footer-right">
+															<p><a href="https://act.mercyforanimals.org/page/they-need-you/donation-form-1?utm_campaign=2022-04-23-thevoice-public-engagement&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=link&amp;utm_term=--"><strong>Donate Today</strong></a><br>
+															<a data-id="7707" href="https://mercyforanimals.org/impact/?utm_campaign=2021-07-21-general-emailfooter-impact-digital-marketing&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=footerlink&amp;utm_term=-">Your Impact</a><br>
+															<a data-id="7707" href="https://store.mercyforanimals.org/?utm_campaign=2021-07-21-general-emailfooter-shop-digital-marketing&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=footerlink&amp;utm_term=-">ShopMFA.com</a><br>
+															<a data-id="7707" href="https://mercyforanimals.org/action-center/?utm_campaign=2021-07-21-general-emailfooter-action-digital-marketing&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=footerlink&amp;utm_term=-">Take Action</a><br>
+															<a data-id="7707" href="https://instagram.com/mercyforanimals"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="px" pardot-height="29.9531" pardot-region="" pardot-region-type="“image”" pardot-width="30" src="https://go.mercyforanimals.org/l/939853/2021-09-20/2f72s/939853/16321586395LFhAfUG/Artboard_1.png" style="margin-left: 10px; margin-top: 5px; width: 30px; max-width: 30px; height: 29.9531px; max-height: 29.9531px;" width="30" height="29.9531"> </a> <a data-id="7707" href="https://www.facebook.com/mercyforanimals"> <img alt="" class="display:block" data-ratio-lock="true" data-unit="px" pardot-height="29.8438" pardot-region="" pardot-region-type="“image”" pardot-width="30" src="https://go.mercyforanimals.org/l/939853/2021-09-20/2f72v/939853/163215876025ZafWWN/facebook_logo.png" style="margin-left: 10px; width: 30px; max-width: 30px; height: 29.8438px; max-height: 29.8438px;" width="30" height="29.8438"> </a> <a data-id="7707" href="https://twitter.com/mercyforanimals"> <img alt="" class="display:block" data-ratio-lock="true" data-unit="px" pardot-height="30" pardot-region="" pardot-region-type="“image”" pardot-width="30" src="https://go.mercyforanimals.org/l/939853/2021-09-20/2f6h4/939853/1632157447FZo08z72/Twitter.png" style="margin-left: 10px; width: 30px; max-width: 30px; height: 30px; max-height: 30px;" width="30" height="30"> </a></p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+											<tr class="footer-mid">
+												<td>
+												<p><em>Your gift will be used where needed most to help farmed animals and support our work.</em></p>
+												</td>
+											</tr>
+											<tr class="footer-bottom">
+												<td><a class="hoverTextLink" href="{{view_online}}" target="_blank">view this email in a browser</a> <a class="hoverTextLink" href="{{{EmailPreferenceCenter_654}}}" rel="nofollow,noreferrer" target="_blank">manage subscriptions</a> <a class="hoverTextLink" href="https://mercyforanimals.org/privacy-policy" target="_blank">privacy policy</a> <a class="hoverTextLink" href="https://www.mercyforanimals.org/state-fundraising-notices" target="_blank">state fundraising notices</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- WIDTH LIMITER --><!-- BACKDROP TABLE --><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</body>
+</html>

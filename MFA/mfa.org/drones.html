@@ -1,0 +1,668 @@
+<style>
+/* :::::::::: general */
+.row {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1060px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.title-wrap {
+	display: flex; 
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin: 80px auto 40px;
+}
+.title {
+	flex-grow: 0;
+	padding: 0 20px;
+	margin: 0 0 0 0;
+	color: #4c4b47;
+	text-align: center;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 300;
+}
+h4 {
+	text-align: center;
+	font-size: 30px;
+	line-height: 30px;
+}
+img {
+	max-width: 100%;
+}
+
+/* :::::::::: hero */
+
+.banner .heading {
+	padding: 37px 0;
+	color: #FFFFFF;
+	background-color: #F99338;
+	text-align: center;
+	font-size: 28px;
+	font-weight: 700;
+}
+.banner .sub-head {
+	font-weight: 500;
+}
+.banner .arrow-wrap {
+	display: flex;
+	justify-content: center;
+	background-color: #ffffff;
+}
+.banner .arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 25px solid #F99338;
+}
+
+/* :::::::::: eyes in skies */
+.eyes-in-skies {
+	width: 100%;
+	padding: 50px 0;
+	background-color: #f3f3f3;
+}
+.eyes-in-skies .row {
+	align-items: center;
+	max-width: 935px;
+}
+.eyes-in-skies .col:first-child {
+	margin-right: 55px;
+}
+.eyes-in-skies .title {
+	width: 100%;
+	padding: 0 0 0 0;
+	margin: 0 0 30px 0;
+	text-align: left;
+	font-size: 28px;
+	font-weight: 500;
+}
+.eyes-in-skies p {
+	text-align: left;
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 300;
+}
+.eyes-in-skies .image {
+	width: 340px;
+	height: 340px;
+	border: 7px solid #ebebeb;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+/* :::::::::: by the numbers */
+
+.by-the-numbers .headline {
+	margin-bottom: 45px;
+	text-align: center;
+	font-size: 28.02px;
+	font-weight: 500;
+}
+.by-the-numbers .row {
+	justify-content: space-around;
+}
+.by-the-numbers .col {
+	max-width: 215px;
+	margin: 0 auto;
+}
+.by-the-numbers .image {
+	width: 215px;
+	height: 215px;
+	margin: 0 auto;
+	border: 7px solid #ebebeb;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.by-the-numbers .title {
+	margin: 40px auto 17px;
+	color: #0666F2;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 28px;
+	font-weight: 900;
+}
+.by-the-numbers .copy {
+	color: #393939;
+	text-align: center;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+}
+
+/*Slider*/
+h4 {
+	margin: 78px auto 45px;
+}
+.slider-section {
+	margin-bottom: 75px;
+}
+.slider-section .row {
+	justify-content: center;
+	align-items: center;
+}
+#bts-slider {
+	width: 650px;
+	height: 320px;
+	margin: auto 80px;
+}
+.flex-direction-nav a {
+	color: #6e6e6e;
+}
+.arrow-nav .fa {
+	font-size: 50px;
+}
+.video-title {
+	width: 100%;
+	color: #393939;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	margin-top: 25px;
+}
+.circle-nav {
+	color: #6e6e6e;
+}
+.flex-control-nav {
+	position: static;
+}
+.flex-control-paging li a.flex-active {
+	background: #6e6e6e;
+}
+.flex-control-paging li a {
+	background: #FFFFFF;
+	border: 1px solid #6e6e6e;
+	box-shadow: none;
+}
+.flex-control-paging li a:hover {
+	background: #6e6e6e;
+}
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+.video-container iframe, .video-container object, .video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.video-title.blue-accent a {
+	color: #0666F2;
+	font-weight: 700;
+}
+	
+.interstitial.interstitial--stats .stat {
+	min-height: 65px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+	.interstitial.interstitial--stats .span4 {
+		padding: 0 2%;
+	}
+}
+	
+@media (max-width: 990px) {
+	.copy-wrap {
+		display: block;
+	}
+	.copy-wrap .line {
+		display: inline;
+	}
+}
+	
+@media (max-width: 845px) {
+	.team-tile, .team-tile__name {
+		min-height: auto;
+	}
+	.by-the-numbers .title {
+		width: 100%;
+		margin: 40px auto 20px;
+	}
+	.by-the-numbers .copy {
+		padding: 0 20px;
+		font-size: 14px;
+	}
+}
+	
+@media only screen and (max-width: 767px) {
+	.hero--video .hero__inner {
+		margin-top: 200px;
+	}
+	.eyes-in-skies .image,
+	.arrow-nav {
+			display: none;
+	}
+}	
+
+@media (max-width: 600px) {
+	.banner .heading {
+		font-size: 18px;
+	}
+}
+	
+@media (min-width: 450px) {
+	#bts-slider {
+		height: 425px;
+	}
+}
+
+</style>
+<section id="hero" class="hero--parallax hero--about">
+			<div class="parallax__bg skrollable skrollable-between" data-center="background-position: 50.000% 0px;" data-top-bottom="background-position: 50.000% -100px;" data-anchor-target="#hero" style="background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2019/12/1200x630/drone-footage-3.jpg'); background-position: 50% -19.3777px;">
+		</div>
+			<div class="parallax__bg skrollable skrollable-between" data-center="background-position: 50.000% 0px;" data-top-bottom="background-position: 50.000% -100px;" data-anchor-target="#hero" style="position: absolute; top: 0px; left: 0px; background-image: url(&quot;themes/mfa/images/overlay.png&quot;); background-position: 50% -19.3777px;">
+				<div class="parallax__container">
+						<div class="parallax__content skrollable skrollable-before" data-top="opacity: 0.5" data-100-top="opacity: 1" data-anchor-target="h1" style="opacity: 1;">
+						<h1>Drone Investigations</h1><h5>Factory farms can’t hide from our drones.</h5>
+					</div>
+				</div>
+			</div>
+		 </section>
+<section class="eyes-in-skies">
+	<div class="row">
+		<div class="col copy-wrap">
+			<h3 class="mb30 mobile-text-left" style="text-align:left !important">EYES IN THE SKIES</h3>
+		<p>Mercy For Animals’ drone investigations provide a whole new perspective on factory farming’s devastating impact on animals, the environment, and rural communities. Equipped with high-tech video cameras, our drones fly above factory farms and slaughterhouses, capturing the nightmarish scale of these facilities.</p>
+
+<p>Our drone footage has exposed open-air cesspools of toxic animal waste, piles of animal corpses, and massive warehouses in which thousands of animals suffer intensive crowding and confinement. Often viral, our drone videos have amassed tens of millions of views on social media.</p>
+
+		</div>
+		<div class="col image-wrap">
+			<div class="image" style="background-image:url('https://mfa.cachefly.net/mfa/images/uploads/2018/01/drones-feedlot.png'); background-size: cover; background-position: center center; background-repeat: no-repeat;"></div>
+		</div>
+	</div>
+</section>
+
+<!-- ==================== -->
+<!-- CUSTOM VIDEO SLIDER  -->
+<!-- ==================== -->
+
+<section class="banner">
+	<div class="heading">Captured on Camera: <span class="sub-head">Recent Drone Investigations</span></div>
+	<div class="arrow-wrap">
+		<div class="arrow-down"></div>
+	</div>
+</section>
+
+<section class="behind-the-stats" style="margin-top: 40px;">
+	<div class="row">
+	</div>
+	<div class="slider-section">
+		<div class="row" style="margin-bottom: 39px">
+			<!--div id="arrow-nav" class="arrow-nav">
+				<a href="#" class="flex-prev">
+					<i class="fa fa-angle-left" aria-hidden="true"></i>
+				</a>
+			</div-->
+			<div id="bts-slider" style="margin: auto auto !important;">
+				<ul class="slides">
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/thld388tyew" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title blue-accent">
+						 Top 5 Weirdest DRONE Discoveries
+						</div>
+					</li>
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/yoqlJ1YmjAc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title blue-accent">
+						 Washington State’s “Mega Dairy” Catastrophe
+						</div>
+					</li>
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/htUhj2NGKAI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title blue-accent">
+						 DRONES Reveal Bizarre “Egg City”
+						</div>
+					</li>	
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/4YdZgz7aBfs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title blue-accent">
+						 Drones Reveal the Unthinkable When Outbreaks Close Slaughterhouses
+						</div>
+					</li>	
+
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/rvxz0b5NRxc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title blue-accent">
+						 DRONE reveals LIVE ANIMALS being auctioned off like objects
+						</div>
+					</li>	
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/4YdZgz7aBfs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title blue-accent">
+						 Drones Reveal the Unthinkable When Outbreaks Close Slaughterhouses
+						</div>
+					</li>		
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/lD3a1AHSO9M" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title blue-accent">
+						 DRONE vs Animal Abuse
+						</div>
+					</li>
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/EivzCsPq9n0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title blue-accent">
+						 The Truth Behind California's Milk (<a href="https://CaliforniaMilkSecrets.com">Take action</a>)
+						</div>
+					</li>
+					
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/G3vnZkTKm38" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title">
+						Cow Attempts to Escape Slaughterhouse
+						</div>
+					</li>
+	
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/HFSuF5_98rk?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title">
+						Drones Expose Amazon Destruction
+						</div>
+					</li>
+
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/ZzjJghCfi8A?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title">
+						Drones Expose Factory Farms in Mexico
+						</div>
+					</li>
+
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/oiofciepOnk?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title">
+						Drones Expose Factory Farming Destruction
+						</div>
+					</li>
+
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/t67I5cxWd1c?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title">
+							Zoom-Camera Drone Reveals Disturbing Milk Production Secrets
+						</div>
+					</li>
+
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/xfpvYmwtFls?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title">
+							Drones Reveal "Calf Hutches"
+						</div>
+					</li>
+					
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/6EQehZ_KjIc?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title">
+							The Pig Industry Treats Pigs Like Garbage
+						</div>
+					</li>
+
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/sMIS96qTH70?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title">
+							First-Ever Drone Investigation of Slaughterhouses 
+						</div>
+					</li>
+
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/Zmli_NuFkK4?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title">
+							Ultimate Compilation: Drones Expose Factory Farming Across America 
+						</div>
+					</li>
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/qmmaY0ACk_4?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title">
+							The Disturbing Truth of Where Eggs Come From
+						</div>
+					</li>
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/BO-8PO3UCFg?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title">
+							The Milk Industry Can't Hide from Our Drones
+						</div>
+					</li>
+					<li class="slide">
+						<div class="video-container">
+							<iframe src="https://www.youtube.com/embed/W7NEqjJZzwY?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="video-title">
+							Drones Expose Massive Beef Feedlots from the Air
+						</div>
+					</li>
+				</ul>
+			</div><!-- #bts-slider -->
+			<!--div id="arrow-nav" class="arrow-nav">
+				<a href="#" class="flex-next">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</a>
+			</div-->
+		</div><!-- .row -->
+		<div class="row">
+			<div id="circle-nav" class="circle-nav"></div>
+		</div>
+	</div>
+</section>
+
+<!---------------------->
+<!-- 3 COLUMN SECTION -->
+<!---------------------->
+<style>
+	.team-grid #team-expander {
+		box-sizing: border-box;
+		padding: 0 0 0 0;
+	}
+	.team-expander__inner {
+		width: 100%;
+		max-width: 100%;
+	}
+	#team-expander .container {
+		display: flex;
+		justify-content: flex-start;
+		width: 100%;
+		max-width: 100%;
+		padding: 0 0;
+	}
+	.interstitial-content {
+		width: 300px;
+		min-height: 300px;
+		box-sizing: border-box;
+		padding: 30px;
+		background: rgba(5,91,217,0.7)
+	}
+	.interstitial-content p {
+		color: #FFFFFF !important;
+		-webkit-font-smoothing: subpixel-antialiased;
+		font-size: 1.3125em  !important;
+		line-height: 1.25;
+		font-weight: 300;
+	}
+	@media (max-width: 530px) {
+		.interstitial-content {
+			width: 200px;
+		}
+		.interstitial-content p {
+			font-size: 14px !important;
+		}
+	}
+</style>
+
+
+<hr class="divide--large divide--light">
+<section id="team" class="team-grid section--large bg-white" style='padding-bottom:0; padding-top:50px'>
+	<div class="container--full text-center by-the-numbers">
+		<div class="team-row">
+	<h3 class="mb30 mobile-text-center">DRONES EXPOSE FACTORY FARMING DESTRUCTION</h3>
+			${setValue('actionSectionClass','third')}
+
+			<div class="team-tile third team-tile--active" id='team-tile-9-billion'>
+				<div class="team-tile__photo image" style="background-image:url('https://mfa.cachefly.net/mfa/images/uploads/2018/02/milk-industry.png'); background-size: cover; background-position: center center; background-repeat: no-repeat;"></div>
+				<div class="team-tile__name title">
+					ANIMAL CRUELTY
+				</div>
+				<div class="team-tile__description">
+					<div id="47-days" class="interstitial interstitial--circle" style="background: url('https://mfa.cachefly.net/mfa/images/uploads/2018/02/milk-industry.png') no-repeat; background-size: cover; background-position: center center;">
+						<div class="interstitial-content">
+						<p>Cows are forced to live in barren corrals that can stretch for hundreds of acres. They spend months standing in dirt, mud, and their own waste.</p>
+
+<p>Pigs and chickens are crammed by the thousands into windowless buildings. They never see daylight or breathe fresh air.<br>&nbsp;<br></p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+						
+			<div class="team-tile third" id='team-tile-zero-dot-eight-percent'>
+				<div class="team-tile__photo image" style="background-image:url('https://mfa.cachefly.net/mfa/images/uploads/2018/02/pig-facility.png'); background-size: cover; background-position: center center; background-repeat: no-repeat;"></div>
+				<div class="team-tile__name title">
+					Environmental Devastation
+				</div>
+				<div class="team-tile__description">
+					<div id="zero-dot-eight-percent" class="interstitial interstitial--circle" style="background: url('https://mfa.cachefly.net/mfa/images/uploads/2018/02/pig-facility.png') no-repeat; background-size: cover; background-position: center center;">
+						<div class="interstitial-content">
+						<p>Industrial farms collect millions of gallons of toxic animal waste in massive open-air pits, often larger than several football fields. </p>
+
+<p>To lower the levels in these cesspits, facilities pump out the waste and spray it onto fields in a fine mist that drifts into nearby homes and schools. </p>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			
+			<div class="team-tile third ${actionSectionClass}" id='team-tile-47-days'>
+				<div class="team-tile__photo image" style="background-image:url('https://mfa.cachefly.net/mfa/images/uploads/2018/02/farm-pollution.png'); background-size: cover; background-position: center center; background-repeat: no-repeat;"></div>
+				<div class="team-tile__name title">
+					Public Health Hazards
+				</div>
+				
+				<div class="team-tile__description">
+					<div id="47-days" class="interstitial interstitial--circle" style="background: url('https://mfa.cachefly.net/mfa/images/uploads/2018/02/farm-pollution.png') no-repeat; background-size: cover; background-position: center center;">
+						<div class="interstitial-content">
+							<p>Factory farms harm surrounding communities. Farm facilities are often built around low-income neighborhoods whose residents have little financial or political power to fight back. </p>
+
+<p>The stench of sewage and the noxious gases from the farms can make breathing difficult. Neighbors worry about their health and the health of their kids and grandkids. </p>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div><!-- .team-row -->
+	</div><!-- .container--full text-center by-the-numbers -->
+</section>
+<script>
+hash = window.location.hash.replace('#','');
+if(hash) {
+	window.onload=daisyChain(
+		window.onload,
+		function() {
+			document.getElementById('team').scrollIntoView( true );
+		}
+	);
+}
+</script>
+
+
+<style>
+	/* Minified FlexSlider CSS with Chrome fix */
+	.flex-container a:active,.flexslider a:active,.flex-container a:focus,.flexslider a:focus{outline:0}.slides,.flex-control-nav,.flex-direction-nav{margin:0;padding:0;list-style:none}.flexslider{margin:0;padding:0}.flexslider .slides>li{display:none;/*-webkit-backface-visibility:hidden;*/position:relative}.flexslider .slides img{width:100%;display:block}.flex-pauseplay span{text-transform:capitalize}.slides:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}html[xmlns] .slides{display:block}* html .slides{height:1%}.no-js .slides>li:first-child{display:block}.flexslider{background:#fff;position:relative;zoom:1}.flex-viewport{max-height:2000px;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;transition:all 1s ease}.loading .flex-viewport{max-height:300px}.flexslider .slides{zoom:1}.carousel li{margin-right:5px}.flex-direction-nav{*height:0}.flex-direction-nav a{width:30px;height:30px;margin:-20px 0 0;display:block;background-position: 0 0;background-repeat: no-repeat;position:absolute;top:50%;z-index:10;cursor:pointer;text-indent:-9999px;opacity:0;-webkit-transition:all .3s ease}.flex-direction-nav .flex-next{background-position:100% 0;right:-36px}.flex-direction-nav .flex-prev{left:-36px}.flexslider:hover .flex-next{opacity:.8;right:5px}.flexslider:hover .flex-prev{opacity:.8;left:5px}.flexslider:hover .flex-next:hover,.flexslider:hover .flex-prev:hover{opacity:1}.flex-direction-nav .flex-disabled{opacity:.3!important;filter:alpha(opacity=30);cursor:default}.flex-control-nav{width:100%;text-align:center}.flex-control-nav li{zoom:1;*display:inline}.flex-control-paging li a{width:11px;height:11px;display:block;background:#666;background:rgba(0,0,0,0.5);cursor:pointer;text-indent:-9999px;-webkit-border-radius:20px;-moz-border-radius:20px;-o-border-radius:20px;border-radius:20px;box-shadow:inset 0 0 3px rgba(0,0,0,0.3)}.flex-control-paging li a:hover{background:#333;background:rgba(0,0,0,0.7)}.flex-control-paging li a.flex-active{background:$black;background:rgba(0,0,0,0.9);cursor:default}.flex-control-thumbs{margin:5px 0 0;position:static;overflow:hidden}.flex-control-thumbs li{width:25%;float:left;margin:0}.flex-control-thumbs img{width:100%;display:block;opacity:.7;cursor:pointer}.flex-control-thumbs img:hover{opacity:1}.flex-control-thumbs .flex-active{opacity:1;cursor:default}
+</style>
+
+<!-- ==================== -->
+<!--    BY THE NUMBERS    -->
+<!-- ==================== -->
+<section class="interstitial section--large interstitial--stats">
+	<div class="container text-center">
+		<h3 class="mb30">BY THE NUMBERS</h3>
+		
+			<div class="span4 wow fadeInDown">
+				<div class="stat__border">
+					<span class="icon" style='background:url(https://mfa.cachefly.net/mfa/images/uploads/2019/02/rb-drones-icon1.jpg) center center no-repeat;background-size:contain;'></span>
+				</div>
+				<span class="stat text-blue">
+					13
+					<span class="stat__sub"></span>
+				</span>
+				<p>drone investigations released by Mercy For Animals</p>
+			</div>
+		
+				<div class="span4 wow fadeInDown localized en">
+				<div class="stat__border">
+					<span class="icon" style='background:url(https://mfa.cachefly.net/mfa/images/uploads/2019/02/rb-drones-icon2.jpg) center center no-repeat;background-size:contain;'></span>
+				</div>
+				<span class="stat text-blue">
+					23
+					<span class="stat__sub">MILLION</span>
+				</span>
+				<p>views of our drone videos on social media</p>
+			</div>
+		
+			<div class="span4 wow fadeInDown">
+				<div class="stat__border">
+					<span class="icon" style='background:url(https://mfa.cachefly.net/mfa/images/uploads/2019/02/rb-drones-icon3.jpg) center center no-repeat;background-size:contain;'></span>
+				</div>
+				<span class="stat text-blue">
+					46
+					<span class="stat__sub"></span>
+				</span>
+				<p>factory farms investigated by our drones</p>
+			</div>
+
+			<div class="span4 wow fadeInDown desktop-only localized en" style="width:16.6666%">
+				&nbsp;
+			</div>
+	</div>
+</section>
+

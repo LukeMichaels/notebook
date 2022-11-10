@@ -1,0 +1,1189 @@
+<style type='text/css'>
+	.overlay {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url(themes/mfa/images/overlay.png);
+		background-size: cover;
+	}
+</style>
+
+<section id="hero" class="hero--parallax hero--about">
+	<div class="parallax__bg" data-center="background-position: 50.000% 0px;"
+		data-top-bottom="background-position: 50.000% -100px;" data-anchor-target="#hero"
+		style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2019/02/1200x630/rb-about-hero-2.jpg)"
+		;>
+	</div>
+	<div class="parallax__bg" data-center="background-position: 50.000% 0px;"
+		data-top-bottom="background-position: 50.000% -100px;" data-anchor-target="#hero"
+		style="position:absolute;top:0px;left:0px;background-image:url(themes/mfa/images/overlay.png)">
+		<div class="parallax__container">
+			<div class="parallax__content" data-top="opacity: 0.5" data-100-top="opacity: 1" data-anchor-target="h1">
+				<h1>About Mercy For Animals<h5>Together we will end factory farming.</h5>
+				</h1>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--CONTENT-START-->
+<style>
+	/* :::::::::: impact */
+	.your-impact .image {
+		display: flex;
+		justify-content: center;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	.copy-wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 75px;
+		color: #393939;
+		text-align: center;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 300;
+	}
+
+	.copy-wrap .line {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.your-impact .copy {
+		width: 100%;
+		padding: 0 10px;
+		margin: 15px 0;
+		text-align: center;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 300;
+	}
+
+	.your-impact .two-up {
+		margin: 55px auto 42px;
+	}
+
+	.your-impact .three-up .image-wrap {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 65px;
+	}
+
+	.your-impact .three-up .image {
+		width: 215px;
+		height: 215px;
+		margin: 0 auto;
+		border: 7px solid #ebebeb;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+	}
+
+	.your-impact .three-up .title {
+		width: 100%;
+		margin: 40px auto 17px;
+		color: #0666F2;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 28px;
+		font-weight: 900;
+	}
+
+	.your-impact .line {
+		display: block;
+	}
+
+	.your-impact .text-wrap {
+		display: flex;
+		align-items: center;
+	}
+
+	.your-impact .text-wrap p {
+		margin-bottom: 20px;
+		text-align: left;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.your-impact .sub-head {
+		margin: 60px auto 73px;
+	}
+
+	.your-impact hr {
+		margin-top: 65px;
+	}
+
+	.your-impact .button {
+		padding: 15px 40px;
+		margin: 30px auto 0;
+		color: #FFFFFF;
+		background: #01a7e0;
+		transition: all 100ms linear;
+		font-size: 18px;
+		font-weight: 100;
+	}
+
+	.your-impact .button:hover {
+		background: #055BD9;
+	}
+
+	.year-in-numbers .number {
+		width: 100%;
+		color: #01a7e0;
+		text-align: center;
+		font-size: 27.1px;
+		line-height: 25.74px;
+		font-weight: 700;
+	}
+
+	.year-in-numbers .copy {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.year-in-numbers .line {
+		display: block;
+	}
+
+	.year-in-numbers .line,
+	.programs .span2 {
+		width: 100%;
+	}
+
+	/* :::::::::: Money at work */
+
+	.interstitial--money img{
+		max-height: 300px;
+			width: auto;	
+	}
+
+	/* :::::::::: general */
+	.icon .fa {
+		font-size: 40px;
+	}
+
+	.row {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 1060px;
+		padding: 0 20px;
+		margin: 0 auto;
+	}
+
+	.title-wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		margin: 80px auto 40px;
+	}
+
+	.border {
+		flex-grow: 3;
+		border-top: 1px solid #e7e7e7;
+	}
+
+	.title {
+		flex-grow: 0;
+		padding: 0 20px;
+		margin: 0 auto 0 auto;
+		color: #4c4b47;
+		text-align: center;
+		font-size: 30px;
+		line-height: 30px;
+		font-weight: 300;
+	}
+
+	h4 {
+		width: 100%;
+		text-align: center;
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	h5 {
+		color: #FFFFFF;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	.two-up .col {
+		width: 49.01960784313725%;
+	}
+
+	.three-up .col {
+		width: 32.35294117647059%;
+	}
+
+	.four-up .col {
+		width: 23.52941176470588%;
+	}
+
+	.blue-text {
+		color: #01a7e0;
+		font-weight: 500;
+	}
+
+	.interstitial--circle .circle-descrip {
+		height: auto;
+	}
+
+	@media only screen and (min-width: 1024px) {
+		.programs {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		.programs .span2 {
+			width: 20%;
+		}
+	}
+
+	@media only screen and (max-width: 979px) and (min-width: 768px) {
+		.interstitial--circle .circle-descrip {
+			width: 48%;
+		}
+
+		.programs h6 {
+			font-size: 16px;
+		}
+	}
+
+	@media (max-width: 700px) {
+		.four-up {
+			flex-wrap: wrap;
+		}
+
+		.four-up .col {
+			width: 49.01960784313725%;
+			margin-bottom: 40px;
+		}
+
+		.three-up {
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.three-up .col {
+			width: 100%;
+			margin-bottom: 40px;
+		}
+
+		.two-up-large {
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.two-up-large .col {
+			width: 100%;
+			margin-bottom: 40px;
+		}
+
+		.extreme-abuse .col:first-child {
+			margin: 0 auto 40px;
+		}
+
+		.extreme-abuse .copy-wrap {
+			order: 2;
+		}
+
+		.extreme-abuse .title {
+			text-align: center;
+		}
+
+		.extreme-abuse p {
+			text-align: center;
+		}
+
+		.extreme-abuse .image-wrap {
+			order: 1;
+		}
+
+		.two-up-large .image {
+			margin: 0 auto;
+		}
+
+		.bullet-points .content-wrap {
+			flex-wrap: wrap;
+		}
+
+		.bullet-points .content-wrap .col {
+			width: 100%;
+			padding: 0 20px;
+		}
+
+		.bullet-points .image {
+			margin: 0 auto 20px;
+		}
+
+		.text-over-image-one {
+			margin-bottom: 40px;
+		}
+
+		.text-over-blue-bg {
+			margin-bottom: 40px;
+		}
+
+		.medium-image-text-top {
+			margin-bottom: 40px;
+		}
+
+		.bright-future {
+			font-size: 18px;
+		}
+
+		.team-row {
+			flex-wrap: wrap {}
+		}
+
+		/*.hero--changing-things .full-width-inner p {
+		padding: 0 20px;
+	}*/
+		.arrow-nav {
+			display: none;
+		}
+	}
+
+	@media (max-width: 530px) {
+		.four-up .col {
+			width: 100%;
+		}
+
+		.two-up {
+			flex-wrap: wrap;
+		}
+
+		.two-up .col {
+			width: 100%;
+		}
+
+		.your-impact .image-wrap {
+			margin-right: auto;
+			margin-bottom: 50px;
+		}
+
+		.banner .heading {
+			padding: 27px 0;
+			font-size: 18px;
+			font-weight: 700;
+		}
+	}
+</style>
+
+<!-- ==================== -->
+<!--     INTERSTITIAL     -->
+<!-- ==================== -->
+<section class="interstitial section--large interstitial--circle">
+	<div class="container">
+		<div class="circle circle--xlrg"
+			style="background-image:url(https://mfa.cachefly.net/mfa/images/circlelrg-compassion.jpg);"></div>
+		<div class="circle-descrip">
+			<div class="inner">
+				<div class="innercontent">
+					<h3 class="mb30 mobile-text-center">Inspiring Compassion. Ending Cruelty.</h3>
+					<p class="text-left">Our mission is to construct a compassionate food system by reducing suffering
+						and ending the exploitation of animals for food.</p>
+					<p class="mb0 text-left">Imagine a world free of cruelty, a world in which we nurture our bodies,
+						minds, and spirits with wholesome, healthy food that is kind to animals and sustainable for our
+						planet. Mercy For Animals believes that world is possible. In fact, it is inevitable if we work
+						together to elevate humanity to its fullest potential.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<hr class="divide--large divide--light">
+
+
+<!-- ==================== -->
+<!--     OUR APPROACH     -->
+<!-- ==================== -->
+<style>
+	.fa-camera,
+	.fa-gavel,
+	.fa-building,
+	.fa-users {
+		font-size: 52px;
+	}
+
+	.circle.circle--med h6 {
+		margin-top: 110px;
+	}
+</style>
+<section class="interstitial section--large">
+	<div class="container text-center">
+		<h3 class="mb30">Our Approach</h3>
+		<p class="width-constrain text-gray mobile-text-left">We are on the front lines fighting to protect farmed
+			animals. From factory farms to corporate boardrooms, courts of justice to courts of public opinion, Mercy
+			For Animals is there to speak up against cruelty and for compassion. Read our <a
+				href="https://mfa.cachefly.net/mfa/pdfs/MFA-Three-Year-Strategic-Plan.pdf">three-year strategic plan</a>
+			to learn more.</p>
+		<div class="programs">
+			<div class="span2 mt30">
+				<a href="investigations" class="circle circle--med hover-effect">
+					<span class="icon"><i class="fa fa-camera"></i></span>
+					<h6 class="text-blue">Undercover <br>Investigations</h6>
+				</a>
+			</div>
+			<div class="span2 mt30">
+				<a href="legal" class="circle circle--med hover-effect">
+					<span class="icon"><i class="fa fa-gavel"></i></span>
+					<h6 class="text-blue">Legal <br>Advocacy</h6>
+				</a>
+			</div>
+			<div class="span2 mt30">
+				<a href="corporate-outreach" class="circle circle--med hover-effect">
+					<span class="icon"><i class="fa fa-building"></i></span>
+					<h6 class="text-blue">Corporate<br>Engagement</h6>
+				</a>
+			</div>
+			<div class="span2 mt30">
+				<a href="/capacity-building" class="circle circle--med hover-effect">
+					<span class="icon"><i class="fa fa-users"></i></span>
+					<h6 class="text-blue single-line">Organizing</h6>
+				</a>
+			</div>
+			<div class="span2 mt30">
+				<a href="/public-engagement" class="circle circle--med hover-effect">
+					<span class="icon"><i class="fa fa-microphone"></i></span>
+					<h6 class="text-blue single-line">Public<br>Engagement</h6>
+				</a>
+			</div>
+		</div>
+		<!--programs-->
+	</div>
+	<!--container-->
+</section>
+
+<hr class="divide--large divide--light">
+
+
+
+<!-- ==================== -->
+<!--  RECOGNITION SLIDER  -->
+<!-- ==================== -->
+<!--  <?php include('partials/recognition.php'); ?> -->
+<hr class="divide--light">
+
+<!-- ==================== -->
+<!--      BOARD MEMBERS   -->
+<!-- ==================== -->
+<section id="our-board" class="team-grid section--large">
+		<div class="container--full text-center">
+				<div class="container">
+						<h3>Meet the Board</h3>
+				</div>
+
+				<div class="team-row">
+
+						<div class="team-tile third">
+								<div class="team-tile__photo"
+										style="background-image:url(https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/450/2021/06/Neysa-profile-scaled-1.jpg);">
+								</div>
+								<div class="team-tile__name">
+										<p>Neysa Colizzi</p>
+										<span>Board Chair</span>
+								</div>
+								<div class="team-tile__description">
+										<p>Neysa Colizzi is a lifelong animal lover and vegetarian turned vegan. Neysa has leveraged her
+												expertise in change management, strategy formulation and execution, and behavioral science to
+												further the missions of animal protection and food innovation organizations for the past five
+												years. Professionally, Neysa helps large companies realize and sustain large-scale change. She
+												is currently an expert partner at Bain & Company, supporting global Fortune 100 companies in
+												their strategic transformations. Neysa holds a master’s in business and a bachelor’s and
+												master’s in engineering. She has served on a number of nonprofit boards in education, community
+												development, and animal protection. Neysa recently moved back to the Detroit area to be close to
+												family and resides there with her daughter (vegan from birth) and two cats.</p>
+								</div>
+						</div>
+
+						<div class="team-tile third">
+								<div class="team-tile__photo"
+										style="background-image:url(https://storage.googleapis.com/file-cdn.mercyforanimals.org/mfa/images/MIKE-BOARD-v2.png);">
+								</div>
+								<div class="team-tile__name">
+										<p>Michael Pellman Rowland</p>
+										<span>Treasurer</span>
+								</div>
+								<div class="team-tile__description">
+										<p>Michael Pellman Rowland is a partner and co-head of impact investments at Alpenrose Wealth
+												Management. He provides clients with a full spectrum of sustainability and impact-investing advice,
+												covering both public and private markets globally. Michael is a frequent public speaker and has
+												been featured in the <em>Wall Street Journal</em>, <em>Forbes</em>, <em>Financial Times</em>,
+												and <em>Institutional Investor</em>. He was selected for the <em>InvestmentNews</em> 40 Under 40
+												list of top wealth advisors and included in the Forbes inaugural listing of America’s Top
+												Next-Generation Wealth Advisors. He was also selected as a founding member of the Forbes Impact
+												Investing Community. For the past four years he’s written a column on Forbes.com, covering
+												sustainable food companies. He is also an advisor for The Good Food Institute and the EAT
+												Foundation.</p>
+								</div>
+						</div>
+
+						<div class="team-tile third">
+								<div class="team-tile__photo"
+										style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2019/02/DEREK-BOARD.jpg);">
+								</div>
+								<div class="team-tile__name">
+										<p>Derek Coons</p>
+										<span></span>
+								</div>
+								<div class="team-tile__description">
+										<p>Derek Coons is a founding board member of Mercy For Animals, overseeing the organization&rsquo;s growth and
+												success for over two decades and working diligently to maximize efficiency through his expert
+												guidance. A graduate of Miami University with a degree in computer science and systems analysis,
+												Derek actively combines his passion for technology with his passion for animals. In 2007, Derek
+												was the first person honored with our Hope Award for his dedication to defending farmed
+												animals.</p>
+										<a class="btn btn--team" href="mailto:DerekC@MercyForAnimals.org"><i
+														class="fa fa-envelope-o"></i></a>
+								</div>
+						</div>
+
+				</div><!-- .team-row -->
+
+				<div class="team-row">
+
+						<div class="team-tile third">
+								<div class="team-tile__photo"
+										style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2019/02/LISA-BOARD.jpg);">
+								</div>
+								<div class="team-tile__name">
+										<p>Lisa Feria</p>
+										<span></span>
+								</div>
+								<div class="team-tile__description">
+										<p>Lisa Feria is the CEO of <a href="https://straydogcapital.com/" target="_blank" rel="noopener noreferrer">Stray Dog Capital</a>, a venture capital firm that invests in
+												early-stage, mission-driven companies that aim to take animals out of the supply chain with
+												innovative products and services. With over 26 investments, Stray Dog Capital is one of the
+												leading early-stage investors in the plant-based market. Before Stray Dog Capital, Lisa spent
+												over 15 years in general management, operations, and engineering at blue-chip companies like
+												General Mills and Procter &amp; Gamble. She has a bachelor&rsquo;s degree in chemical
+												engineering and a master&rsquo;s from the University of Chicago Booth School of Business. Lisa
+												spent over 14 years focused on food operations and consumer packaged goods and led marketing,
+												profit-and-loss management, and strategy for billion-dollar brands. In addition, Lisa is a
+												Kauffman fellow and an active board member at several portfolio companies and the Great Plains
+												SPCA shelter.</p>
+								</div>
+						</div>
+
+
+						<div class="team-tile third">
+								<div class="team-tile__photo"
+										style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2019/02/ALEXIS-BOARD.jpg);">
+								</div>
+								<div class="team-tile__name">
+										<p>Alexis Fox</p>
+										<span></span>
+								</div>
+								<div class="team-tile__description">
+										<p>Alexis Fox is the CEO of <a href="https://www.lighternutrition.com/" target="_blank" rel="noopener noreferrer">Lighter</a>, an influential technology company that helps the
+												world eat better. Alexis has dedicated her life to fixing our broken food system. She has worked
+												in the movement as an attorney, a political leader, and an entrepreneur. She also spent three years
+												as an adjunct professor of leadership at Emerson College.</p>
+								</div>
+						</div>
+
+						<div class="team-tile third">
+								<div class="team-tile__photo"
+										style="background-image:url('https://mfa.cachefly.net/mfa/images/uploads/2020/10/tl-thumb-2.jpg');">
+								</div>
+								<div class="team-tile__name">
+										<p>Tyson-Lord Gray</p>
+										<span></span>
+								</div>
+								<div class="team-tile__description">
+										<p>Tyson-Lord Gray is a research associate at the Baylor Collaborative on Hunger and Poverty and an
+												adjunct assistant professor at NYU Stern School of Business. His research lies at the
+												intersections of environmental ethics, critical race theory, and public policy. He is
+												specifically interested in the influence of society and culture on environmental history and
+												policy. Dr. Gray has taught courses on animals and public policy at NYU, as well as presented
+												numerous papers on animal rights at academic conferences. He is a member of the New York State
+												Bar, a minister with the National Baptist Convention, and a board member at Green the Church.
+										</p>
+								</div>
+						</div>
+
+				</div><!-- .team-row -->
+
+				<div class="team-row">
+
+
+						<div class="team-tile third">
+								<div class="team-tile__photo"
+										style="background-image:url('https://mfa.cachefly.net/mfa/images/uploads/2020/10/sid-thumb-2.jpg');">
+								</div>
+								<div class="team-tile__name">
+										<p>Siddharth Hariharan</p>
+										<span></span>
+								</div>
+								<div class="team-tile__description">
+										<p>Siddharth (“Sid”) Hariharan is a managing director at Rothschild & Co, a leading global advisory
+												firm. Sid advises clients across industries on mergers and acquisitions, as well as fundraising.
+												He is especially focused on plant-based businesses and helping them access funding and
+												monetization opportunities. Sid is a passionate vegan and hopes to engender a kind and
+												compassionate planet.</p>
+								</div>
+						</div>
+
+						<div class="team-tile third">
+								<div class="team-tile__photo"
+										style="background-image:url('https://mfa.cachefly.net/mfa/images/uploads/2020/10/liza-thumb-2.jpg');">
+								</div>
+								<div class="team-tile__name">
+										<p>Liza Heavener</p>
+										<span></span>
+								</div>
+								<div class="team-tile__description">
+										<p>Liza Heavener serves as the chief operating officer of NEXUS. After being a NEXUS member for many
+												years, Liza was tapped to chair the NEXUS Working Group on Animal Welfare and Biodiversity
+												Conservation. She had spent the previous decade on Capitol Hill, running campaign strategy and
+												grassroots outreach.</p>
+										<p>As a founding member of DeforestACTION, Liza coordinated the launch of a new orangutan
+												rehabilitation center in the Bornean rainforests. Her work is featured in <em>Rise of the
+														Eco-Warrior</em>, an internationally acclaimed documentary and TV series. Liza serves as an
+												advisor to the Millennial Action Project, Well Beings charity, Eastern Mennonite University, and
+												White Coat Waste. She has spoken at conferences and events around the world.</p>
+								</div>
+						</div>
+
+						<div class="team-tile third">
+								<div class="team-tile__photo"
+										style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2019/02/JAMIE-BOARD.jpg);">
+								</div>
+								<div class="team-tile__name">
+										<p>Jaime Surenkamp</p>
+										<span></span>
+								</div>
+								<div class="team-tile__description">
+										<p>Jaime Surenkamp comes to Mercy For Animals with a long career in hospitality sales. She has
+												worked with leading businesses such as OpenTable, Daiya Foods, and HotSchedules. Through this
+												work, Jaime has built deep relationships with some of the biggest and most influential
+												restaurants in America. A longtime supporter of Mercy For Animals, Jaime served as director of
+												corporate outreach from 2013 to 2014. She is committed to creating a humane world by reducing
+												animal suffering, increasing plant-based offerings, and ensuring fellow advocates are able to
+												work in an inclusive, safe, and open environment.</p>
+								</div>
+						</div>
+
+				</div><!-- .team-row -->
+
+				<div class="team-row">
+
+						<div class="team-tile third">
+								<div class="team-tile__photo"
+										style="background-image:url('https://mfa.cachefly.net/mfa/images/uploads/2020/10/ashley-thumb-2.jpg');">
+								</div>
+								<div class="team-tile__name">
+										<p>Ashley Bugeja Vuu</p>
+										<span></span>
+								</div>
+								<div class="team-tile__description">
+										<p>Ashley Bugeja Vuu is an HR mergers, acquisitions, and restructuring consultant for Deloitte.   Originally from Detroit, Ashley was the first person in her
+												family to earn master’s and bachelor’s degrees. For more than 10 years she has advocated for the
+												environment and underprivileged people of color, citing a lifestyle of “kindness to the
+												vulnerable”, which includes being vegan.</p>
+										<p>Ashley has held HR leadership positions at some of the largest tech firms, including Infosys,
+												Unisys, and Computer Science Corporation. She also holds a Global Professional in Human
+												Resources certification and is fluent in Spanish and English. When she is not working or
+												volunteering, Ashley enjoys spending time with her family and pursuing her passion for
+												long-distance running fueled entirely by plants.</p>
+								</div>
+						</div>
+
+				</div><!-- .team-row -->
+
+		</div>
+</section>
+<!-- ==================== -->
+<!--      OUR TEAM        -->
+<!-- ==================== -->
+<section class="team-grid section--large" id="team">
+	<div class="container--full text-center">
+		<div class="container">
+			<h3>Our Leadership Team</h3>
+			<p>Changing Hearts. Changing Minds. Changing the World.</p>
+		</div>
+	</div>
+	<div class="container--full text-center">
+
+		<div class="team-row">
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2018/10/Leah-Headshot.jpg);">
+				</div>
+				<div class="team-tile__name">
+					<p>Leah Garcés</p>
+					<span>President</span>
+				</div>
+				<div class="team-tile__description">
+					<p>
+					<p>Leah Garc&eacute;s is president of Mercy For Animals. She has been fighting for better food and
+						farming systems for nearly 20 years as a leader in the animal protection movement. Leah oversaw
+						international campaigns in 14 countries at the World Society for the Protection of Animals and
+						launched Compassion in World Farming in the United States. She is the author of <em>Grilled:
+							Turning Adversaries into Allies to Change the Chicken Industry</em> from Bloomsbury
+						Publishing. Leah&rsquo;s work has grabbed headlines in the <em>New York Times</em>, the
+						<em>Washington Post</em>, BuzzFeed, <em>Vice</em> magazine, the <em>Chicago Tribune</em>, and
+						other national media outlets. Leah also serves on the advisory councils of Encompass and Seattle
+						Food Tech. She lives in Atlanta, Georgia, with her husband, three kids, and two cats. Learn more
+						about her vision for the organization <a href="../vision">here</a>.</p>
+					</p>
+					<a class="btn btn--team" href="mailto:LeahG@MercyForAnimals.org"><i
+							class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2020/07/susan.jpg);"></div>
+				<div class="team-tile__name">
+					<p>Susan Lane</p>
+					<span>Senior Vice President of Development</span>
+				</div>
+				<div class="team-tile__description">
+					<p>
+					<p>Susan Lane is senior vice president of development at Mercy For Animals. She oversees and manages
+						fundraising strategy, development, and execution. Through all channels of fundraising, including
+						annual fund, major gifts, planned giving, corporate and foundation relations, events, donor
+						stewardship, and development operations, her team&rsquo;s mission is to engage donors and
+						prospects in a way that both educates and inspires them to give. Susan has served as assistant
+						vice president of development for Florida International University, chief development officer
+						for the College of Medicine at Michigan State University, and vice president of planned giving
+						for Fidelity Charitable Services. She is a certified fundraising executive (CFRE) and passionate
+						advocate for the nonprofit community. Susan is married to Tom, an estate and tax attorney, and
+						is the proud mother of Emily, a recent law school graduate. Susan is an avid reader and enjoys
+						traveling, music, theater, and gatherings with friends and family.</p>
+					</p>
+					<a class="btn btn--team" href="mailto:SusanL@MercyForAnimals.org"><i
+							class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2018/01/lucas_alvarenga.jpg);">
+				</div>
+				<div class="team-tile__name">
+					<p>Lucas Alvarenga</p>
+					<span>Senior Vice President, Strategy, Impact and Research</span>
+				</div>
+				<div class="team-tile__description">
+					<p>
+					<p>Lucas Alvarenga is senior vice president of strategy, impact, and research at Mercy For Animals.
+						Born and raised in Rio de Janeiro, Brazil, Lucas has extensive communication and marketing
+						experience and co-founded an e-commerce company. When Lucas decided to dedicate his life to
+						reducing suffering, he launched pro-vegan projects in Brazil, including the <a
+							href="http://desafio21diassemcarne.com.br/">21-Day Meatless Challenge</a> in partnership
+						with the Brazilian Vegetarian Society. Lucas joined Mercy For Animals on his 15th anniversary as
+						a vegetarian. He led the organization&rsquo;s growth in South America&rsquo;s largest country
+						for three years. In his current role, Lucas uses this experience to build our work
+						internationally and oversee our impact evaluation and research programs. Lucas lives in
+						S&atilde;o Paulo with his girlfriend and four lovely nonhuman rescued babies.</p>
+					</p>
+					<a class="btn btn--team" href="mailto:lucasa@mercyforanimals.org"><i
+							class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2018/12/Melanie-Heymans-small.jpg);">
+				</div>
+				<div class="team-tile__name">
+					<p>Melanie Heymans</p>
+					<span>Senior Vice President, People and Culture</span>
+				</div>
+				<div class="team-tile__description">
+					<p>
+					<p>Melanie Heymans is senior vice president of people and culture at Mercy For Animals. Melanie and
+						her team are responsible for overall administration of the people operations functions for all
+						our offices. They drive initiatives that support and strengthen our organizational culture and
+						ensure a diverse and inclusive work environment for all team members. Originally from Austria,
+						Melanie moved to the United States in 2010 and has worked with several mission-driven and
+						nonprofit organizations to build strong people operations functions and foster supportive,
+						diverse, and inclusive cultures. Melanie lives in Santa Monica with her husband, Stijn, and
+						their terrier mix, Poppy, and enjoys travel, good food, exploring nature, and living an active
+						and compassionate life.</p>
+					<p>&nbsp;</p>
+					</p>
+					<a class="btn btn--team" href="mailto:MelanieH@mercyforanimals.org"><i
+							class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2018/12/jesse-headshot.jpg);">
+				</div>
+				<div class="team-tile__name">
+					<p>Jesse Marks</p>
+					<span>Senior Vice President, Engagement</span>
+				</div>
+				<div class="team-tile__description">
+					<p>
+					<p>Jesse Marks is senior vice president of engagement at Mercy For Animals. He oversees the public
+						engagement, corporate engagement, and volunteer program teams. Part of the animal protection
+						movement since 2002, Jesse has over a decade of professional experience in advocacy, campaigns,
+						and communications for animals. Originally from Australia, Jesse was once the director of farmed
+						animal advocacy at Animals Australia, where he helped pioneer corporate engagement in the
+						region, develop innovative outreach tactics, and build cutting-edge digital advocacy tools.
+						Having moved numerous times to be where he could best serve animals, Jesse now calls home
+						wherever his wife, Karen, and their rescue dog, Nina, are.</p>
+					</p>
+					<a class="btn btn--team" href="mailto:JesseM@mercyforanimals.org"><i
+							class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+
+		</div><!-- .team-row -->
+
+		<div class="team-row">
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://mercyforanimals.org/mercy4animals.wpengine.com/sites/517/2021/02/Mamta_Headshot_Circle.png); background-size: cover;"></div>
+				<div class="team-tile__name">
+					<p>Mamta Jain Valderrama</p>
+					<span>Senior Vice President, Operations</span>
+				</div>
+
+				<div class="team-tile__description">
+					<p>Mamta Jain Valderrama is senior vice president of operations at Mercy For Animals, overseeing finance and technology. Before Mercy For Animals, Mamta spent 10 years in healthcare operations and has led multimillion-dollar income reports. An activist in her free time, she took a break from corporate America to write a book about human trafficking that became an Amazon bestseller. Born and raised in the Jain culture, she grew up with the principle of ahimsa and was eager to join Mercy For Animals. Originally from Los Angeles, Mamta lives in Scottsdale, Arizona, with her husband and daughter.
+					</p>
+					<a class="btn btn--team" href="MamtaV@MercyForAnimals.Org "><i
+							class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://mercyforanimals.org/mercy4animals.wpengine.com/sites/517/2021/08/jodi_small.jpg);">
+				</div>
+				<div class="team-tile__name">
+					<p>​​Jodi Medoff</p>
+					<span>General Counsel</span>
+				</div>
+				<div class="team-tile__description">
+					<p>
+					<p>​​Jodi Medoff is general counsel at Mercy For Animals, overseeing legal affairs and advising on all legal matters that arise concerning the organization’s programs, operations, compliance, and corporate governance. With more than 16 years in legal practice, including 10 years of in-house counsel work, Jodi brings a breadth and depth of corporate and transactional experience. She also brings experience in law enforcement. Jodi received her law degree from Georgetown University Law Center, her master’s in business from Georgetown University McDonough School of Business, and her bachelor’s in psychology from Brandeis University.</p>
+					</p>
+					<a class="btn btn--team" href="mailto:JodiM@MercyForAnimals.org"><i
+							class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2020/07/travis.jpg);"></div>
+				<div class="team-tile__name">
+					<p>Travis Sitzlar</p>
+					<span>Vice President of Technology</span>
+				</div>
+				<div class="team-tile__description">
+					<p>
+					<p>Travis Sitzlar is vice president of technology at Mercy For Animals. He leads a team of
+						developers and PMOs dedicated to helping Mercy For Animals achieve its vision through
+						information technology. With over 20 years&rsquo; experience creating and managing
+						high-performing technology teams around the globe, Travis has supported organizations ranging
+						from local, regional, and international mission-driven nonprofits to emerging startups and
+						multinational corporations backed by private equity. He is delighted to see technology play a
+						role in transforming people&rsquo;s perception of plant-based foods and looks forward to a world
+						where plant-based eating is the norm. Travis and his wife, Stephanie, live in the Tampa Bay area
+						in a home ruled by their two dogs, rescue bird, and cat.</p>
+					</p>
+					<a class="btn btn--team" href="mailto:TravisS@mercyforanimals.org"><i
+							class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2020/07/chris.jpg);"></div>
+				<div class="team-tile__name">
+					<p>Chris Liptrot</p>
+					<span>Vice President of Corporate Engagement</span>
+				</div>
+				<div class="team-tile__description">
+					<p>
+					<p>Chris Liptrot is vice president of corporate engagement, providing strategic guidance for Mercy
+						For Animals&rsquo; global teams. Chris has devised campaign strategies and led negotiations to
+						secure animal welfare policies from hundreds of the world&rsquo;s largest companies. He lives in
+						Philadelphia with his wife, Katie, one adopted dog, and two rescued chinchillas.</p>
+					</p>
+					<a class="btn btn--team" href="mailto:ChrisL@MercyForAnimals.org"><i
+							class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2020/10/luiza_small.jpg);">
+				</div>
+				<div class="team-tile__name">
+					<p>Luiza Schneider</p>
+					<span>Vice President of Investigations</span>
+				</div>
+				<div class="team-tile__description">
+					<p>
+					<p>Luiza Schneider serves as vice president of investigations at Mercy For Animals. She works with
+						our brave investigations team to expose the cruelty at factory farms. Luiza joined Mercy For
+						Animals in 2017 as investigations manager. Previously, she had worked for years as an animal
+						welfare expert and inspector in Brazil, visiting and reporting animal abuse at hundreds of
+						slaughterhouses, factory farms, puppy mills, and vivisection labs.</p>
+					</p>
+					<a class="btn btn--team" href="mailto:LuizaS@MercyForAnimals.org"><i
+							class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+
+		</div><!-- .team-row -->
+
+		<div class="team-row">
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://mercyforanimals.org/mercy4animals.wpengine.com/sites/517/2021/07/diana_small_v2.jpg);"></div>
+				<div class="team-tile__name">
+					<p>Diane May</p>
+					<span>Vice President of Public Engagement</span>
+				</div>
+
+				<div class="team-tile__description">
+					<p>Diane May is vice president of public engagement at Mercy For Animals, managing our communications, social media, and video teams. Before joining Mercy For Animals, she served as director of communications for Our Revolution, the grassroots organization founded by Sen. Bernie Sanders. Diane has more than 10 years of experience working on messaging and communications for successful national, state, and local campaigns across the United States. Diane lives in Washington, DC, with her rescue dog, Cookie.
+
+					</p>
+					<a class="btn btn--team" href="mailto:dianem@mercyforanimals.org"><i
+							class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://mercyforanimals.org/mercy4animals.wpengine.com/sites/517/2021/08/sage_small.jpg);"></div>
+				<div class="team-tile__name">
+					<p>Sage Evans</p>
+					<span>Vice President of Development</span>
+				</div>
+			
+				<div class="team-tile__description">
+					<p>Sage Evans is vice president of development at Mercy For Animals. She brings over 20 years of progressive experience in fundraising leadership and strategy with nonprofits and local government agencies. A graduate of Grand View University with a degree in philanthropic studies, Sage has focused her career on improving donor relations and mission alignment through stewardship, annual giving, prospect research, and development operations. Sage resides in Des Moines, Iowa, with her husband, Jon, and their three rescue cats. She has a passion for travel and enjoys searching for hidden locations and treasures around the globe.
+					</p>
+					<a class="btn btn--team" href="mailto:SageE@MercyForAnimals.org"><i
+							class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://mercyforanimals.org/mercy4animals.wpengine.com/sites/517/2021/02/Nikunj_Headshot_Circle.png); background-size: cover;"></div>
+				<div class="team-tile__name">
+					<p>Nikunj Sharma</p>
+					<span>Chief Executive Officer of Mercy For Animals in India</span>
+				</div>
+				<div class="team-tile__description">
+					<p>
+					<p>Nikunj Sharma is chief executive officer of Mercy For Animals in India. Based in New Delhi,
+						Nikunj provides strategic leadership and guidance for our work in India, including building and
+						managing teams, maintaining collaborative relationships with stakeholders, setting goals, and
+						implementing short- and long-term plans and policies to further the organization&rsquo;s
+						mission. Nikunj has over 12 years of rich experience in strategizing and leading policy and
+						advocacy initiatives for animal protection campaigns in India and has been part of some of the
+						landmark victories for animals in the country. Nikunj has worked with key influencers, such as
+						parliamentarians, bureaucrats, think tanks, corporations, senior lawyers, and civil society
+						leaders to build strong formal networks. For his extensive work in animal protection, Nikunj has
+						been featured by the BBC, the Newsmakers, NDTV India, Aaj Tak, Times Now, and many more top news
+						outlets.</p>
+					</p>
+					<a class="btn btn--team" href="mailto:NikunjS@MercyForAnimals.org"><i
+							class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://mercyforanimals.org/mercy4animals.wpengine.com/sites/517/2021/08/fer_small.jpg); background-size: cover;"></div>
+				<div class="team-tile__name">
+					<p>Fernando Gallart</p>
+					<span>Managing Director of Mercy For Animals in Latin America</span>
+				</div>
+				<div class="team-tile__description">
+					<p>
+					<p>Fernando Gallart is managing director of Mercy For Animals in Latin America. Based in Mexico with experience building high-performing teams, he provides strategic guidance for our Latin American operations and oversees a growing team of passionate professional activists. Before joining Mercy For Animals, Fernando worked in international business expansion and marketing, helping companies increase their revenue in France, Spain, and Latin America.</p>
+					</p>
+				</div>
+			</div>
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2015/12/kelcey.jpg);"></div>
+				<div class="team-tile__name">
+					<p>Kelcey Meadows-Lucas</p>
+					<span>Senior Philanthropy Officer</span>
+				</div>
+				<div class="team-tile__description">
+					<p>
+					<p>Kelcey Meadows-Lucas is a senior philanthropy officer at Mercy For Animals, helping our donors fulfill
+						their dreams of ending farmed animal cruelty. Adopting a feisty terrier 18 years ago opened her
+						heart to all animals. Kelcey soon dedicated her life to helping animals. She brings more than a
+						decade of fundraising experience to her position. Kelcey shares her home with her husband and
+						son, rescued dog, and&nbsp;rescued fish.</p>
+					</p>
+					<a class="btn btn--team" href="mailto:KelceyML@mercyforanimals.org"><i
+							class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+
+		</div><!-- .team-row -->
+
+		<div class="team-row">
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://mercyforanimals.org/mercy4animals.wpengine.com/sites/517/2020/11/Caitlin-headshot-sq.jpg?ver=2020);"></div>
+				<div class="team-tile__name">
+					<p>Caitlin Oates</p>
+					<span>Philanthropy Officer</span>
+				</div>
+
+				<div class="team-tile__description">
+					<p>Caitlin Oates is a philanthropy officer at Mercy For Animals, helping donors make the greatest impact with their giving. Caitlin has concentrated her professional career on her lifelong passion, animal welfare. For the past decade, she has dedicated her life to raising funds to help animals both locally and globally, with a focus on bringing supporters closer to the causes they love most. Caitlin has impacted a wide range of animals in need—from local homeless domestic dogs and cats to lions, tigers, and other exotic animals in abandoned roadside zoos around the world. Caitlin is beyond excited to use her years of expertise to help farmed animals and build a compassionate food system with Mercy For Animals. A graduate of Boston College, Caitlin resides in Watertown, Massachusetts, with her husband, Jeff, and their 12-year-old rescue wheaten terrier, Liam.
+					</p>
+					<a class="btn btn--team" href="mailto:CaitlinO@MercyForAnimals.Org"><i
+							class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/450/2021/09/Kellie-headshot.jpg); background-size: cover"></div>
+				<div class="team-tile__name">
+					<p>Kellie Rattigan</p>
+					<span>Philanthropy Officer</span>
+				</div>
+
+				<div class="team-tile__description">
+					<p>Kellie Rattigan is a philanthropy officer at Mercy For Animals. As such, she connects donors to the organization in ways that are meaningful to them to create a just, sustainable food system and a world where animals are respected, protected, and free. Kellie brings more than a decade of fundraising experience to her role. She holds a master’s in business administration from Florida State University and a bachelor of arts in English and psychology from Boston College, where she also minored in French. Outside work, Kellie is an amateur lifter, a runner, and a yogi, as well as an avid reader, traveler, and writer. She resides in Hopkinton, Massachusetts, with her family.
+					</p>
+					<a class="btn btn--team" href="mailto:KellieE@MercyForAnimals.Org"><i
+							class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+
+			<div class="team-tile fifth">
+				<div class="team-tile__photo"
+					style="background-image:url(https://file-cdn.mercyforanimals.org/mfa/images/team/Join-Us.jpg);background-size:cover">
+				</div>
+				<div class="team-tile__name">
+					<p>Join Our Team</p>
+					<span>View Job Openings</span>
+				</div>
+				<div class="team-tile__description">
+					<p>
+					<p><strong>Interested in joining our team?</strong> <a href="/jobs/">Click here</a> to see our current
+						job openings.</p>
+					<p>Mercy For Animals also invites people to join us as volunteers and interns. Please visit our <a
+							href="/action-center/">Action Center</a> and <a href="/internship/">internship program</a> pages
+						for more details.</p>
+					</p>
+				</div>
+			</div>
+
+		</div><!-- .team-row -->
+	</div>
+</section>
+
+<hr class="divide--large divide--light">
+
+
+<!-- ==================== -->
+<!--     INTERSTITIAL     -->
+<!-- ==================== -->
+<section class="interstitial section--large interstitial--money">
+	<div class="container">
+		<img src="https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/450/2021/06/Money-at-Work-Chart-1.jpg"
+			alt="Pie Chart for Mercy For Animals, showing that nearly 70 cents of every dollar spent by Mercy For Animals goes directly to programs that save animals"
+			width="378" height="321">
+		<div class="descrip">
+			<div class="inner mobile-text-center">
+				<div class="innercontent">
+					<h3 class="mb30">Your Money at Work</h3>
+					<p class="mb30 text-left">About 70 cents of every dollar spent by Mercy For Animals goes directly to programs that help animals. The remainder is used to grow our size and capacity so we can help even more animals in the future.</p>
+					<p><span onclick="window.location='/financials'" class="btn btn--primary">Learn More</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<hr class="divide--large divide--light">
+
+
+<!-- ==================== -->
+<!--    4 CTA / DONATE    -->
+<!-- ==================== -->
+<style>
+	#form--donation a {
+		font-weight: 700;
+		text-decoration: underline;
+	}
+
+	a:hover {
+		opacity: .8;
+	}
+
+	@media only screen and (max-width: 1024px) {
+		.donation-form-v2.bg-img {
+			background-position: 50% 50%;
+		}
+	}
+</style>
+
+<!--=========== Donation form section ===========-->
+<section class="donation-form-v2 bg-img">
+	<div class="gradient-overlay"></div>
+	<div id="form--donation">
+		<div class="container mini-grid-1024">
+			<div class="span6 text-center">
+				<h2 class="cta-heading toUpper">Become a Monthly Supporter</h2>
+				<h4 class="mb30">Your <a
+						href="https://give.mercyforanimals.org/page/24219/donate/1?transaction.recurrpay=Y&ea.tracking.id=19WA3DA"
+						style="color: #ffffff">monthly gift</a> will bring hope to suffering animals.</h4>
+				<div id="form--donation" class="v2-form mb30 to-en-form">
+					<div class="form--donation__container">
+						<form class="form--donation__form">
+							<div class="span12 mb15">
+								<fieldset class="input-amount">
+									<label class="gfield_label" for="input_2_1">
+										<i class="fa fa-dollar"></i>
+									</label>
+									<input name="amount" id="donationAmount" type="number" class="ginput_amount"
+										value="25">
+								</fieldset>
+							</div>
+							<div class="span12 mt15">
+								<a href="https://give.mercyforanimals.org/page/24219/donate/1?ask_monthly=25%7C50%7C75&ask_selected=25&transaction.recurrpay=Y&ea.tracking.id=19WA3DA" class="btn btn--primary donate-btn monthly" data-frequency="monthly" data-tracking="19WA3DA" target="_blank" rel="noopener noreferrer">Donate</a>
+							</div>
+						</form>
+					</div>
+				</div>
+				<h4 class="mb30">"What keeps me focused is to remember that we are their only hope."</h4>
+				<p class="toUpper quote-subtitle">—Camilla, an undercover investigator in Brazil</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!--CONTENT-END-->

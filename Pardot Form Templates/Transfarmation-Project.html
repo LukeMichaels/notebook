@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<base href="https://go.mercyforanimals.org" >
+	<meta charset="utf-8"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="%%description%%"/>
+	<title>%%title%%</title>
+	<link rel="icon" type="image/png" href="https://mfacdn.cachefly.net/mfa/mfa_favicon.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cloud.typography.com/6738896/6053212/css/fonts.css" />
+	<!-- load fonts -->
+	<link rel="stylesheet" href="https://cloud.typography.com/6738896/6053212/css/fonts.css" />
+	<link rel="stylesheet" href="https://use.typekit.net/tqp8nen.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
+	<!-- MWD Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TC7H6LZ');</script>
+	<!-- End Google Tag Manager -->
+	<style>
+		/* ::::::::: Common Styles ::::::::*/
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		body,
+		textarea {
+			color: #000000;
+			font-family: "Gotham A", "Gotham B", Gotham, Helvetica, "Helvetica Neue", Arial, sans-serif;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5 {
+			font-weight: 700;
+		}
+
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		.toUpper {
+			text-transform: uppercase;
+		}
+
+		/* hide required graphic */
+		form.form p.required label, form.form span.required label {
+			background: none !important;
+		}
+
+		/* form styles */
+		form.form {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 100%;
+			padding-left: 0;
+		}
+
+		.form-field {
+			display: inline-block;
+			width: 48%;
+			padding-bottom: 18px;
+		}
+
+		.pd-textarea {
+			width: 100%;
+		}
+
+		.form-field label {
+			display: inline-block;
+			width: 100% !important;
+			padding: 6px 0 !important;
+			text-align: left !important;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+		}
+
+		.form-field input {
+			display: inline-block;
+			width: 100% !important;
+			box-sizing: border-box;
+			padding: 6px !important;
+			border: 1px solid #000000;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+		}
+
+		.form-field textarea {
+			display: inline-block;
+			width: 100% !important;
+			height: 200px !important;
+			box-sizing: border-box;
+			padding: 6px !important;
+			border: 1px solid #000000;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+		}
+
+		.form-field select {
+			display: inline-block;
+			width: 100% !important;
+			box-sizing: border-box;
+			padding: 6px !important;
+			border: 1px solid #000000;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+		}
+
+		/* radio buttons */
+		.pd-radio {
+			width: 100%;
+			padding-bottom: 0;
+		}
+		.pd-radio .value {
+			display: flex !important;
+			flex-direction: column;
+			width: 100%;
+			padding: 0 0;
+			margin: 0 0 0 0 !important;
+		}
+		.pd-radio .value span {
+			display: flex !important;
+			justify-content: flex-start;
+			align-items: flex-start;
+			margin-bottom: 5px;
+		}
+		.pd-radio .value span label {
+			display: block !important;
+			width: 100%;
+			vertical-align: baseline;
+			padding: 3px 0 0 0 !important;
+			margin: 0 auto 0;
+			color: #000000;
+			text-transform: none;
+			text-align: left;
+			font-size: 16px !important;
+			line-height: 18px !important;
+		}
+		.pd-radio .value span input {
+			width: 20px !important;
+			padding: 0 0 0 0;
+			margin-top: 5px;
+			margin-right: 10px ;
+			border: 1px solid #000000;
+		}
+
+		/* submit button */
+		form.form p.submit {
+			width: 100% !important;
+			margin: 0 auto 0 auto !important;
+			padding: 0;
+			text-align: center;
+		}
+		form.form p.submit input {
+			display: block;
+			width: 47%;
+			padding: 18px 24px 16px !important;
+			margin: 40px auto 0 !important;
+			color: #fff;
+			background-color: #141414;
+			text-transform: uppercase;
+			text-decoration: none;
+			text-align: center;
+			letter-spacing: 5px;
+			font-size: 14.4px;
+			font-weight: 400;
+			cursor: pointer;
+			border: 2px solid #000000;
+			transition:	background-color 1s ease-out, border-color 1s ease-out;
+		}
+		form.form p.submit input:hover {
+			color: #fff !important;
+			background-color: #319b00 !important;
+			border: 2px solid #319b00 !important;
+		}
+
+		/* privacy policy checkbox */
+		.pd-checkbox {
+			width: 100%;
+			padding-bottom: 0;
+		}
+		.pd-checkbox label {
+			display: none !important;
+		}
+		.pd-checkbox .value {
+			width: 100%;
+			padding: 0 0;
+			margin: 0 0 0 0 !important;
+		}
+		.pd-checkbox .value span {
+			display: flex !important;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		.pd-checkbox .value span label {
+			display: block !important;
+			width: 100%;
+			vertical-align: baseline;
+			padding: 3px 0 0 0 !important;
+			margin: 0 auto 0;
+			color: #000000;
+			text-transform: none;
+			text-align: left;
+			font-size: 16px !important;
+			line-height: 18px !important;
+		}
+		.pd-checkbox .value span input {
+			width: 20px !important;
+			padding: 0 0 0 0;
+			margin-top: 5px;
+			margin-right: 10px ;
+			border: 1px solid #000000;
+		}
+
+		/* :::::::: Media Queries :::::::: */
+		@media only screen and (max-width: 600px) {
+			.form-field {
+				width: 100%;
+			}
+			form.form p.submit input {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+ <!-- MWD Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TC7H6LZ"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+<div class="mainContent container">
+
+	%%content%%
+	
+</div><!-- .mainContent container -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.contentWindow.min.js" integrity="sha256-EH+7IdRixWtW5tdBwMkTXL+HvW5tAqV4of/HbAZ7nEc=" crossorigin="anonymous"></script>
+</body>
+</html>

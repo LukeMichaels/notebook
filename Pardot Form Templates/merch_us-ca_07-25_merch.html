@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+	<title></title>
+	<meta charset="utf-8"><!-- utf-8 works for most cases --><meta name="viewport" content="width=device-width"><!-- Forcing initial-scale shouldn't be necessary --><meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Use the latest (edge) version of IE rendering engine --><meta name="x-apple-disable-message-reformatting"><!-- Disable auto-scale in iOS 10 Mail entirely -->
+	<style type="text/css">
+		body {
+			background-color: #ffffff;
+			margin: 0;
+			padding: 0;
+		}
+		body,
+		table,p
+		td,
+		a {
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+		}
+		table,
+		td {
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+		img {
+		-ms-interpolation-mode: bicubic;
+		}
+		a[x-apple-data-detectors] {
+		color: inherit !important;
+		text-decoration: none !important;
+		font-size: inherit !important;
+		font-family: inherit !important;
+		font-weight: inherit !important;
+		line-height: inherit !important;
+		}
+
+		td.hoverButton:hover,
+		a.hoverButton:hover {
+		color: #ffffff !important;
+		background-color: #f4a000 !important;
+		border-color: #f4a000 !important;
+		transition: background-color .66s, border .66s;
+		}
+
+		td.hoverButton:active,
+		a.hoverButton:active {
+		color: darkgray !important;
+		background-color: lightgray !important;
+		border-color: lightgray !important;
+		transition: background-color 0s, border 0s;
+		}
+
+		a.hoverTextLink {
+		transition: color .5s, text-decoration .25s !important;
+		}
+
+		a.hoverTextLink:hover {
+		text-decoration: underline !important;
+		}
+
+
+		a.hoverTextLink:active {
+		color: #808080 !important;
+		}
+
+		a.hoverSocialIcon:hover {
+		position: relative !important;
+		top: -1px !important;
+
+		}
+
+		a.hoverSocialIcon:active {
+		position: relative !important;
+		top: 1px !important;
+		opacity: .5 !important;
+		}
+
+		td.footerLinkContainer a.hoverTextLink:hover {
+		color: #333 !important;
+		}
+
+
+		/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+		.im {
+				color: inherit !important;
+		}
+
+		/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+		.a6S {
+				display: none !important;
+				opacity: 0.01 !important;
+		}
+		/* If the above doesn't work, add a .g-img class to any image in question. */
+		img.g-img + div {
+				display: none !important;
+		}
+
+		/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+		/* Create one of these media queries for each additional viewport size you'd like to fix */
+
+		/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+		@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+				u ~ div .email-container {
+						min-width: 320px !important;
+				}
+		}
+		/* iPhone 6, 6S, 7, 8, and X */
+		@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+				u ~ div .email-container {
+						min-width: 375px !important;
+				}
+		}
+		/* iPhone 6+, 7+, and 8+ */
+		@media only screen and (min-device-width: 414px) {
+				u ~ div .email-container {
+						min-width: 414px !important;
+				}
+		}
+
+
+
+		@media only screen and (max-width: 600px) {
+
+
+			.mobileProduct {
+					width:160px !important;
+					font-size:16px !important;
+			}
+	
+			td.mobileProduct {
+					width:160px !important;
+					font-size:16px !important;
+			}
+
+			.storeMenu {
+					font-size:12px !important;
+					font-weight:bold !important;
+			}
+	
+			td.storeMenu {
+					font-size:12px !important;
+					font-weight:bold !important;
+			}
+	
+			.responsiveDefault {
+					width: 100% !important;
+					max-width: 100% !important;
+			}
+	
+			.responsiveLogo {
+	
+					max-width: 150px !important;
+			}
+	
+			.responsiveCallout {
+					width: 100% !important;
+					max-width: 216px !important;
+			}
+	
+			.responsiveButton {
+					width: 200px !important;
+			}
+	
+			table.widthContainer {
+					width: 100% !important;
+					max-width: 100% !important;
+			}
+	
+			td.footerLinkContainer {
+					text-align: center !important;
+			}
+	
+			td.widthContainerMargin {
+					padding-left: 0 !important;
+					padding-right: 0 !important;
+			}
+	
+			td.headerContainer {
+					/* shrink the logo a bit */
+					padding-left: 1% !important;
+					padding-right: 1% !important;
+			}
+	
+			td.headlineContainer,
+			td.contentContainer {
+					padding-left: 3% !important;
+					padding-right: 3% !important;
+			}
+	
+			td.footerLinkContainer {
+					padding-top: 5px !important;
+			}
+	
+			table.buttonContainer {
+					width: 100% !important;
+					margin-left: auto !important;
+					margin-right: auto !important;
+			}
+	
+			td.buttonContainer {
+					height: 30px !important;
+			}
+	
+			table.btn-top-center{
+					font-size: 12px !important;
+					line-height: 22px !important;
+			}
+	
+			div.twoUp,
+			table.twoUp,
+			td.twoUp,
+			div.twoUpGoWide,
+			table.twoUpGoWide,
+			td.twoUpGoWide {
+					float: none !important;
+			}
+	
+			div.twoUpGoWide,
+			table.twoUpGoWide,
+			td.twoUpGoWide {
+					width: 100% !important;
+					max-width: 100% !important;
+					text-align: left !important;
+					padding-left: 0 !important;
+					padding-right: 0 !important;
+			}
+	
+			td.calloutContainer {
+					padding-left: 3% !important;
+					padding-right: 3% !important;
+			}
+	
+			table.threeUp {
+					width: 100% !important;
+					margin-left: auto !important;
+					margin-right: auto !important;
+			}
+	
+			div.threeUp {
+					float: none !important;
+			}
+	
+			div.threeUpGoWide {
+					max-width: 100% !important;
+			}
+	
+			div.threeUpWideOnly {
+					display: none !important;
+			}
+	
+			td.threeUp,
+			td.threeUpGoWide {
+					width: 100% !important;
+			}
+	
+			td.threeUpGoWide {
+					text-align: center !important;
+			}
+	
+			table.calloutBtn,
+			td.calloutBtn,
+			div.calloutBtn {
+					/* display: block !important; */
+					margin: 0 auto !important;
+					float: none !important;
+	
+			}
+	
+			.liftnoteHeadline {
+					font-size: 24px !important;
+					line-height: 30px !important;
+			}
+			td.headerLogo{
+					width: 100% !important;
+					max-width: 150px !important;
+					padding-left: 0px !important;
+					padding-right: 0px !important;
+	
+			}
+			table.btn-top, td.btn-top{
+					width: 160px !important;
+					max-width: 160px !important;
+					font-size: 10px !important;
+					line-height: 14px !important;
+			}
+			td.header-btn{
+				width: 160px !important;
+				max-width: 160px !important;
+				padding-left: 10px !important;
+				padding-right: 0px !important;
+			}
+
+			.two-column-mobile, td.two-column-mobile {
+				width: 100% !important;
+			}
+			.two-column-mobile img, td.two-column-mobile img {
+				width: 100% !important;
+				height: auto !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 450px) {
+			td.headlineContainer {
+				font-size: 30px !important;
+				line-height: 34px !important;
+			}
+			td.callout {
+				font-size: 30px !important;
+				line-height: 34px !important;
+			}
+			td.portrait {
+				padding-right: 12px !important;
+			}
+			img.portrait {
+				width: 140px !important;
+			}
+			td.buttonContainer {
+				height: 30px !important;
+			}
+			td.headline {
+				font-size: 27px !important;
+				line-height: 36px !important;
+			}
+			.two-column-mobile, td.two-column-mobile {
+				width: 100% !important;
+			}
+			.two-column-mobile img, td.two-column-mobile img {
+				width: 100% !important;
+				height: auto !important;
+			}
+		}
+	</style>
+	<!-- What it does: Makes background images in 72ppi Outlook render at correct size. --><!--[if gte mso 9]>
+<xml>
+		<o:OfficeDocumentSettings>
+				<o:AllowPNG/>
+				<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+</head>
+<body data-gr-c-s-loaded="true" data-gr-ext-installed="" data-gramm="false" data-new-gr-c-s-check-loaded="14.1028.0" data-new-gr-c-s-loaded="14.1002.0" style="background-color: rgb(255, 255, 255); margin-top: 0px; margin-bottom: 0px; margin-left: 0px; padding: 0px;">
+<!-- preheader -->
+<p style="display:none; ">Are cows your favorite?</p>
+
+<div style="display: none; max-height:0; overflow: hidden;">&nbsp;</div>
+<!-- BACKDROP TABLE -->
+
+<table class="backdrop" style="background-color:#ffffff;margin-left:auto; margin-right:auto;" width="100%" cellspacing="0" cellpadding="0" align="center">
+	<tbody>
+		<tr>
+			<td><!-- WIDTH LIMITER -->
+			<table class="widthContainer responsiveDefault" style="width: 600px; max-width: 600px; margin-left:auto; margin-right:auto;" width="600" cellspacing="0" cellpadding="0" align="center">
+				<tbody>
+					<tr>
+						<td class="widthContainerMargin" style="padding:20px 0;"><!-- MAIN EMAIL STACK -->
+						<table class="emailStack responsiveDefault" width="600" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td class="emailBorderBackground" style="padding:0; background-color:#fff;">
+									<table class="emailContentStack responsiveDefault" width="600" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td class="headerContainer" style="padding: 0px; font-family:arial,sans-serif; color:#010101; font-size:16px; line-height:24px; font-weight:normal;">
+												<table width="100%" cellspacing="0" cellpadding="0" border="0" align="left">
+													<tbody>
+														<tr>
+															<td class="headerLogo" style="padding-left: 0px;display:inline-block;width:150px;text-align:left;" valign="middle" height="100%" align="left"><a data-id="7707" href="https://mercyforanimals.org/?utm_campaign=2022---Merch-Email-FY22-]%20merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=header-menu&amp;utm_term=-"><img alt="Mercy For Animals" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10040/MERCY_FOR_ANIMALS_LOGO_440X86.png?v=1552411786000" style="padding-bottom: 10px; display: block; border: 0px; width: 150px; height: auto;" width="150"> </a></td>
+															<td style="padding-right:0px;padding-bottom:10px;" height="100%">
+															<table width="100%" cellspacing="0" cellpadding="0" border="0">
+																<tbody>
+																	<tr>
+																		<td>
+																		<table style="display:inline-block;vertical-align:middle;" cellspacing="0" cellpadding="5" border="0" align="right">
+																			<tbody><!--begin menu-->
+																				<tr>
+																					<td class="storeMenu" style="display:inline-block:vertical-align:bottom; font-family:Arial, sans-serif; color:#000000; font-size:16px; line-height:14px; text-align:left;white-space:nowrap;"><a data-custom-urls-enabled="false" data-id="7707" href="https://store.mercyforanimals.org/collections/logo?utm_campaign=2022---Merch-Email-FY22-]%20merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=header-menu&amp;utm_term=-o" style="color:#000000;font-weight:normal;text-decoration:none;" target="_blank">LOGO</a></td>
+																					<td class="storeMenu" style="display:inline-block:vertical-align:bottom;font-family:Arial, sans-serif; color:#000000;  font-size:16px; line-height:14px; text-align:left;white-space:nowrap;"><a data-custom-urls-enabled="false" data-id="7707" href="https://store.mercyforanimals.org/collections/shirts?utm_campaign=2022---Merch-Email-FY22-]%20merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=header-menu&amp;utm_term=-" style="color:#000000;font-weight:normal;text-decoration:none;" target="_blank">APPAREL</a></td>
+																					<td class="storeMenu" style="display:inline-block:vertical-align:bottom; font-family:Arial, sans-serif; color:#f99338;  font-size:16px; line-height:14px; text-align:left;white-space:nowrap;"><a data-custom-urls-enabled="false" data-id="7707" href="https://store.mercyforanimals.org/collections/sale?utm_campaign=2022---Merch-Email-FY22-]%20merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=header-menu&amp;utm_term=-" style="color: rgb(231, 61, 66); font-weight: normal; text-decoration: none;" target="_blank">SALE</a></td>
+																					<td class="storeMenu" style="display:inline-block:vertical-align:bottom;font-family:Arial, sans-serif; color:#0666f2;  font-size:16px; line-height:14px; text-align:left;white-space:nowrap;"><a href="https://act.mercyforanimals.org/page/she-needs-you/donation-form-13??utm_campaign=2022---Merch-Email-FY22-]%20merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=header-menu&amp;utm_term=-" style="color:#0666f2;font-weight:normal;text-decoration:none;" target="_blank">DONATE</a></td>
+																				</tr>
+																				<!--end menu-->
+																			</tbody>
+																		</table>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+											<!-- FEATURE IMAGE  -->
+											<tr>
+												<td class="featureContainer" style="padding:0; font-family:arial,sans-serif; color:#010101; font-size:16px; line-height:24px; font-weight:normal; text-align:center;">
+												<table style="margin-left:auto; margin-right:auto;" cellspacing="0" cellpadding="0" align="center">
+													<tbody>
+														<tr>
+															<td style="padding:0px;font-family:arial,sans-serif; color:#010101; font-size:16px; line-height:24px; font-weight:normal;" class=""><a data-id="7707" href="https://store.mercyforanimals.org/collections/marvelous-moo-cows?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="%" src="https://go.mercyforanimals.org/l/939853/2022-07-25/32jrn/939853/1658770293O5zyqkqq/Merch_Alert.gif" style="width: 100%;" width="100"></a></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table class="emailContentStack responsiveDefault" width="100%" cellspacing="0" cellpadding="0">
+							<tbody><!-- HEADLINE  --><!-- BODY TEXT SECTION -->
+								<tr>
+									<td class="contentContainer" style="padding-top:px; font-family:arial,sans-serif; color:#010101; font-size:18px; line-height:24px; font-weight:normal; text-align:left;">
+									<table style="color: rgb(1, 1, 1); font-family: arial, sans-serif; font-size: 18px; text-align: center;" width="100%" cellspacing="0" cellpadding="5">
+										<tbody>
+											<tr>
+												<td class="mobileProduct" style="display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><a data-id="7707" href="https://store.mercyforanimals.org/collections/marvelous-moo-cows/products/kindness-exercise-mat?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="%" src="https://go.mercyforanimals.org/l/939853/2022-07-25/32jrg/939853/1658770201JeEbWfam/Thumbnail_Yoga.png" style="width: 100%;" width="100"></a></td>
+												<td class="mobileProduct" style="display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><a data-id="7707" href="https://store.mercyforanimals.org/collections/marvelous-moo-cows/products/mercy-for-animals-plush-hoodie?variant=41785980256433?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="%" src="https://go.mercyforanimals.org/l/939853/2022-07-25/32jr2/939853/1658770201GgAC2eRo/Thumbnail_Hoodie.png" style="width: 100%;" width="100"></a></td>
+											</tr>
+											<tr>
+												<td class="mobileProduct" style="display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><span style="font-family:Verdana,Geneva,sans-serif;"><a data-id="7707" href="https://store.mercyforanimals.org/collections/marvelous-moo-cows/products/kindness-exercise-mat?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-" style="color: rgb(6, 102, 242); text-decoration-line: none;"><strong>‘Kindness’ Exercise Mat</strong></a><br>
+												$70</span></td>
+												<td class="mobileProduct" style="display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><span style="font-family:Verdana,Geneva,sans-serif;"><a data-id="7707" href="https://store.mercyforanimals.org/collections/marvelous-moo-cows/products/mercy-for-animals-plush-hoodie?variant=41785980256433?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-" style="  font-weight: normal;text-decoration:none;color: #0666f2;"><strong>Mercy For Animals Plush Hoodie</strong></a><br>
+												$76</span></td>
+											</tr>
+										</tbody>
+									</table>
+									&nbsp;
+
+									<table style="color: rgb(1, 1, 1); font-family: arial, sans-serif; font-size: 18px; text-align: center;" width="100%" cellspacing="0" cellpadding="5">
+										<tbody style="">
+											<tr style="text-decoration-line: none;">
+												<td class="mobileProduct" style="display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><a data-id="7707" href="https://store.mercyforanimals.org/collections/marvelous-moo-cows/products/holiday-compassion-candle-13-75-oz-calf?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="%" src="https://go.mercyforanimals.org/l/939853/2022-07-25/32jqr/939853/1658770200uWtPUdzt/Thumbnail_Candle.png" style="width: 100%;" width="100"></a></td>
+												<td class="mobileProduct" style="display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><a data-id="7707" href="https://store.mercyforanimals.org/collections/marvelous-moo-cows/products/cow-flower-sweatshirt?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="%" src="https://go.mercyforanimals.org/l/939853/2022-07-25/32jr5/939853/1658770201wcfpCyO2/Thumbnail_Sweatshirt.png" style="width: 100%;" width="100"></a></td>
+											</tr>
+											<tr style="">
+												<td class="mobileProduct" style="text-decoration-line: none; display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><span style="font-family:Verdana,Geneva,sans-serif;"><a data-id="7707" href="https://store.mercyforanimals.org/collections/marvelous-moo-cows/products/holiday-compassion-candle-13-75-oz-calf?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-" style=" font-weight: normal; text-decoration:none;color: #0666f2;"><strong>Compassion Candle, Calf</strong></a><br>
+												$28</span></td>
+												<td class="mobileProduct" style="display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><span style="font-family:Verdana,Geneva,sans-serif;"><span style="font-size:18px;"><a data-id="7707" href="https://store.mercyforanimals.org/collections/marvelous-moo-cows/products/cow-flower-sweatshirt?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-" style="color: rgb(6, 102, 242); font-weight: normal; text-decoration: none;"><strong>Cow Flower Sweatshirt</strong></a></span><a data-id="null" href="https://store.mercyforanimals.org/collections/marvelous-moo-cows/products/cow-flower-sweatshirt?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-" style="color: rgb(6, 102, 242); font-weight: normal; text-decoration: none;"><strong>&nbsp;</strong></a><br>
+												$28</span></td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table style="text-align:center;" width="100%" cellspacing="0" cellpadding="" bgcolor="#F5F6F6">
+										<tbody><!--item one-->
+											<tr>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="footerContainer" style="padding:0px 0; border-top:0px solid #707070; "><a href="https://store.mercyforanimals.org/collections/marvelous-moo-cows/products/boho-herd-bundle?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=lifestyle&amp;utm_term=-&amp;EN_Campaign_Id=-"><img alt="" src="https://go.mercyforanimals.org/l/939853/2022-07-25/32jrr/939853/1658770294JMfUUH79/Lifestyle_Image.png" style="width: 100%; border-width: 0px; border-style: solid;" width="100" border="0"></a></td>
+					</tr>
+					<tr>
+						<td>
+						<table width="100%" cellspacing="0" cellpadding="" border="0">
+							<tbody>
+								<tr>
+									<td class="contentContainer en__component en__component--textblock" style="padding:20px %; font-family:arial,sans-serif; color:#010101 ; font-size:10px; line-height:px; font-weight:; text-align:center;" width="100%" bgcolor="#F5F6F6">
+									<table width="100%" cellspacing="10" cellpadding="10" border="0">
+										<tbody>
+											<tr>
+												<td class="contentContainer en__component en__component--textblock" style="color: rgb(1, 1, 1); text-align: center;" width="100%">
+												<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><br>
+												<span style="font-family:Verdana,Geneva,sans-serif;"><span style="font-size: 18px; white-space: pre-wrap;">We have everything you need to show off your big heart for cute cows everywhere. Thank you for your continued support of Mercy For Animals’ vital work. </span></span></p>
+												</td>
+											</tr>
+											<tr>
+												<td class="contentContainer en__component en__component--textblock" style="font-family: arial, sans-serif; color: rgb(1, 1, 1); font-size: 16px; text-align: center;" width="100%">
+												<table style="color: rgb(1, 1, 1); font-family: arial, sans-serif; font-size: 28px; font-weight: 700; text-align: center; margin-left: auto; margin-right: auto;" cellspacing="0" cellpadding="0" align="center">
+													<tbody>
+														<tr>
+															<td class=""><a data-custom-urls="" data-custom-urls-enabled="true" data-id="7707" href="https://store.mercyforanimals.org?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-" style="text-size-adjust: none; background-color: rgb(6, 102, 242); display: inline-block; line-height: 50px; width: 300px; color: rgb(255, 255, 255); text-decoration-line: none;">SHOP NOW</a></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="contentContainer en__component en__component--textblock" style="padding:px %; font-family:arial,sans-serif; color:#010101; font-size:16px; line-height:px; font-weight:; text-align:center;" width="100%">
+									<table style="color: rgb(1, 1, 1); font-family: arial, sans-serif; font-size: 18px; text-align: center;" width="100%" cellspacing="0" cellpadding="5">
+										<tbody>
+											<tr>
+												<td class="mobileProduct" style="display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><a data-id="7707" href="https://store.mercyforanimals.org/collections/marvelous-moo-cows/products/copy-of-love-notions-boots?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="%" src="https://go.mercyforanimals.org/l/939853/2022-07-25/32jqv/939853/1658770200z3RBk71A/Thumbnail_Boots.png" style="width: 100%;" width="100"></a></td>
+												<td class="mobileProduct" style="display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><a data-id="7707" href="https://store.mercyforanimals.org/collections/marvelous-moo-cows/products/kindness-throw-blanket-calf?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="%" src="https://go.mercyforanimals.org/l/939853/2022-07-25/32jrc/939853/1658770201lfFEVAvC/Thumbnail_Throw.png" style="width: 100%;" width="100"></a></td>
+											</tr>
+											<tr>
+												<td class="mobileProduct" style="display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><span style="font-family:Verdana,Geneva,sans-serif;"><strong style="color: rgb(6, 102, 242); text-decoration-line: none;"><a data-id="7707" href="https://store.mercyforanimals.org/collections/marvelous-moo-cows/products/copy-of-love-notions-boots?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-" style=" text-decoration-line: none;color: #0666f2;">‘Love’ Notions Boots</a></strong><strong style="color: rgb(6, 102, 242); text-decoration-line: none;"><a data-id="7707" href="https://store.mercyforanimals.org/collections/marvelous-moo-cows/products/copy-of-love-notions-boots?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-" style="color: rgb(6, 102, 242); text-decoration-line: none;">&nbsp;</a></strong><br>
+												$95</span></td>
+												<td class="mobileProduct" style="display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><span style="font-family:Verdana,Geneva,sans-serif;"><a data-id="7707" href="https://store.mercyforanimals.org/collections/marvelous-moo-cows/products/kindness-throw-blanket-calf?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-" style="color: rgb(6, 102, 242); text-decoration-line: none;"><strong>‘Kindness’ Throw, Calf</strong></a><br>
+												$66</span></td>
+											</tr>
+											<tr>
+												<td class="mobileProduct" style="display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><a data-id="7707" href="https://store.mercyforanimals.org/collections/marvelous-moo-cows/products/shine-t-cow-2?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="%" src="https://go.mercyforanimals.org/l/939853/2022-07-25/32jr8/939853/1658770201Fygc6Q3b/Thumbnail_T.png" style="height: auto; width: 100%;" width="100%" height="auto"></a></td>
+												<td class="mobileProduct" style="display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><a data-id="7707" href="https://store.mercyforanimals.org/collections/home/products/believe-giclee-art-print?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="%" src="https://go.mercyforanimals.org/l/939853/2022-07-25/32jqy/939853/1658770201AzE7MBAg/Thumbnail_Print.png" style="height: auto; width: 100%;" width="100%" height="auto"></a></td>
+											</tr>
+											<tr>
+												<td class="mobileProduct" style="display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><span style="font-family:Verdana,Geneva,sans-serif;"><a data-id="7707" href="https://store.mercyforanimals.org/collections/marvelous-moo-cows/products/shine-t-cow-2?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-" style="color: rgb(6, 102, 242); font-weight: normal; text-decoration: none;"><strong>‘Shine’ T, Cow</strong></a><br>
+												$20</span></td>
+												<td class="mobileProduct" style="display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><span style="font-family:Verdana,Geneva,sans-serif;"><a data-id="7707" href="https://store.mercyforanimals.org/collections/home/products/believe-giclee-art-print?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-" style="color: rgb(6, 102, 242); text-decoration-line: none;"><strong>‘Be Kind’ Art Print</strong></a><br>
+												$25</span></td>
+											</tr>
+											<tr>
+												<td class="mobileProduct" style="display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><font face="Verdana, Geneva, sans-serif"><b>&nbsp;</b></font></td>
+												<td class="mobileProduct" style="display: inline-block; vertical-align: top; width: 265px; margin-top: 10px;" width="300"><font face="Verdana, Geneva, sans-serif"><b>&nbsp;</b></font></td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table style="color: rgb(1, 1, 1); font-family: arial, sans-serif; font-size: 18px; text-align: center;" width="100%" cellspacing="0" cellpadding="0" bgcolor="#F5F6F6">
+										<tbody>
+											<tr>
+												<td class="two-column-mobile mobileProduct" pardot-data="" style="display: inline-block; vertical-align: top; margin-top: 0px; background: rgb(245, 246, 246);" width="300" height="432" bgcolor="#F5F6F6">
+													<div style="text-align: left; padding-left: 20px;"><br>
+														<span style="font-size:22px; font-variant: normal; white-space: pre-wrap; font-family:Arial; color:#000000; font-weight:700; font-style:normal; text-decoration:none;">Every purchase you make </span><span style="color:#0666f2;"><span style="font-weight:700"><span style="font-style:normal"><span style="text-decoration:none">helps us help animals</span></span></span></span><span style="color:#000000"><span style="font-weight:700"><span style="font-style:normal"><span style="text-decoration:none">.</span></span></span></span></span></span></span><br><br>
+														<span bgcolor="#F5F6F6" style="font-size:18px;"><span style="font-family:Verdana,Geneva,sans-serif; font-variant: normal; white-space: pre-wrap; text-decoration:none">Our groundbreaking investigations expose animal cruelty at factory farms and slaughterhouses, driving major changes to corporate animal welfare policies.</span>
+													</div><br><br>
+													<span style="font-family:Verdana,Geneva,sans-serif;"><strong><a data-custom-urls="" data-custom-urls-enabled="true" data-id="7707" href="https://store.mercyforanimals.org?utm_campaign=2022-07-25-Cow-Theme-FY22-merch&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=banner-button&amp;utm_term=-happy-" style="text-size-adjust: none; background-color: rgb(6, 102, 242); display: inline-block; line-height: 50px; width: 200px; color: rgb(255, 255, 255); text-decoration-line: none;">SHOP NOW</a></strong></span>
+												</td>
+												<td class="two-column-mobile mobileProduct" pardot-data="" style="display: inline-block; vertical-align: top; width: 293px; margin-top: 0px; background: rgb(245, 246, 246);" width="300" bgcolor="#F5F6F6"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="%" src="https://go.mercyforanimals.org/l/939853/2022-07-25/32jng/939853/1658762911pOBQS9zz/UNDERCOVER_INVESTIGATIONS_1.png" style="width: 270px; height: 432px; float: right; margin: 0px; border-width: 0px; border-style: solid;" width="270" height="432" border="0" align="right"></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<!--end bottom copy--><!-- FOOTER -->
+					<tr>
+						<td class="footerContainer" style="padding:0px 0; border-top:0px solid #707070; " bgcolor="#F5F6F6">
+						<table style="color: rgb(1, 1, 1); font-family: arial, sans-serif; font-size: 18px; text-align: center;" width="100%" cellspacing="0" cellpadding="5">
+							<tbody>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="footerContainer" style="padding:0px 0; border-top:0px solid #707070; ">
+						<table 100="" style="margin-left:auto; width=" width="100%" cellspacing="0" cellpadding="0" align="center">
+							<tbody>
+								<tr>
+									<td style="padding:px 0; font-family:Verdana,Geneva,sans-serif; color:#babdbe; font-size:14px; line-height:24px; font-weight:normal; text-align:right;" bgcolor="#0666f2">
+									<table style="width:100%;" cellspacing="" cellpadding="9px" border="0">
+										<tbody>
+											<tr>
+												<td class="">
+												<p style="text-align: left;"><span style="font-family:Verdana,Geneva,sans-serif;"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="px" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10040/MFA-LOGO-WHT.png?v=1627473783000" style="height: 34px; width: 175px;" width="175" height="34"></span></p>
+
+												<p bgcolor="#0666f2" style="text-align: left;"><span style="font-family:Verdana,Geneva,sans-serif;"><span style="color: rgb(255, 255, 255); font-size: 14px; text-align: center;">8033 Sunset Blvd., Ste. 864<br>
+												Los Angeles, CA 90046<br>
+												866-632-6446</span></span></p>
+												</td>
+												<td color:="" rgb="" style="text-align: right;style=" class="">
+												<p><span style="font-family:Verdana,Geneva,sans-serif;"><a href="https://act.mercyforanimals.org/page/she-needs-you/donation-form-13?" style="color:#0666f2;"><span style="color:#f99338;"><span style="font-size: 14px; text-align: center; background-color: rgb(6, 102, 242);"><strong>Donate Today</strong></span></span></a><br>
+												<span style="font-size: 14px; text-align: center; background-color: rgb(6, 102, 242);"><a data-id="7707" href="https://mercyforanimals.org/impact/?utm_campaign=2021-07-21-general-emailfooter-impact-digital-marketing&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=footerlink&amp;utm_term=-"><span style="color:#FFFFFF;">Your Impact</span></a></span><br>
+												<span style="font-size: 14px; text-align: center; background-color: rgb(6, 102, 242);"><a data-id="7707" href="https://store.mercyforanimals.org/?utm_campaign=2021-07-21-general-emailfooter-shop-digital-marketing&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=footerlink&amp;utm_term=--"><span style="color:#FFFFFF;">ShopMFA.com</span></a></span><br>
+												<span style="font-size: 14px; text-align: center; background-color: rgb(6, 102, 242);"><a data-id="7707" href="https://mercyforanimals.org/action-center/?utm_campaign=2021-07-21-general-emailfooter-action-digital-marketing&amp;utm_medium=email&amp;utm_source=ealert&amp;utm_content=footerlink&amp;utm_term=-"><span style="color:#FFFFFF;">Take Action</span></a></span><br>
+												<img alt="" emailimage="" style="display:block class="><a data-id="7707" href="https://instagram.com/mercyforanimals"><img alt="" class="emailImage" data-ratio-lock="true" data-unit="px" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10040/IG.png?v=1627489148000" style="margin-left: 10px; margin-top: 5px; width: 30px;" width="30" height=""></a><a data-id="7707" href="https://www.facebook.com/mercyforanimals"><img alt="" class="display:block" data-ratio-lock="true" data-unit="px" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10040/Facebook.png?v=1627489149000" style="margin-left: 10px; width: 30px;" width="30" height=""></a><a data-id="7707" href="https://twitter.com/mercyforanimals"><img alt="" class="display:block" data-ratio-lock="true" data-unit="px" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10040/Twitter.png?v=1627489146000" style="margin-left: 10px; width: 30px;" width="30" height=""></a></span></p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td bg-color:="0666f2" style="text-align: center;" class=""><br>
+									<span style="font-size:11px;"><span style="font-family:Verdana,Geneva,sans-serif;"><a class="hoverTextLink" href="{{view_online}}" style="display: inline-block; color:#babdbe;" target="_blank"><span style="color:#696969;">view this email in a browser</span></a><span style="color:#696969;"> &nbsp;|&nbsp; </span><a class="hoverTextLink" href="{{{EmailPreferenceCenter_709}}}" rel="nofollow,noreferrer" style="display: inline-block; " target="_blank"><span style="color:#696969;">manage subscriptions</span></a><span style="color:#696969;"> &nbsp;|&nbsp; </span><a class="hoverTextLink" href="https://mercyforanimals.org/privacy-policy" style="display: inline-block; color:#babdbe;" target="_blank"><span style="color:#696969;">privacy policy</span></a><span style="color:#696969;"> &nbsp;|&nbsp; </span><a class="hoverTextLink" href="https://www.mercyforanimals.org/state-fundraising-notices" style="display: inline-block;color:#babdbe; " target="_blank"><span style="color:#696969;">state fundraising notices</span></a></span></span></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- WIDTH LIMITER --><!-- BACKDROP TABLE --><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</body>
+</html>

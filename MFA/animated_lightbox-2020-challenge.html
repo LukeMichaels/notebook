@@ -1,0 +1,193 @@
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<style>
+	.flexslider {
+		margin: 0;
+		background: none;
+		border: none;
+		border-radius: 0;
+	}
+
+	.flexslider img,
+	.flexslider li {
+		height: 500px;
+	}
+
+	.flexslider img {
+		object-fit: cover;
+		object-position: left top;
+		width: 100%;
+	}
+		
+	.pop-up-container {
+		background: rgba(0,0,0,.70);
+		bottom: 0;
+		display: none;
+		height: 100%;
+		left: 0;
+		overflow: auto;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 100%;
+		z-index: 99999;
+	}
+
+	.pop-up-content {
+		align-items: center;
+		background: #fff;
+		display: flex;
+		margin: 0 auto;
+		max-width: 700px;
+		top: 20%;
+		width: 80%;
+		position: relative;
+	}
+
+	.text-block {
+		background: #fff;
+		padding: 0 5%;
+	}
+
+	.text-block h3,
+	.text-block a {
+		text-transform: none;
+	}
+
+	.text-block h3 {
+		font-size: 36px;
+		letter-spacing: 2px;
+		margin-bottom: 30px;
+	}
+
+	.text-block .btn-v2.btn--primary {
+		font-size: 24px;
+		letter-spacing: 0;
+	}
+
+	.flexslider,
+	.text-block {
+		display: inline-block;
+		width: 49%;
+	}
+
+	#main-pop-close {
+		color: #0666f2;
+		cursor: pointer;
+		position: absolute;
+		right: -20px;
+		top: -20px;
+		z-index: 100;
+	}
+
+	#main-pop-close .fa-2x {
+		font-size: 1.5em;
+	}
+
+	.call-to-action {
+		background-color: #fbcc00 !important;
+		text-align: center;
+	}
+	.call-to-action:hover {
+		background-color: #054edc;
+	}
+
+	@media only screen and (max-width: 1024px) {
+		.flexslider,
+		.text-block {
+			width: 100%;
+		}
+
+		.pop-up-content {
+			display: block;
+		}
+
+		.pop-up-content h3 {
+			font-size: 24px;
+			margin-top: 30px;
+		}
+
+		.pop-up-content .mb30 {
+			margin-bottom: 15px !important;
+		}
+
+		.text-block {
+			padding-bottom: 30px;
+		}
+
+		.text-block a {
+			display: block;
+			text-align: center;
+		}
+	}
+
+	@media only screen and (max-width: 767px) {
+		.flexslider img,
+		.flexslider li {
+			height: 200px;
+		}
+	}
+</style>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		jQuery(document).ready(function($) {
+			// Display popup after delay
+			setTimeout(function(){
+				$(".pop-up-container").show('slow');
+
+				// Disable scrolling while popup is active
+				$("html").css({
+					overflow: "hidden",
+					height: "100%"
+				});
+			}, 8000);
+			// Close popup
+			$(".closeButton").click(function() {
+				$(".pop-up-container").attr("style", "display: none !important");
+				// Re-enable scrolling
+				$("html").css({
+					overflow: "auto",
+					height: "auto"
+				});
+			});
+			// Slider animation
+			$('.flexslider').flexslider({
+					animation: 'fade',
+					slideshowSpeed: 2000,
+					directionNav: false, 
+			});
+
+		}); /*end jquery*/
+	});
+</script>
+
+<div class="pop-up-container">
+	<div class="pop-up-content">
+		<div id="main-pop-close" class="closeButton">
+			<span class="fa-stack fa-2x">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fas fa-times fa-stack-1x fa-inverse" aria-hidden="true"></i>
+			</span>
+		</div>
+		<div class="flexslider">
+			${if isMobile()}
+				<ul class="slides">
+					<li><img src="https://mfa.cachefly.net/mfa/images/uploads/2020/07/2020-Mobile-1.png"/></li>
+					<li><img src="https://mfa.cachefly.net/mfa/images/uploads/2020/07/2020-Mobile-2.png"/></li>
+					<li><img src="https://mfa.cachefly.net/mfa/images/uploads/2020/07/2020-Mobile-3.png"/></li>
+				</ul>
+			${else}
+				<ul class="slides">
+					<li><img src="https://mfa.cachefly.net/mfa/images/uploads/2020/07/2020-Desktop-1.png"/></li>
+					<li><img src="https://mfa.cachefly.net/mfa/images/uploads/2020/07/2020-Desktop-2.png"/></li>
+					<li><img src="https://mfa.cachefly.net/mfa/images/uploads/2020/07/2020-Desktop-3.png"/></li>
+				</ul>
+			${endif}
+		</div>
+		<div class="text-block">
+			<h3 class="mb30"></h3>
+			<p class="mb30">The 20/20 Challenge is a new campaign to raise money and awareness for our mission to end the exploitation of animals for food—and you can be part of it! </p>
+			<a class="btn btn-v2 btn--primary call-to-action" style="background-color:#fbcc00;" href="https://2020challenge.funraise.org" target="_blank">Join Now</a>
+		</div>
+	</div>
+</div>

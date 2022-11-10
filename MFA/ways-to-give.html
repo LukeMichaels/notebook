@@ -1,0 +1,441 @@
+<style type='text/css'>
+	.overlay {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url(themes/mfa/images/overlay.png);
+		background-size: cover;
+	}
+	.row {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 1060px;
+		padding: 0 20px;
+		margin: 0 auto;
+	}
+</style>
+
+<style type='text/css'>
+	/* :::::::::: hero */
+	.hero {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		width: 100%;
+		height: 535px;
+		color: #FFFFFF;
+		background: url('https://mfa.cachefly.net/mfa/images/uploads/2018/05/clube-de-membros-hero.jpg') no-repeat;
+		background-position: center right;
+		background-size: cover;
+	}
+	.hero .copy-wrap {
+		margin: auto;
+		text-align: center;
+	}
+	.hero h1 {
+		width: 100%;
+		color: #FFFFFF;
+		text-align: center;
+		margin: 0 0 0rem;
+	}
+	.hero .copy {
+		width: 100%;
+	}
+	.hero .copy .line {
+		display: block;
+		width: 100%;
+		color: #FFFFFF;
+	}
+	#hero.hero .hero__inner {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	@media only screen and (min-width: 1400px) {
+		.hero--parallax {
+			height: 700px;
+		}
+	}
+</style>
+<section id="hero" class="hero--parallax hero--about">
+	<div class="parallax__bg" data-center="background-position: 50.000% 0px;"
+		data-top-bottom="background-position: 50.000% -100px;" data-anchor-target="#hero"
+		style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2019/02/1200x630/rb-hero-calves.jpg)" ;>
+	</div>
+	<div class="parallax__bg" data-center="background-position: 50.000% 0px;"
+		data-top-bottom="background-position: 50.000% -100px;" data-anchor-target="#hero"
+		style="position:absolute;top:0px;left:0px;background-image:url(themes/mfa/images/overlay.png)">
+		<div class="parallax__container">
+			<div class="parallax__content" data-top="opacity: 0.5" data-100-top="opacity: 1" data-anchor-target="h1">
+				<h1>Donate today to help farmed animals<h5>You can support the vital work of Mercy For Animals by donating today!</h5>
+				</h1>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style type='text/css'>
+	.forceHide #team-expander,
+	.forceHide .team-tile.team-tile--active:after {
+		display: none !important;
+	}
+	.team-row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.team-tile {
+		width: 25%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.circle {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 155px !important;
+		height: 155px !important;
+		margin: 20px 20px 20px 20px;
+		border: 4px solid #f3f3f3;
+		cursor: pointer;
+		color: #0666f2;
+		-moz-transition: all 100ms linear;
+		-o-transition: all 100ms linear;
+		-webkit-transition: all 100ms linear;
+		transition: all 100ms linear;
+	}
+	.circle:hover {
+		border: 4px solid #0666f2;
+	}
+	.more-info {
+		max-width: 575px;
+		padding: 80px 20px 0;
+		margin: 0 auto;
+		color: #393939;
+		text-align: center;
+		font-family: "Gotham Pro","Gotham A","Gotham B",Gotham,Helvetica,"Helvetica Neue",Arial,sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.5;
+		text-rendering: optimizeLegibility;
+	}
+	.more-info p {
+		width: 100%;
+	}
+	.more-info a {
+		width: 100%;
+		color: #f99338;
+		text-decoration: none;
+	}
+	.federal-retiree {
+		display: flex; flex-wrap: wrap; align-items: center;
+	}
+	.federal-retiree h3 { width: 100%; color: #393939; text-align: left; font-size: 18px; }
+	.federal-retiree p { width: 100%; color: #393939; text-align: left; font-size: 14px; line-height: 16px; }
+	@media only screen and (max-width: 980px) {
+		.team-tile {
+			width: 33%;
+		}
+	}
+	@media only screen and (max-width: 750px) {
+		.federal-retiree div { padding: 0 20px; }
+	}
+	@media only screen and (max-width: 600px) {
+		.team-tile {
+			width: 50%;
+		}
+	}
+	@media only screen and (max-width: 400px) {
+		.team-tile {
+			width: 100%;
+		}
+	}
+</style>
+<section class="team-grid section--medium" id="other-ways">
+	<div class="container--full text-center">
+		<div class="team-row">
+			<div class="team-tile span2" onclick="window.location='securities';document.getElementById('other-ways').classList.add('forceHide')">
+				<div class="circle">
+					<img style="max-width: 54%;" src="https://mfa.cachefly.net/mfa/images/uploads/2019/02/rb-stocks.jpg" alt="Stock Donation" />
+				</div>
+			</div>
+			<div class="team-tile span2" onclick="window.location='will';document.getElementById('other-ways').classList.add('forceHide')">
+				<div class="circle">
+					<img style="max-width: 80%;" src="https://storage.googleapis.com/file-cdn.mercyforanimals.org/mfa/images/Legacy_Gifts-v2.png"
+						alt="The Legacy Society" />
+				</div>
+			</div>
+			<div class="team-tile span2" onclick="window.location='https://give.mercyforanimals.org/page/9687/donate/1';document.getElementById('other-ways').classList.add('forceHide')">
+				<div class="circle">
+					<img style="max-width: 56%;" src="https://mfa.cachefly.net/mfa/images/uploads/2019/02/tribute_gifts.png"
+						alt="Tribute Gifts" />
+				</div>
+			</div>
+			<!-- <div class="team-tile span2" onclick="window.location='https://2020challenge.funraise.org/';document.getElementById('other-ways').classList.add('forceHide')">
+				<div class="circle">
+					<img style="max-width: 80%;" src="https://storage.googleapis.com/file-cdn.mercyforanimals.org/mfa/images/2020-Challenge-v4.png"
+						alt="Fundraise for MFA" />
+				</div>
+			</div> -->
+			<div class="team-tile span2" onclick="window.location='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=L2PV7PNTDEBQ8';document.getElementById('other-ways').classList.add('forceHide')">
+				<div class="circle">
+					<img style="max-width: 61%;" src="https://mfa.cachefly.net/mfa/images/uploads/2018/10/paypal.gif" alt="Paypal" />
+				</div>
+			</div>
+			<div class="team-tile span2" onclick="window.location='crypto';document.getElementById('other-ways').classList.add('forceHide')">
+				<div class="circle">
+					<img style="max-width: 70%;" src="https://mercyforanimals.org/mercy4animals.wpengine.com/sites/517/2021/04/Cryptocurrency.png"
+						alt="Cryptocurrency Donations" />
+				</div>
+			</div>
+			<div class="team-tile span2" onclick="window.location='property-gifts';document.getElementById('other-ways').classList.add('forceHide')">
+				<div class="circle">
+					<img style="max-width: 54%;" src="https://mfa.cachefly.net/mfa/images/uploads/2019/02/rb-property-donation.jpg"
+						alt="Property Donation" />
+				</div>
+			</div>
+			<div class="team-tile span2" onclick="window.location='https://rcforward.org/charity/mercy-for-animals/';document.getElementById('other-ways').classList.add('forceHide')">
+				<div class="circle">
+					<img style="max-width: 72%;" src="https://mercyforanimals.org/mercy4animals.wpengine.com/sites/517/2021/04/RCForward.png"
+						alt="RC Forward Canada Donations" />
+				</div>
+			</div>
+			<div class="team-tile span2" onclick="window.location='https://give.mercyforanimals.org/page/13626/donate/1?_ga=2.93488798.2029440149.1601301722-1447309145.1593552420';document.getElementById('other-ways').classList.add('forceHide')" >
+				<div class="circle">
+					<img style="max-width: 100%;" src="https://storage.googleapis.com/file-cdn.mercyforanimals.org/mfa/images/Donate_Today-v2.png"
+						alt="Donate Today" />
+				</div>
+			</div>
+			<div class="team-tile span2" onclick="window.location='https://www.freewill.com/mercy-for-animals?utm_source=partner&utm_medium=plannedgivingpage&utm_campaign=mercy-for-animals_website';document.getElementById('other-ways').classList.add('forceHide')">
+				<div class="circle">
+					<img style="max-width: 54%;" src="https://mercyforanimals.org/mercy4animals.wpengine.com/sites/517/2021/04/Freewill-DONATION.png" alt="Freewill Donation" />
+				</div>
+			</div>
+			<div class="team-tile span2" onclick="window.location=' https://givecfc.org/Home';document.getElementById('other-ways').classList.add('forceHide')">
+				<div class="circle">
+					<img style="max-width: 54%;" src="https://mercyforanimals.org/mercy4animals.wpengine.com/sites/517/2021/08/CFC_Icon.png" alt="CFC Approved Charity" />
+				</div>
+			</div>
+			<div class="federal-retiree span6">
+				<div>
+					<h3>Are you a federal employee or retiree?</h3>
+					<p>If you are a federal employee or retiree, you can participate in the Combined Federal Campaign (CFC) and support Mercy For Animals through a one-time donation or payroll deduction by selecting CFC number 30027. Did you pledge volunteer time through the CFC? Find volunteer opportunities by contacting our volunteer coordinator <a href="mailto:organizing@mercyforanimals.org">here</a>.</p>
+				</div>
+			</div>
+		</div><!-- .team-row -->
+
+		<script>var _msdaf_id= 'a75b8e708c11b'</script> <script src='https://app.dafwidget.com/api/js/source.js'></script>
+
+		<div class="more-info">
+			<p>If you have any questions about ways to give, including wire transfers, please call or email us.</p>
+			<p>Rachel Mazzagatti</p>
+			<p><a href="mailto:RachelM@MercyForAnimals.org">RachelM@MercyForAnimals.org</a></p>
+			<p><a href="tel:3238225124">323-822-5124</a></p>
+		</div>
+
+		<a class="btn btn--yellow mt30 slide-toggle" onclick="jQuery('#faqs').toggle()">Common Questions</a>
+		<dl id="faqs" class="faq-list">
+			<div class="faq">
+				<dt class="faq__q">How do I donate?</dt>
+				<dd class="faq__a">Donating to Mercy For Animals is easy! <a
+						href="https://www.mercyforanimals.org/donate">Click here</a> to be taken to our donation form
+					where you can make a secure one-time or monthly gift.
+				</dd>
+			</div>
+			<div class="faq">
+				<dt class="faq__q">Is my donation tax-deductible?</dt>
+				<dd class="faq__a">All donations in the United States are tax-deductible to the full extent of the law.
+					No goods or services are provided in exchange for your donation. If you are donating from Canada or
+					Brazil, we are unable to offer you a deduction at
+					this time. </dd>
+			</div>
+			<div class="faq">
+				<dt class="faq__q">Is my donation secure?</dt>
+				<dd class="faq__a">Absolutely. The security and confidentiality of your information is our top priority.
+					We use industry-standard SSL (secure
+					socket layer) technology to provide a safe and secure environment for online donations. We will not
+					sell, trade, or
+					share your personal information with anyone or send donor mailings on behalf of other organizations.
+					We will share
+					personal information only if you give us permission to do so.</dd>
+			</div>
+			<div class="faq">
+				<dt class="faq__q">Can I donate gift cards?</dt>
+				<dd class="faq__a">
+					Yes! Mercy For Animals is happy to announce that we now accept gift cards as donations.
+					<br><br>
+					If you have unused gift cards, please consider donating them to support our vital programs. Through
+					a partnership, Mercy For Animals directly receives the resale value of the cards.
+					<br><br>
+					You may mail your gift cards to:
+					<br>
+					<br>
+					<div style="text-align:center;">Mercy For Animals
+						<br> 8033 Sunset Blvd., Ste. 864
+						<br> Los Angeles, CA 90046</div>
+					<br>
+					<br> You may also drop them in a collection box at 7908 Santa Monica Blvd., Los Angeles, CA 90046.
+					<br><br>
+					Contact our donor relations team at <a
+						href="mailto:Donations@MercyForAnimals.org">Donations@MercyForAnimals.org</a> with any
+					questions.
+				</dd>
+			</div>
+			<div class="faq">
+				<dt class="faq__q">Can I donate by mail or phone?</dt>
+				<dd class="faq__a">
+					Yes! You can make a donation through the mail by sending a check to:
+					<br>
+					<br>
+					<div style="text-align:center;">Mercy For Animals
+						<br> 8033 Sunset Blvd., Suite 864
+						<br> Los Angeles, CA 90046</div>
+					<br>
+					<br> You can make a donation by phone at 323-822-5124 Monday through Friday between 9 a.m. and 5
+					p.m. Pacific time.
+				</dd>
+			</div>
+			<div class="faq">
+				<dt class="faq__q">Where does my money go?</dt>
+				<dd class="faq__a">All donations support our mission to end animal cruelty and inspire compassion
+					worldwide. Mercy For Animals prides itself
+					on being one of the most effective animal charities. To see a breakdown of donation spending, visit
+					<a href="/financials">MercyForAnimals.org/financials</a>.</dd>
+			</div>
+			<div class="faq">
+				<dt class="faq__q">What is your tax ID number?</dt>
+				<dd class="faq__a">54-2076145</dd>
+			</div>
+			<div class="faq">
+				<dt class="faq__q">Can I change or cancel my monthly donation?</dt>
+				<dd class="faq__a">Monthly donations can be canceled and the amount changed at any time. You can manage
+					your donations by clicking "Claim
+					My Account" at the bottom of your donation receipt. You may also email
+					<a href="mailto:Info@MercyForAnimals.org">Info@MercyForAnimals.org</a> or call 323-822-5124 Monday
+					through Friday between 9 a.m. and 5 p.m. Pacific time for assistance.</dd>
+			</div>
+			<div class="faq">
+				<dt class="faq__q">Who should I contact if I have a question about my donation?</dt>
+				<dd class="faq__a">Any questions about your donation can be answered by emailing
+					<a href="mailto:Donations@MercyForAnimals.org">Donations@MercyForAnimals.org</a> or calling
+					323-822-5124.</dd>
+			</div>
+			<div class="faq">
+				<dt class="faq__q">What will Mercy For Animals do with my information?</dt>
+				<dd class="faq__a">Mercy For Animals uses your information to keep you up to date on our campaigns and
+					programs and to improve our websites and campaigns.
+					Please visit
+					<a href="/rpivacy-policy">MercyForAnimals.org/privacy-policy</a> for more details regarding
+					information you share with Mercy For Animals.</dd>
+			</div>
+			<div class="faq">
+				<dt class="faq__q">I think my employer matches my gift. How do I take advantage of this?</dt>
+				<dd class="faq__a">Many employers offer some sort of gift-matching program, and it’s a great way to
+					double your impact! You can search for
+					your employer on our donation form. If you don’t see your employer listed, reach out to your
+					supervisor or
+					HR representative for more information.</dd>
+			</div>
+			<div class="faq">
+				<dt class="faq__q">I want to host a fundraiser for Mercy For Animals. Is that OK?</dt>
+				<dd class="faq__a">We’d love for you to fundraise on our behalf. To ensure your planned event aligns
+					with Mercy For Animals’ mission and standards, please
+					email us at
+					<a href="mailto:Donations@MercyForAnimals.org">Donations@MercyForAnimals.org</a>
+					<b>prior to hosting or advertising your event</b>. You can also visit
+					<a href="/fundraise">MercyForAnimals.org/fundraise</a> for information on our Be a Hero campaign.
+				</dd>
+			</div>
+			<div class="faq">
+				<dt class="faq__q">How do I include Mercy For Animals in my will?</dt>
+				<dd class="faq__a">Including Mercy For Animals in your planned giving is one of the best ways to leave a
+					legacy of compassion. For more information on
+					making Mercy For Animals a part of your will, visit
+					<a href="/will">MercyForAnimals.org/will</a>.
+				</dd>
+			</div>
+			<div class="faq">
+				<dt class="faq__q">What are other ways to support Mercy For Animals?</dt>
+				<dd class="faq__a">You can support Mercy For Animals through a one-time donation, a monthly donation, or
+					special planned-giving options, such as making
+					Mercy For Animals a part of your will or retirement plan.
+				</dd>
+			</div>
+		</dl>
+	</div>
+</section>
+
+<hr class="divide--large divide--light">
+
+<!-- ==================== -->
+<!--     INTERSTITIAL     -->
+<!-- ==================== -->
+<section class="interstitial section--large">
+	<div class="container" style="display: flex; justify-content: center;">
+		<div class="inner table">
+			<a class="btn btn--yellow" style="margin: 0 auto 30px;" href="https://mercyforanimals.org/impact/">Global Impact Center</a>
+			<p class="text-gray text-center">Our mission is to construct a compassionate food system by reducing suffering and ending the exploitation of animals for food. The Global Impact Center tracks our progress with real-time program results and major milestones.</p>
+	</div>
+</section>
+<hr class="divide--large divide--light">
+
+<!-- ==================== -->
+<!--  RECOGNITION SLIDER  -->
+<!-- ==================== -->
+<section class="flexslider flexslider--large flexslider--show-paging flexslider--recognition mb5">
+	<ul class="slides">
+		<li class="slide"
+			style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2019/02/rb-recognition-overlay.jpg);">
+			<div class="container--constrain block-center">
+				<div class="container text-center">
+					<div class="slide__content">
+						<img src="https://mfa.cachefly.net/mfa/images/uploads/2015/04/philanthropedia-logo.jpg"
+							alt="Philanthropedia acknowledges MFA as one of the 5 most high-impact animal protection organizations in the U.S"
+							style="border-radius:6px">
+						<h5 class="alt text-white">Mercy For Animals is named one of the "15 Top High-Impact Nonprofits"
+							in the category of "animal welfare, rights, and protection" by Philanthropedia.</h5>
+						<p class="larger">“Mercy For Animals has an immensely talented and dedicated crew of employees
+							and attracts legions of volunteers. They are also fiscally responsible and make a great
+							impact choosing campaigns that are not only effective, but cost-efficient.”</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="slide"
+			style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2019/02/rb-recognition-overlay2.jpg);">
+			<div class="container--constrain block-center">
+				<div class="container text-center">
+					<div class="slide__content">
+						<img src="https://mfa.cachefly.net/mfa/images/recognition03.png"
+							alt="Independent Charities of America">
+						<h5 class="alt text-white">Mercy For Animals has been consistently named Best in America by the
+							Independent Charities of America, a seal awarded to less than 1 percent of charities
+							nationwide each year. </h5>
+						<p class="larger">“The Independent Charities Seal of Excellence is awarded to [charities] … that
+							have, upon rigorous independent review, been able to certify, document, and demonstrate on
+							an annual basis that they meet the highest standards of public accountability, program
+							effectiveness, and cost effectiveness.”</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="slide"
+			style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2019/02/rb-recognition-overlay3.jpg);">
+			<div class="container--constrain block-center">
+				<div class="container text-center">
+					<div class="slide__content">
+						<img src="https://mfa.cachefly.net/mfa/images/uploads/2015/04/guidestar-exchange-gold-2.png"
+							alt="Mercy For Animals is recognized as a Gold Level Participant of the GuideStar Exchange for its deep commitment to transparency and accountability">
+						<h5 class="alt text-white">Mercy For Animals is recognized as a Gold Level Participant of the
+							GuideStar Exchange for its deep commitment to transparency and accountability.</h5>
+						<p class="larger">The Gold Level is GuideStar’s highest level and has been attained by less than
+							1 percent of U.S. nonprofits.</p>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</section>

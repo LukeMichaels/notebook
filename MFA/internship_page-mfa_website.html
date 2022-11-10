@@ -1,0 +1,521 @@
+<!-- ============ -->
+<!--		 TABS		 -->
+<!-- ============ -->
+<style>
+	.internships-info {
+		width: 100%;
+		color: #393939;
+		font-family: "Gotham A", "Gotham B", Gotham, Helvetica, "Helvetica Neue", Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+	}
+	.internships-info nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin: 60px auto 40px;
+	}
+	.internships-info nav a {
+		padding: 20px 20px 0 20px;
+		color: #0666F2;
+		font-size: 1.25em;
+		line-height: 1.25;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	@media (max-width: 440px) {
+		.internships-info nav a {
+			font-size: 1rem;
+		}
+	}
+	.internships-info nav a:hover {
+		opacity: .8;
+	}
+	.internships-info nav a.selected {
+		border-bottom: 1px solid #0666F2;
+		cursor: default;
+	}
+	.internships-info nav a.selected:hover {
+		opacity: 1;
+	}
+	.intro {
+		display: flex;
+		align-items: center;
+		max-width: 980px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		padding: 60px 20px;
+	}
+	@media (max-width: 880px) {
+		.intro {
+			flex-wrap: wrap;
+		}
+	}
+	.intro .image {
+		width: 200px;
+		height: 200px;
+		margin-right: 40px;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		border-radius: 50%;
+	}
+	@media (max-width: 880px) {
+		.intro .image {
+			margin: 0 auto 40px auto;
+		}
+	}
+	.intro .information {
+		max-width: 600px;
+	}
+	@media (max-width: 880px) {
+		.intro .information {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+	.intro .information h2 {
+		margin: 0 0 1rem;
+		color: #393939;
+		font-size: 1.75em;
+		line-height: 1.25;
+		font-weight: 700;
+		text-align: left;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;	
+	}
+	.intro .information p {
+		width: 100%;
+		margin-bottom: 20px;
+		color: #393939;
+		text-align: left;
+		font-size: 16px;
+	}
+	.intro .information p:last-of-type {
+		margin-bottom: 0;
+	}
+	.the-details {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 60px 20px;
+		background-color: #f3f3f3;
+	}
+	.details-wrap {
+		max-width: 680px;
+		margin: 0 auto;
+	}
+	.the-details h3 {
+		width: 100%;
+		margin: 0 0 1rem;
+		color: #393939;
+		font-size: 1.5em;
+		line-height: 1.25;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+	}
+	.the-details p {
+		width: 100%;
+		margin-bottom: 20px;
+		color: #393939;
+		text-align: left;
+		font-size: 16px;
+	}
+	.the-details p:last-of-type {
+		margin-bottom: 0;
+	}
+	.ready {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 980px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		padding: 60px 20px;
+	}
+	.ready h3 {
+		width: 100%;
+		margin: 0 auto 20px;
+		color: #393939;
+		font-size: 1.5em;
+		line-height: 1.25;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+	}
+	.ready p {
+		color: #393939;
+		text-align: center;
+		font-size: 16px;
+	}
+	.apply-button {
+		display: inline-block;
+		padding: 10px 30px;
+		margin: 20px auto;
+		color: #fff;
+		background: #0666F2;
+		border: none;
+		text-transform: uppercase;
+		font-family: "Gotham A", "Gotham B", Gotham, Helvetica, "Helvetica Neue", Arial, sans-serif;
+		font-size: 23.5px;
+		font-weight: 400;
+		letter-spacing: 0.1em;
+		-moz-transition: all 150ms linear;
+		-o-transition: all 150ms linear;
+		-webkit-transition: all 150ms linear;
+		transition: all 150ms linear;
+		cursor: pointer;
+		-webkit-appearance: button;
+		text-decoration: none;
+	}
+	.apply-button:hover {
+		opacity: .8;
+	}
+</style>
+<section class="internships-info">
+	<nav id="tabLinks"> 
+		<a href="#" class="selected" name="tab" id="tab1">Legal Internships</a>
+		<a href="#" class="" name="tab" id="tab2">Outreach Internships</a>
+	</nav>
+	<div class="tab-container">
+		<div class="tab" id="tab1_info">
+			<div class="intro">
+				<div class="image" style="background-image:url('https://mfa.cachefly.net/mfa/images/uploads/2020/02/Legal_Internships.png');"></div>
+				<div class="information">
+					<h2>LEGAL DEPARTMENT INTERNSHIPS</h2>
+					<p>As a Mercy For Animals legal intern, you can help shape the future of animal law. Legal interns gain invaluable experience while assisting our campaigns and high-impact work advocating for animals in courts, state houses, and administrative agencies. A vital part of our team, our interns are closely involved with important projects.</p>
+					<p>You’ll work directly with our international team of attorneys to research and analyze federal, state, and local laws; draft memoranda; review undercover footage; execute campaigns; and assist with administrative and corporate governance tasks pertaining to general nonprofit administration and legal compliance. You’ll leave with hands-on experience in a wide variety of legal disciplines and insight into the field of animal protection.</p>
+				</div>
+			</div>
+			<div class="the-details">
+				<div class="details-wrap">
+					<h3>THE DETAILS</h3>
+					<p>Mercy For Animals offers full-time internships during the summer, fall, and spring, which can be completed remotely. Internships are unpaid, but academic credit may be available. For summer internships, we are looking for a time commitment of 6–12 weeks.</p>
+					<p>Application deadlines for legal department internships are July 1 for fall, November 1 for spring, and January 31 for summer.</p>
+				</div>
+			</div>
+			<div class="ready">
+				<h3>READY?</h3>
+				<p>If you’ve got what it takes to intern with our legal team,</p>
+				<a class="apply-button" href="https://mercyforanimals.org/internship-legal-application">APPLY NOW!</a>
+				<p>If you have questions, please refer to our <a href="https://mercyforanimals.org/internship-faq-legal">legal internship FAQ</a>.</p>
+			</div>
+		</div><!-- .tab -->
+		<div class="tab" id="tab2_info">
+			<div class="intro">
+				<div class="image" style="background-image:url('https://mfa.cachefly.net/mfa/images/uploads/2020/02/Outreach_Internships.png');"></div>
+				<div class="information">
+					<h2>Outreach Internships</h2>
+					<p>Interns and volunteer outreach assistants are the backbone of MFA’s grassroots advocacy work. We want you on our team!</p>
+					<p>As an intern, you’ll work directly with our volunteer team to distribute pro-vegan leaflets, host video screenings, draft blog posts, conduct research, staff outreach tables, and build supporter relationships through social media. You’ll leave with hands-on experience in vegan advocacy, grassroots outreach, and nonprofit administration and connections that could help you land a career in animal protection.</p>
+				</div>
+			</div>
+			<div class="the-details">
+				<div class="details-wrap">
+					<h3>THE DETAILS</h3>
+					<p>Limited full-time and part-time positions are available year-round from remote locations. Please apply three months or more before you’d like to start.</p>
+					<p>Training will be provided by MFA and experience is not required. Interns receive school credit, while volunteer outreach assistants do not. Otherwise, these positions are identical.</p>
+				</div>
+			</div>
+			<div class="ready">
+				<h3>READY?</h3>
+				<p><strong>Applications for outreach internships will no longer be accepted this year. We expect to reopen the application process in early 2020.</strong></p>
+				<a class="apply-button" href="https://mercyforanimals.org/internship-education-application">APPLY NOW!</a>
+				<p>If you have questions, please refer to our <a href="https://mercyforanimals.org/internship-faq">outreach internship FAQ</a>.</p>
+			</div>
+		</div><!-- .tab -->
+	</div><!-- tab-container -->
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+		$("div.tab:gt(0)").hide();	// to hide all div except for the first one
+		$('#tabLinks a').click(function(selected) {
+			event.preventDefault(); 
+			var getID = $(this).attr("id");
+			var projectImages = $(this).attr("name");
+			$("div.tab").hide();
+			$("#" + getID + "_info" ).show();
+			$("#tabLinks>a").removeClass("selected");
+			$(this).addClass("selected");
+		});
+	});
+</script>
+
+<!-- ===================== -->
+<!--		 QUOTES SLIDER		 -->
+<!-- ===================== -->
+<style>
+	.quotes {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 60px 20px;
+		margin: 0 auto;
+		background-color: #f3f3f3;
+	}
+	.quotes-containter {
+		max-width: 980px;
+		margin: 0 auto;
+	}
+	.quotes-intro {
+		width: 100%;
+	}
+	.quotes-intro h3 {
+		display: block;
+		width: 100%;
+		margin: 0 0 1rem;
+		color: #393939;
+		text-align: center;
+		font-family: "Gotham A", "Gotham B", Gotham, Helvetica, "Helvetica Neue", Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		font-size: 1.75em;
+		font-weight: 700;
+		line-height: 1.25;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+	}
+	.quotes-intro p {
+		display: block;
+		width: 100%;
+		margin: 0 0 40px;
+		color: #393939;
+		text-align: center;
+		font-family: "Gotham A", "Gotham B", Gotham, Helvetica, "Helvetica Neue", Arial, sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.5;
+		text-rendering: optimizeLegibility;
+	}
+	.quotes-slider .slide-content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+	}
+	@media (max-width: 820px) {
+		.quotes-slider .slide-content {
+			flex-wrap: wrap;
+			height: auto;
+		}
+	}
+	.quotes-slider .image {
+		width: 200px;
+		height: 200px;
+		margin-right: 40px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		border: none;
+		border-radius: 50%;
+	}
+	@media (max-width: 820px) {
+		.quotes-slider .image {
+			width: 200px;
+			height: 200px;
+			margin: 0 auto 20px;
+		}
+	}
+	@media (max-width: 820px) {
+		.quotes-slider .copy-wrap {
+			width: 100%;
+			padding: 20px;
+		}
+	}
+	.quotes-slider .copy {
+		width: 100%;
+		max-width: 600px;
+	}
+	@media (max-width: 350px) {
+		.quotes-slider .copy {
+			font-size: 18px;
+		}
+	}
+	.quotes-slider .copy p {
+		padding: 0 20px;
+		margin: 0 0 1rem;
+		color: #393939;
+		font-family: "Gotham A", "Gotham B", Gotham, Helvetica, "Helvetica Neue", Arial, sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.5;
+		text-rendering: optimizeLegibility;
+	}
+	.quotes-slider .name {
+		width: 100%;
+		text-align: right;
+		font-family: "Gotham A", "Gotham B", Gotham, Helvetica, "Helvetica Neue", Arial, sans-serif;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 1.5;
+		text-rendering: optimizeLegibility;
+	}
+	.quotes-slider i {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 5;
+		color: #393939;
+		cursor: pointer;
+		font-size: 1.5rem;
+	}
+	.quotes-slider .fa-chevron-left {
+		left: 20px;
+	}
+	.quotes-slider .fa-chevron-right {
+		right: 20px;
+	}
+	@media (max-width: 820px) {
+		.quotes-slider .fa-chevron-left {
+			left: 10px;
+		}
+		.quotes-slider .fa-chevron-right {
+			right: 10px;
+		}
+	}
+	.slick-slide{ 
+		height: auto !important;
+	}
+</style>
+<section class="quotes">
+	<div class="quotes-container">
+		<div class="quotes-intro">
+			<h3>Time of My Life</h3>
+			<p>Hear what former interns had to say about their time at Mercy For Animals.</p>
+		</div>
+		<div id="quotes-slider" class="quotes-slider">
+			<div class="slide" id="slide">
+				<div class="slide-content">
+					<div class="image" style="background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2015/05/Olivia-Anne-Carkulis-former-MFA-intern-discussing-her-amazing-experience-during-her-internship.jpg');"></div>
+					<div class="copy-wrap">
+						<div class="copy">
+							<p>
+								"I adored the other interns I worked with and my supervisor: they were all fun, down-to-earth, hardworking individuals who showed remarkable empathy for animals. Not only did my passion grow during my internship but my activist skills were also enhanced in a way that made my activism more effective and efficient. I absolutely plan to continue a career in animal activism and am delighted to have developed new knowledge and skills from my internship that I can take back to my college and city."
+							</p>
+							<div class="name">- Olivia Carkulis</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .slide -->
+			<div class="slide" id="slide">
+				<div class="slide-content">
+					<div class="image" style="background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2015/05/Kevin-Schneider-former-MFA-intern-discussing-his-amazing-experience-during-his-internship.jpg');"></div>
+					<div class="copy-wrap">
+						<div class="copy">
+							<p>
+								"The reason I went to law school in the first place was to find a way—some way—to fight for farmed animals. The work at MFA was ideal for me; I jumped right into hard-hitting investigations, researching the legal issues, and looking for hooks on which to hang factory farms. The feeling when I later saw those same investigations splashed across the internet was electric—at once horrified by the atrocity of it all and yet inspired by the idea that my work was having a direct impact on the national conversation about animals. My internship at MFA gave me deep insights into how to be an effective voice for animals, and I will carry these lessons with me throughout my career as an animal rights attorney."
+							</p>
+							<div class="name">- Kevin Schneider</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .slide -->
+			<div class="slide" id="slide">
+				<div class="slide-content">
+					<div class="image" style="background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2015/05/Kristen-Diederich-former-MFA-intern-discussing-her-amazing-experience-during-her-internship.jpg');"></div>
+					<div class="copy-wrap">
+						<div class="copy">
+							<p>
+								"Interning with Mercy For Animals launched my career in animal protection and I couldn't be more grateful to have had the opportunity. Although I came into the position relatively new to the field, everyone was very willing to share their knowledge and experience. I received hands-on training and was given the chance to get out there and really feel like I was making a difference from the very first day. It was an inspiration to work with such a compassionate, dedicated group of activists."
+							</p>
+							<div class="name">- Kristen Diederich</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .slide -->
+			<div class="slide" id="slide">
+				<div class="slide-content">
+					<div class="image" style="background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2015/05/Rachel-Curit-former-MFA-intern-discussing-her-amazing-experience-during-her-internship.jpg');"></div>
+					<div class="copy-wrap">
+						<div class="copy">
+							<p>
+								"My internship with Mercy For Animals proved to be more valuable than I ever could have imagined. I saw firsthand the positive impact grassroots advocacy has on the animal rights movement. I had the opportunity to meet some really inspiring activists who I now call my friends. More than anything, I learned how to speak up for the billions of animals suffering every year. And that is something I carry with me everywhere, from the supermarket to the office to conversations with friends."
+							</p>
+							<div class="name">- Rachel Curit</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .slide -->
+			<div class="slide" id="slide">
+				<div class="slide-content">
+					<div class="image" style="background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2015/05/Eve-Massie-former-MFA-intern-discussing-her-amazing-experience-during-her-internship.jpg');"></div>
+					<div class="copy-wrap">
+						<div class="copy">
+							<p>
+								"Interning at Mercy For Animals was nothing short of incredible. My two months spent at MFA's LA office were the most exciting, enlightening, and positively challenging two months yet! MFA provided me with an invaluable opportunity to combine my legal knowledge and love of animals to serve as a voice for farmed animals within the legal framework. I also participated in occasional outreach work, which has empowered me with the confidence to promote compassionate living through leafleting and fundraising events back home. My time spent at MFA has not only given me the experience necessary to further my career in the animal rights legal sector, but has also made me a more effective advocate for farmed animals!"
+							</p>
+							<div class="name">- Eve Massie</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .slide -->
+			<div class="slide" id="slide">
+				<div class="slide-content">
+					<div class="image" style="background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2015/05/Alan-Darer-former-MFA-intern-discussing-his-amazing-experience-during-his-internship.jpg');"></div>
+					<div class="copy-wrap">
+						<div class="copy">
+							<p>
+								"My internship with MFA was life-changing—literally! During my winter break as a freshman in college, I had the opportunity to work with an experienced MFA outreach coordinator who helped me channel my anger about factory farming and taught me how to be an effective animal advocate and make a real difference in the lives of thousands, if not millions, of farmed animals. Everything I learned through my internship helped me thrive the following year as a leader of my campus’s animal advocacy group. My internship with MFA gave me the confidence and experience I needed to be a successful animal advocate and has indeed changed my life by leading me to my dream job: a full-time position in MFA’s education department!"
+							</p>
+							<div class="name">- Alan Darer</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .slide -->
+			<div class="slide" id="slide">
+				<div class="slide-content">
+					<div class="image" style="background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2015/05/Meg-York-former-MFA-intern-discussing-her-amazing-experience-during-her-internship.jpg');"></div>
+					<div class="copy-wrap">
+						<div class="copy">
+							<p>
+								"Serving as a Mercy For Animals legal intern has been a privilege. I have been able to work on a variety of legal issues related to farmed animal protection and advocacy, including conducting crucial research necessary to facilitate undercover investigations and expose cruelty. I have had the privilege of working with dedicated advocates and an outstanding attorney who strive every day to help farmed animals. Inspired by this experience, I plan to use my law degree to expose cruelty and abuse, to demand enforcement of current animal welfare laws, and to create a better world for animals."
+							</p>
+							<div class="name">- Meg York</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .slide -->
+			<div class="slide" id="slide">
+				<div class="slide-content">
+					<div class="image" style="background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2015/05/Priscilla-Rader-former-MFA-intern-discussing-her-amazing-experience-during-her-internship.jpg');"></div>
+					<div class="copy-wrap">
+						<div class="copy">
+							<p>
+								"My time with MFA is one of my most treasured memories, for both personal and professional reasons. Personally, it granted me opportunities to become closer than ever with animal rights activists, like-minded individuals, and a think tank that propels me further in the pursuit of my passion. Professionally, I learned invaluable research strategies and out-of-the-box analysis, as well as how to interpret and read mass amounts of legal information. I use these lessons daily in both law school and in my current position. I recommend MFA every chance I get."
+							</p>
+							<div class="name">- Priscilla Rader</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .slide -->
+		</div><!-- #quotes-slider -->
+	</div><!-- .container -->
+</section>
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+		$('#quotes-slider').slick({
+			dots: false,
+			infinite: true,
+			speed: 1000,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			cssEase: 'linear',
+			lazyLoad: 'ondemand',
+			lazyLoadBuffer: 0,
+			nextArrow: '<i class="fa fa-chevron-right"></i>',
+			prevArrow: '<i class="fa fa-chevron-left"></i>',
+		});
+	});
+</script>
+
+<!-- ==================== -->
+<!--		 CTA / DONATE		 -->
+<!-- ==================== -->
+${includePage('cta-bottom')}

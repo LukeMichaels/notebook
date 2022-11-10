@@ -1,0 +1,399 @@
+<style type='text/css'>
+.inverted-triangle:before {
+	margin-top:-11px;
+}
+.inverted-triangle:after {
+	margin-top:-11px;
+}
+#financialsContainer {
+	display:inline-block;
+	text-align:center;
+	margin:50px 0;
+}
+#financialsGraph {
+	display:inline-block;
+	vertical-align:bottom;
+	margin-right:40px;
+}
+#financialsLegend {
+	text-align:left;
+	display:inline-block;
+	vertical-align:bottom;
+}
+#financialsLegend ul {
+	margin:0;
+	padding:0;
+}
+#financialsLegend li {
+	margin:0;
+	padding:0;
+	list-style:none;
+	position:relative;
+	text-transform:uppercase;
+	color:#000000;
+	font-size:14px;
+	padding-left:30px;
+	line-height:21px;
+	margin:6px 0;
+}
+#financialsLegend li:before {
+	content:' ';
+	position:absolute;
+	top:0;
+	left:0;
+	border:1px solid #aaaaaa;
+	background:#bbbbbb;
+	width:19px;
+	height:19px;
+	box-sizing:content-box;
+}
+.legend1:before {
+	border:1px solid #D9DADB !important;
+	background:#E7E7E8 !important;
+}
+.legend2:before {
+	border:1px solid #C8C9CB !important;
+	background:#D1D2D4 !important;
+}
+.legend3:before {
+	border:1px solid #7AD0F3 !important;
+	background:#73CEF4 !important;
+}
+.legend4:before {
+	border:1px solid #53B9E8 !important;
+	background:#4AB6E8 !important;
+}
+.legend5:before {
+	border:1px solid #31A8DE !important;
+	background:#129FDA !important;
+}
+.legend6:before {
+	border:1px solid #0E98D2 !important;
+	background:#0590CA !important;
+}
+.programsGroup {
+	position:relative;
+	margin:14px 0 !important;
+}
+.programsGroup:before {
+	content:' ';
+	position:absolute;
+	top:-10px;
+	bottom:-10px;
+	left:-12px;
+	right:-12px;
+	border:3px solid #D1D2D4;
+	border-radius:18px;
+	padding:0px 6px;
+}
+.programsGroup:after {
+	content:'Programs';
+	position:absolute;
+	right:-18px;
+	top:-4px;
+	color:#BCBDC0;
+	text-transform:uppercase;
+	font-size:16px;
+	width:0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.financials .btn {
+	font-size:28px;
+	margin:20px 20px 0 20px;
+}
+.financials .btn--unselected {
+	background-color:#ffffff !important;
+	color:#464646 !important;
+}
+#financialsButtons {
+	max-width:600px;
+	margin:0 auto;
+}
+#financialsDetails {
+	font-weight: 100;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+.financialLinksContainer .container {
+	max-width:700px;
+	text-align:center;
+	margin:0 auto;
+	padding:0 30px;
+}
+.financialLinks {
+	width:260px;
+	height:200px;
+	margin:0 20px;
+	display:inline-block;
+	text-align:left;
+	vertical-align:top;
+}
+@media only screen and (max-width:767px) {
+
+	#financialsGraph {
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:20px;
+	}
+	#financialsContainer {
+		margin-bottom:0;
+		padding-bottom:0;
+	}
+	.financials .btn {
+		font-size:20px;
+		margin:20px 10px 0 10px;
+	}
+	.financialLinks {
+		display:block;
+		margin:0 auto;
+		height:auto;
+	}
+}
+.legend7::before {
+    border: 1px solid #0666F2 !important;
+    background: #0666F2 !important;
+}
+</style>
+
+<section class="interstitial section--large interstitial--circle ">
+	<div class="container">
+		<div class="circle-descrip left">
+			<div class="inner">
+				<div class="innercontent">
+					<h3 class="mb30 mobile-text-center">Helping the Most Animals</h3>
+					<p>Mercy For Animals has been called one of the "best bang for your buck" organizations by VegNews magazine. Our programs spare millions of animals a year from a lifetime of misery. With our commitment to helping the largest number of suffering animals with the most effective and cost-efficient programs, you can rest assured that your donation to MFA will create major impact.</p>
+				</div>
+			</div>
+		</div>
+		<div class="circle circle--xlrg" style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2015/05/Hen-and-chicks-supported-by-the-life-saving-work-of-Mercy-For-Animals.png);"></div>
+	</div>
+</section>
+
+<section class="interstitial section--large bg-gray financials">
+	<div class="container text-center">
+		<h3 class="mb30">How Donations Are Spent</h3>
+		<p>All donations directly support Mercy For Animals’ mission. Below is a spending breakdown by program area.</p>
+		<div id='financialsContainer'>
+			<canvas id="financialsGraph" width="280" height="280" onfirstvisible="selectFinancialsYear(2019)"></canvas>
+			<div id="financialsLegend">
+				<h3 id="yearTitle" class="text-blue"></h3>
+				<ul class='programsGroup'>
+					<li class='legend7'>All Programs</li>
+					<li class='legend3'>Corporate Outreach</li>
+					<li class='legend4'>Education</li>
+					<li class='legend5'>Investigations</li>
+					<li class='legend6'>Legal</li>
+				</ul>
+				<ul>
+					<li class='legend1'>Administration</li>
+					<li class='legend2'>Development</li>
+				</ul>
+			</div>
+		</div>
+		<div id='financialsDetails' class='hidden'>
+			Administration and Fundraising combined as a percentage of Total Expenses: <span id='financialPercentExpenses'></span><br>
+			Administration and Fundraising combined as a percentage of Total Revenue: <span id='financialPercentRevenue'></span><br>
+		</div>
+		<div id='financialsButtons'>
+			<span onclick="selectFinancialsYear(2019)" class="btn btn--primary btn--unselected" id='btn2019'>2019</span>
+			<span onclick="selectFinancialsYear(2018)" class="btn btn--primary btn--unselected" id='btn2018'>2018</span>
+			<span onclick="selectFinancialsYear(2017)" class="btn btn--primary btn--unselected" id='btn2017'>2017</span>
+			<span onclick="selectFinancialsYear(2016)" class="btn btn--primary btn--unselected" id='btn2016'>2016</span>
+			<span onclick="selectFinancialsYear(2015)" class="btn btn--primary btn--unselected" id='btn2015'>2015</span>
+			<span onclick="selectFinancialsYear(2014)" class="btn btn--primary btn--unselected" id='btn2014'>2014</span>
+			<span onclick="selectFinancialsYear(2013)" class="btn btn--primary btn--unselected" id='btn2013'>2013</span>
+			<span onclick="selectFinancialsYear(2012)" class="btn btn--primary btn--unselected" id='btn2012'>2012</span>
+		</div>
+	</div>
+</section>
+
+<section class="interstitial section--large inverted-triangle financialLinksContainer">
+	<div class="container">
+		<h3>Financial History</h3>
+		<p class="mb50">Browse our inspiring year-in-review videos and annual reports.</p>
+
+						<div class='financialLinks'>
+			<h4><b>2019</b></h4>
+			<ul>
+				<li><a style="cursor:pointer" href="https://mfa.cachefly.net/mfa/pdfs/MFA_2019_Form_990.pdf" target="_blank">Form 990</a></li>
+        <li><a style="cursor:pointer" href="https://mfa.cachefly.net/mfa/pdfs/Mercy_For_Animals-2019_Audited_Financials.pdf" target="_blank">Audited Financials</a></li>
+			</ul>
+		</div>
+		
+				<div class='financialLinks'>
+			<h4><b>2018</b></h4>
+			<ul>
+				<li><a style="cursor:pointer" href="http://www.mercyforanimals.org/2018">Year-in-Review Website</a></li>
+								<li><a style="cursor:pointer" href="https://www.youtube.com/watch?v=zT1lrcmMszE&t=1s" target="_blank">Year-in-Review Video</a></li>
+				<li><a href="https://mfa.cachefly.net/mfa/pdfs/YIR-18-Single-144.pdf" target="_blank">Annual Review</a></li>
+				<li><a href="https://mfa.cachefly.net/mfa/pdfs/MFA_2018_990.pdf" target="_blank">Form 990</a></li>
+        <li><a style="cursor:pointer" href="https://mfa.cachefly.net/mfa/pdfs/MFA_2018_Audited_Financials.pdf" target="_blank">Audited Financials</a></li>
+			</ul>
+		</div>
+		
+		<div class='financialLinks'>
+			<h4><b>2017</b></h4>
+			<ul>
+				<li><a style="cursor:pointer" href="http://www.mercyforanimals.org/2017">Year-in-Review Video</a></li>
+				<li><a href="http://mercyforanimals.org/2017-YIR" target="_blank">Annual Review</a></li>
+			<li><a href="https://mfa.cachefly.net/mfa/pdfs/MFA_2017_990.pdf" target="_blank">Form 990</a></li>
+			 <li><a href="https://mfa.cachefly.net/mfa/pdfs/MFA_2017_Audited_Financials.pdf" target="_blank">Audited Financials</a></li>
+			</ul>
+		</div>
+			
+				<div class='financialLinks'>
+			<h4><b>2016</b></h4>
+			<ul>
+				<li><a style="cursor:pointer" onclick="showLightbox('${htmlspecialchars(embedVideo("FnBnWdmRqLw",1))}')">Year-in-Review Video</a></li>
+				<li><a href="http://www.mercyforanimals.org/pdfviewer.php?prefix=https://mfa.cachefly.net/mfa/images/uploads/2017/05/YIR2016-&pages=12&pagewidth=1000&pdf=files/YIR2016.pdf&title=Year%20In%20Review%202016&donateUrl=http://mercyforanimals.org/donate" target="_blank">Annual Review</a></li>
+								<li><a href="https://mfa.cachefly.net/mfa/pdfs/2016_MFA_990.pdf" target="_blank">Form 990</a></li>
+		<li><a href="https://mfa.cachefly.net/mfa/pdfs/MFA_2016_Audited_Financial_Statement.pdf" target="_blank">Audited Financials</a></li>  
+				
+			</ul>
+		</div>
+			
+				<div class='financialLinks'>
+				<h4><b>2015</b></h4>
+			<ul>
+				<li><a style="cursor:pointer" onclick="showLightbox('${htmlspecialchars(embedVideo("E_gOWOUb01Q",1))}')">Year-in-Review Video</a></li>
+				<li><a href="http://www.mercyforanimals.org/files/YIR-2015.pdf" target="_blank">Annual Review</a></li>
+				<li><a href="http://www.mercyforanimals.org/files/MFA-990-2015-Public-Signed.pdf" target="_blank">Form 990</a></li>
+					</ul>
+			</div>
+		
+				<div class='financialLinks'>
+			<h4><b>2014</b></h4>
+			<ul>
+				<li><a style="cursor:pointer" onclick="showLightbox('${htmlspecialchars(embedVideo("GsX1bsnxEZY",1))}')">Year-in-Review Video</a></li>
+				<li><a href="http://www.mercyforanimals.org/files/2014PYIR.pdf" target="_blank">Annual Review</a></li>
+				<li><a href="http://www.mercyforanimals.org/files/MFA.2014.Form-990-public-1.pdf" target="_blank">Form 990</a></li>
+			</ul>
+		</div>
+
+
+		
+			<div class='financialLinks'>
+			<h4><b>2013</b></h4>
+			<ul>
+				<li><a style="cursor:pointer" onclick="showLightbox('${htmlspecialchars(embedVideo("h1UslPYDnmw",1))}')">Year-in-Review Video</a></li>
+				<li><a href="http://www.mercyforanimals.org/files/2013PYIR.pdf" target="_blank">Annual Review</a></li>
+				<li><a href="http://www.mercyforanimals.org/files/2013-MFA-990.pdf" target="_blank">Form 990</a></li>
+			</ul>
+		</div>
+			
+	
+
+		<div class='financialLinks'>
+			<h4><b>2012</b></h4>
+			<ul>
+				<li><a style="cursor:pointer" onclick="showLightbox('${htmlspecialchars(embedVideo("XDdW3NGb7Nc",1))}')">Year-in-Review Video</a></li>
+				<li><a href="http://www.mercyforanimals.org/files/2012YIR.pdf" target="_blank">Annual Review</a></li>
+				<li><a href="http://www.mercyforanimals.org/files/2012-MFA-990.pdf" target="_blank">Form 990</a></li>
+			</ul>
+		</div>
+
+		<div class='financialLinks'>
+			<h4><b>Other Documents</b></h4>
+			<ul>
+				<li><a href="http://www.mercyforanimals.org/files/MFA501C3Letter.pdf" target="_blank">501(c)(3) Ruling</a></li>
+								<li><a href="anti-harassment-and-discrimination-policy">Anti-Harassment and Discrimination Policy</a></li>
+				<li><a href="privacy-policy">Privacy Policy</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<!-- ==================== -->
+<!--  RECOGNITION SLIDER  -->
+<!-- ==================== -->
+${includePage('recognition-bottom')}
+
+<!-- ==================== -->
+<!--      BOARD MEMBERS   -->
+<!-- ==================== -->
+<!--
+<section id="team" class="team-grid section--large">
+	<div class="container--full text-center">
+		<div class="container">
+			<h4>Meet the Board</h4>
+		</div>
+		${setValue('international','0')}
+		${includePage('board-bios')}
+	</div>
+</section> -->
+
+<!-- ==================== -->
+<!--      BOARD MEMBERS   -->
+<!-- ==================== -->
+<!--
+<section id="team" class="team-grid section--large">
+	<div class="container--full text-center">
+		<div class="container">
+			<h4>Meet the Board</h4>
+		</div>
+		${setValue('international','0')}
+		${includePage('board-bios')}
+	</div>
+</section>
+-->
+  
+  
+<script type='text/javascript'>
+var financialsChart = PieChart.init(
+	'financialsGraph', [
+		{color:'#E7E7E8',fontColor:'#a7a9ac',radius:120,offsetX:0,offsetY:0},
+		{color:'#D1D2D4',fontColor:'#ffffff',radius:130,offsetX:0,offsetY:0},
+		{color:'#73CEF4',fontColor:'#ffffff',radius:139,offsetX:0,offsetY:0},
+		{color:'#4AB6E8',fontColor:'#ffffff',radius:139,offsetX:0,offsetY:0},
+		{color:'#129FDA',fontColor:'#ffffff',radius:139,offsetX:0,offsetY:0},
+		{color:'#0590CA',fontColor:'#ffffff',radius:139,offsetX:0,offsetY:0},
+		{color:'#0666F2',fontColor:'#ffffff',radius:139,offsetX:0,offsetY:0},
+	]
+);
+
+// Order:
+// admin, development, corporate outreach, education, investigations, legal
+var yearFinancials = {
+	'2019':{graph:[14,16,0,0,0,0,70]},
+	'2018':{graph:[27,18,0,0,0,0,55]},
+	'2017':{graph:[7,14,19,28,19,13]},
+	'2016':{graph:[4,20,14,34,21,7]},
+	'2015':{graph:[4,21,9,37,23,6]},
+	'2014':{graph:[7,15,5,41,26,6]},
+	'2013':{graph:[10,12,4,42,26,6],expenses:21.6,revenue:15.4},
+	'2012':{graph:[10,10,5,52,17,6],expenses:20.2,revenue:13.5},
+};
+
+function selectFinancialsYear(year) {
+	
+	document.getElementById('yearTitle').innerHTML = year;
+	
+	if (yearFinancials[year].expenses) {
+	
+		removeElementClass('financialsDetails','hidden');
+		document.getElementById('financialPercentExpenses').innerHTML = yearFinancials[year].expenses + '%';
+		document.getElementById('financialPercentRevenue').innerHTML = yearFinancials[year].revenue + '%';
+		
+	} else {
+	
+		addElementClass('financialsDetails','hidden');
+	}
+													
+	addElementClass('btn2012','btn--unselected');
+	addElementClass('btn2013','btn--unselected');
+	addElementClass('btn2014','btn--unselected');
+	addElementClass('btn2015','btn--unselected');
+	addElementClass('btn2016','btn--unselected');
+	addElementClass('btn2017','btn--unselected');
+	addElementClass('btn2018','btn--unselected');
+	addElementClass('btn2019','btn--unselected');
+	removeElementClass('btn' + year,'btn--unselected');
+	
+	financialsChart.animateGraph(yearFinancials[year].graph);
+}
+</script>

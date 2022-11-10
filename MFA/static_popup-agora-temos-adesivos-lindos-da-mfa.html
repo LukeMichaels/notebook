@@ -1,0 +1,103 @@
+<style>
+	.flexslider,
+	.single-image {
+		width: 100%;
+		margin: 0;
+		background: none;
+		border: none;
+		border-radius: 0;
+	}
+	.pop-up-container {
+		background: rgba(0,0,0,.70);
+		bottom: 0;
+		display: none;
+		height: 100%;
+		left: 0;
+		overflow: auto;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 100%;
+		z-index: 99999;
+	}
+	.pop-up-content {
+		align-items: center;
+		background: #fff;
+		display: flex;
+		margin: 0 auto;
+		max-width: 700px;
+		top: 20%;
+		width: 80%;
+		position: relative;
+	}
+	#main-pop-close {
+		color: #0666f2;
+		cursor: pointer;
+		position: absolute;
+		right: -20px;
+		top: -20px;
+		z-index: 100;
+	}
+	.pop-up-content .single-image img {
+		width: 100%;
+		padding: 0 0 0 0;
+		margin: auto auto;
+		vertical-align: middle;
+	}
+	.mobile-image {
+		display: none;
+	}
+	.desktop-image {
+		display: block;
+	}
+	@media only screen and (max-width: 767px) {
+		.mobile-image {
+			display: block;
+		}
+		.desktop-image {
+			display: none;
+		}
+	}
+</style>
+<div class="pop-up-container">
+	<div class="pop-up-content">
+		<div id="main-pop-close" class="closeButton">
+			<span class="fa-stack fa-2x">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-times fa-stack-1x fa-inverse" aria-hidden="true"></i>
+			</span>
+		</div>
+		<div class="single-image">
+			<a href="https://budaveg.com.br/mercy-for-animals/" class="mobile-image">
+				<img src="https://storage.googleapis.com/file-cdn.mercyforanimals.org/mfa/images/Pop-Up-adesivos-cell-phone.png" alt="AGORA TEMOS ADESIVOS LINDOS DA MFA!"  />
+			</a>
+			<a href="https://budaveg.com.br/mercy-for-animals/" class="desktop-image">
+				<img src="https://storage.googleapis.com/file-cdn.mercyforanimals.org/mfa/images/Pop-Up-adesivos_Desktop.png" alt="AGORA TEMOS ADESIVOS LINDOS DA MFA!" />
+			</a>
+		</div>
+	</div>
+</div>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		jQuery(document).ready(function($) {
+			// Display popup after delay
+			setTimeout(function(){
+				$(".pop-up-container").show('slow');
+				// Disable scrolling while popup is active
+				$("html").css({
+					overflow: "hidden",
+					height: "100%"
+				});
+			}, 2000);
+			// Close popup
+			$(".closeButton").click(function() {
+				$(".pop-up-container").attr("style", "display: none !important");
+				// Re-enable scrolling
+				$("html").css({
+					overflow: "auto",
+					height: "auto"
+				});
+			});		
+		}); /*end jquery*/
+	});
+</script>
