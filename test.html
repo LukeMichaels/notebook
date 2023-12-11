@@ -1,0 +1,22 @@
+              <?php if( have_rows('nested_accordion') ): ?>
+  <div class="nested-accordion">
+    <div class="nested-accordion-wrap">
+      <?php
+      $id = 99;
+      while ( have_rows('nested_accordion')) : the_row();
+        $nested_label = get_sub_field('nested_label');
+        $nested_content = get_sub_field('nested_content'); ?>
+        <div class="item-wrap">
+          <dt class="nested-accordion-item">
+            <a href="#nested-accordion<?php echo $id; ?>" aria-expanded="false" aria-controls="nested-accordion<?php echo $id; ?>" class="accordion-title accordion-title js-accordionTrigger" target="_blank"><?php echo wp_kses_post($nested_label); ?></a>
+          </dt>
+          <dd class="nested-accordion-item accordion-content accordion-item is-collapsed" id="nested-accordion<?php echo $id; ?>" aria-hidden="true">
+            <?php echo wp_kses_post($nested_content); ?>
+          </dd><!-- .nested-accordion-item -->
+        </div><!-- .item-wrap -->
+      <?php
+      $id++;
+      endwhile; ?>
+    </dl>
+  </div><!-- .nested-accordion -->
+<?php endif; ?>

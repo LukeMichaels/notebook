@@ -1,0 +1,896 @@
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+  integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+/>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
+
+<style type="text/css">
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(themes/mfa/images/overlay.png);
+    background-size: cover;
+  }
+</style>
+
+<section id="hero" class="hero--parallax hero--about">
+  <div
+    class="parallax__bg"
+    data-center="background-position: 50.000% 0px;"
+    data-top-bottom="background-position: 50.000% -100px;"
+    data-anchor-target="#hero"
+    style="
+      background-image: url(https://mfa.cachefly.net/mfa/images/uploads/2017/06/1200x630/mercy-for-animals-book-hero-4.jpg);
+    "
+    ;
+  ></div>
+  <div
+    class="parallax__bg"
+    data-center="background-position: 50.000% 0px;"
+    data-top-bottom="background-position: 50.000% -100px;"
+    data-anchor-target="#hero"
+    style="
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-image: url(themes/mfa/images/overlay.png);
+    "
+  >
+    <div class="parallax__container">
+      <div
+        class="parallax__content"
+        data-top="opacity: 0.5"
+        data-100-top="opacity: 1"
+        data-anchor-target="h1"
+      >
+        <h1>
+          <i>Mercy For Animals</i>
+          <h5>Book by Mercy For Animals Founder Milo Runkle</h5>
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--CONTENT-START-->
+<style type="text/css">
+  /* :::::::::: hero */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 600px !important;
+    color: #ffffff;
+    background: url("https://mfa.cachefly.net/mfa/images/uploads/2018/04/one-hero.png")
+      no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .hero .copy-wrap {
+    margin: auto;
+    text-align: center;
+  }
+
+  .hero h1 {
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Gotham A", "Gotham B", Gotham, Helvetica, "Helvetica Neue",
+      Arial, sans-serif;
+    margin: 0 0 0rem;
+  }
+
+  .hero .copy {
+    width: 100%;
+  }
+
+  .hero .copy .line {
+    display: block;
+    width: 100%;
+    color: #ffffff;
+  }
+
+  /* :::::::::: general */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1060px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .bg-gray {
+    color: #4c4b47;
+  }
+
+  .closeVideo {
+    display: none;
+  }
+
+  .book-review h5 {
+    margin-bottom: 50px;
+  }
+
+  .book-review h4 {
+    font-style: italic;
+  }
+
+  .book-review h4 span {
+    font-style: normal;
+  }
+
+  .book-review p {
+    margin-bottom: 0;
+  }
+
+  .summary {
+    margin-bottom: 35px;
+  }
+
+  .summary h3 {
+    font-size: 25px;
+  }
+
+  .read-more {
+    text-align: center;
+  }
+
+  .read-more .btn {
+    font-size: 16px;
+    height: 67px;
+    line-height: 2.083;
+    margin-top: 6px !important;
+    padding: 19px 44px 10px;
+    width: 225px;
+  }
+
+  .book-media-kit a {
+    font-size: 16px;
+    padding: 19px 44px 16px;
+  }
+
+  .read-more .preorder {
+    font-size: 14px;
+  }
+
+  .book-image-and-providers {
+    float: left;
+    height: 850px;
+    width: 368px;
+  }
+
+  .book-image {
+    background-repeat: no-repeat;
+    background-size: 330px;
+    height: 510px;
+    margin-top: -28px;
+    width: 368px;
+  }
+
+  .book-media-kit {
+    text-align: center;
+    width: 325px;
+  }
+
+  .book-providers-small {
+    border-bottom: 3px solid rgb(243, 243, 243);
+    border-top: 3px solid rgb(243, 243, 243);
+    padding: 25px 0;
+    width: 325px;
+  }
+
+  .book-providers-small h4 {
+    display: block;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .book-providers-small a {
+    display: inline-block;
+    margin-bottom: 35px;
+    margin-right: 10px;
+  }
+
+  .book-providers-small a.margin-bottom {
+    margin-bottom: 20px;
+  }
+
+  .book-providers-small a.no-margin-right {
+    margin-right: 0;
+  }
+
+  .book-providers-large a {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px;
+    vertical-align: middle;
+  }
+
+  .container--wide {
+    max-width: 1200px;
+    margin: auto auto;
+  }
+
+  .praise-slider {
+    padding: 0 60px;
+  }
+
+  .imagerotatoritem {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .imagerotatoritem .circle-descrip {
+    margin-left: 60px;
+    padding-left: 0;
+    width: 580px;
+  }
+
+  .interstitial--circle .circle-descrip--large {
+    height: 280px;
+  }
+
+  .imagerotatoritem .inner {
+    padding-left: 30px;
+  }
+
+  .imagerotatoritem .inner p {
+    font-size: 25px;
+    line-height: 1.25;
+    margin-bottom: 35px;
+  }
+
+  .imagerotatoritem .inner .text-left {
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .imagerotatoritem {
+    padding-left: 3px;
+  }
+
+  .slick-next,
+  .slick-prev {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  i.fa.fa-chevron-left.slick-arrow {
+    left: 0px;
+    position: absolute;
+    top: 40%;
+    font-size: 30px;
+    font-weight: 100px;
+  }
+
+  i.fa.fa-chevron-right.slick-arrow {
+    right: 0px;
+    position: absolute;
+    top: 40%;
+    font-size: 30px;
+    font-weight: 100px;
+  }
+
+  .mfa-compatibility-layer .slick-dots li.slick-active button {
+    background: #000;
+    width: 10px;
+  }
+
+ .mfa-compatibility-layer .slick-dots li button {
+    border: 2px solid #000;
+  }
+
+  .mfa-compatibility-layer .slick-dots {
+    bottom: -80px;
+  }
+
+  .section--large.xl {
+    padding-bottom: 0;
+  }
+
+  .section--large.xl > .container {
+    max-width: 1180px;
+  }
+
+  .reviews ul {
+    float: left;
+    width: 550px;
+  }
+
+  .reviews ul.margin-right {
+    margin-right: 60px;
+  }
+
+  .reviews li {
+    display: inline-block;
+    line-height: 1.35;
+    margin-bottom: 50px;
+    text-align: left;
+  }
+
+  .reviews li p {
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+
+  .reviews li p span {
+    font-style: normal;
+  }
+
+  @media only screen and (max-width: 1179px) {
+    .reviews ul {
+      width: 100%;
+    }
+
+    .reviews li.no-margin-bottom {
+      margin-bottom: 0;
+    }
+
+    .reviews li {
+      margin-bottom: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 979px) {
+    .book-image-and-providers {
+      height: 877px;
+    }
+
+    .read-more {
+      text-align: center;
+    }
+
+    .interstitial--circle .circle {
+      float: none;
+      margin: 0 auto 20px auto;
+    }
+
+    .imagerotatoritem .circle-descrip {
+      float: none;
+      margin: 0 auto;
+      width: 452px;
+    }
+
+    .imagerotatoritem .inner p {
+      font-size: 21px;
+      line-height: 1.05;
+      margin: 0 30px 30px !important;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .book-description {
+      clear: both;
+    }
+
+    .book-description h3 {
+      padding-top: 60px;
+    }
+
+    .book-media-kit {
+      width: 100%;
+    }
+
+    .book-image-and-providers {
+      height: 710px;
+      width: 100%;
+    }
+
+    .book-image {
+      background-size: 234px;
+      height: 365px;
+      margin-left: 26%;
+      margin-right: auto;
+      width: 234px;
+    }
+
+    .book-providers-small {
+      margin: 0 auto;
+    }
+
+    .imagerotatoritem .circle-descrip {
+      width: auto;
+    }
+
+    .imagerotatoritem .circle--large {
+      height: 200px;
+      width: 200px;
+    }
+
+    .interstitial--circle .circle-descrip--large {
+      height: 300px;
+    }
+
+    .imagerotatoritem .inner {
+      margin-left: 0;
+      padding: 0;
+    }
+
+    .praise-slider {
+      padding: 0;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .book-image {
+      margin: 0 auto;
+    }
+  }
+</style>
+<!--
+<section class="bg-gray">
+  <div class="container text-center">
+    <div class="closeVideo"><div class="closeVideoIcon" onclick="hideLightbox()">X</div></div><iframe class="videoFrame" src="https://www.youtube.com/embed/jdT75WDGVYs?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+<section id="hero" class="hero">
+  <div class="row">
+    <div class="copy-wrap"><h1><i>Mercy For Animals</i></h1><h5>Book by MFA Founder Nathan Runkle</h5></div></div>
+</section> -->
+
+<section class="section--small">
+  <div class="container text-center">
+    <div class="book-review">
+      <!--			<h1><i>Mercy For Animals</i><h5>Book by MFA Founder Nathan Runkle</h5></h1> -->
+      <h4>
+        <br /><br />"<span>Mercy For Animals</span> not only exposes the almost
+        unbelievable cruelty suffered by the billions of animals raised in
+        factory farms but explains what can—and must—be done to change things.
+        Please read it and recommend it to all your friends."
+      </h4>
+      <p>
+        Jane Goodall, PhD, DBE; Founder of the Jane Goodall Institute; and U.N.
+        Messenger of Peace
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="interstitial section--large book-info">
+  <div class="container">
+    <div class="book-image-and-providers">
+      <a href="https://www.amazon.com/dp/0399574050/ref=cm_sw_r_cp_dp_T1_v6Oozb8C5054G" target="_blank" rel="noopener noreferrer">
+        <div
+          class="book-image"
+          style="
+            background-image: url(https://mfa.cachefly.net/mfa/images/uploads/2017/08/mercy_for_animals_book.png);
+          "
+        ></div>
+      </a>
+
+      <div class="book-providers-small">
+        <h4>Order now:</h4>
+
+        <a href="https://itunes.apple.com/us/book/mercy-for-animals/id1202668330?mt=11" target="_blank" rel="noopener noreferrer"><img
+            src="https://mfa.cachefly.net/mfa/images/uploads/2017/06/ibooks-small.png"
+        /></a>
+        <a href="https://www.amazon.com/dp/B01MSF3KPC/ref=cm_sw_r_cp_dp_T2_Q-Oozb9TPSYVE" target="_blank" rel="noopener noreferrer"><img
+            src="https://mfa.cachefly.net/mfa/images/uploads/2017/06/kindle-small.png"
+        /></a>
+        <a href="https://play.google.com/store/books/details/Nathan_Runkle_Mercy_For_Animals?id=xcIPDgAAQBAJ" target="_blank" rel="noopener noreferrer"><img
+            src="https://mfa.cachefly.net/mfa/images/uploads/2017/06/googleplay-small.png"
+        /></a>
+        <a href="http://www.booksamillion.com/p/Mercy-Animals/Nathan-Runkle/9780399574054?id=6970102871767" target="_blank" class="no-margin-right" rel="noopener noreferrer"><img
+            src="https://mfa.cachefly.net/mfa/images/uploads/2017/06/bam-small.png"
+        /></a>
+        <a href="https://www.amazon.com/dp/0399574050/ref=cm_sw_r_cp_dp_T1_v6Oozb8C5054G" target="_blank" class="margin-bottom" rel="noopener noreferrer"><img
+            src="https://mfa.cachefly.net/mfa/images/uploads/2017/06/amazon-small.png"
+        /></a>
+        <a href="https://www.barnesandnoble.com/w/mercy-for-animals-nathan-runkle/1125684517?ean=9780399574054" target="_blank" class="margin-bottom barnes-and-noble-sm" rel="noopener noreferrer"><img
+            src="https://mfa.cachefly.net/mfa/images/uploads/2017/08/barnes_and_noble-sm.jpg"
+        /></a>
+        <a href="https://www.kobo.com/us/en/ebook/mercy-for-animals" target="_blank" class="margin-bottom" rel="noopener noreferrer"><img
+            src="https://mfa.cachefly.net/mfa/images/uploads/2017/06/kobo-small.png"
+        /></a>
+        <a href="https://www.indiebound.org/book/9780399574054" target="_blank" class="margin-bottom no-margin-right" rel="noopener noreferrer"><img
+            src="https://mfa.cachefly.net/mfa/images/uploads/2017/06/indiebound-small.png"
+        /></a>
+      </div>
+
+      <div class="book-media-kit">
+        <a href="book-media" class="btn btn--yellow mt20">View the Media Kit</a
+        ><br />
+      </div>
+    </div>
+
+    <div class="book-description">
+      <div class="inner mobile-text-center">
+        <div class="innercontent">
+          <div class="summary">
+            <h3 class="mb30">
+              A compelling look at animal welfare and factory farming in the
+              United States from Mercy For Animals, the leading international
+              force in preventing cruelty to farmed animals and promoting
+              compassionate food choices and policies.
+            </h3>
+            <p class="text-gray text-left">
+              Nathan Runkle would have been a fifth-generation farmer in his
+              small Midwestern town. Instead, he founded our nation’s leading
+              nonprofit organization for protecting factory-farmed animals. In
+              <i>Mercy For Animals</i>, Nathan brings us into the trenches of
+              his organization’s work; from MFA’s early days in grassroots
+              activism to dangerous and dramatic experiences doing undercover
+              investigations to the organization’s current large-scale efforts
+              at making sweeping legislative change to protect factory-farmed
+              animals and encourage compassionate food choices.
+            </p>
+            <p class="text-gray text-left">
+              But this isn’t just Nathan’s story.
+              <i>Mercy For Animals</i> examines how our country moved from a
+              network of small local farms with more than 50 percent of
+              Americans involved in agriculture to a massive coast-to-coast
+              industrial complex controlled by a mere 1 percent of our
+              population—and the consequences of this drastic change for animals
+              as well as our global and local environments. We also learn how
+              MFA strives to protect farmed animals in behind-the-scenes
+              negotiations with companies like Nestlé and other brand
+              names—conglomerates whose policy changes can spare countless lives
+              and strengthen our planet.
+            </p>
+          </div>
+          <div class="read-more">
+            <a
+              href="https://store.mercyforanimals.org/?productId=14126"
+              class="btn btn--primary mt30"
+              >Order Now</a
+            >
+            <!--<p class="preorder mt10">Once you order the book, <a href="https://mercyforanimals.org/giveaway" target="_blank" rel="noopener noreferrer">click here</a> to enter to win one of five vegan prize packages!</p>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="interstitial section--large interstitial--circle bg-gray">
+  <div class="container container--wide">
+    <h2 class="text-center mb50">Praise for <i>Mercy For Animals</i></h2>
+
+    <div class="praise-slider">
+      <div class="imagerotatoritem imagerotatorheight">
+        <div
+          class="circle circle--large"
+          style="
+            background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2017/06/joaquin-phoenix.jpg');
+          "
+        ></div>
+        <div class="circle-descrip circle-descrip--large">
+          <div class="inner">
+            <div class="innercontent">
+              <p>
+                "Factory farms operate in secrecy, regularly abusing innocent
+                animals. Mercy For Animals deserves our gratitude for exposing
+                their insidious practices and helping to close their doors once
+                and for all."
+              </p>
+              <p class="text-left">
+                Joaquin Phoenix, Actor from <i>Her</i>, <i>Walk the Line</i>,
+                and <i>Gladiator</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide -->
+
+      <div class="imagerotatoritem imagerotatorheight">
+        <div
+          class="circle circle--large"
+          style="
+            background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2017/08/woodyharrelson-2.jpg');
+          "
+        ></div>
+        <div class="circle-descrip circle-descrip--large">
+          <div class="inner">
+            <div class="innercontent">
+              <p>
+                "Mercy For Animals educates and enlightens, without being
+                preachy, suggesting real and practical changes for ending animal
+                suffering."
+              </p>
+              <p class="text-left">
+                Woody Harrelson, Actor from
+                <i>War for Planet of the Apes</i> and <i>The Hunger Games</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide -->
+
+      <div class="imagerotatoritem imagerotatorheight">
+        <div
+          class="circle circle--large"
+          style="
+            background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2017/08/petersinger-2.jpg');
+          "
+        ></div>
+        <div class="circle-descrip circle-descrip--large">
+          <div class="inner">
+            <div class="innercontent">
+              <p>
+                "Nathan Runkle tells gripping true stories of how courage
+                combined with smarts can change the world.
+                <i>Mercy For Animals</i> is an antidote for those who feel
+                powerless and unable to make a difference."
+              </p>
+              <p class="text-left">
+                Peter Singer, Professor of Bioethics at Princeton University and
+                Author of <i>Animal Liberation</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide -->
+      <div class="imagerotatoritem imagerotatorheight">
+        <div
+          class="circle circle--large"
+          style="
+            background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2017/07/dr-greger.jpg');
+          "
+        ></div>
+        <div class="circle-descrip circle-descrip--large">
+          <div class="inner">
+            <div class="innercontent">
+              <p>
+                "A wonderfully written story of bravery and justice, this book
+                will open your eyes and stir your heart."
+              </p>
+              <p class="text-left">
+                Dr. Michael Greger, Author of <i>How Not to Die</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide -->
+
+      <div class="imagerotatoritem imagerotatorheight">
+        <div
+          class="circle circle--large"
+          style="
+            background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2017/06/kathy-2.jpg');
+          "
+        ></div>
+        <div class="circle-descrip circle-descrip--large">
+          <div class="inner">
+            <div class="innercontent">
+              <p>
+                "Thanks to Nathan Runkle and Mercy For Animals, I know the world
+                is moving towards a more compassionate future. The people in
+                this book give me hope."
+              </p>
+              <p class="text-left">
+                Kathy Freston, Author of <i>The Book of Veganish</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide -->
+
+      <div class="imagerotatoritem imagerotatorheight">
+        <div
+          class="circle circle--large"
+          style="
+            background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2017/08/moby.jpg');
+          "
+        ></div>
+        <div class="circle-descrip circle-descrip--large">
+          <div class="inner">
+            <div class="innercontent">
+              <p>
+                "Nathan’s story is proof that one person truly can change the
+                world. I'm so grateful for him and Mercy For Animals."
+              </p>
+              <p class="text-left">
+                Moby, Grammy Award-Nominated Musician and Author of
+                <i>Gristle</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide -->
+
+      <div class="imagerotatoritem imagerotatorheight">
+        <div
+          class="circle circle--large"
+          style="
+            background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2017/08/johnrobbins.jpg');
+          "
+        ></div>
+        <div class="circle-descrip circle-descrip--large">
+          <div class="inner">
+            <div class="innercontent">
+              <p>
+                "I’ve supported Mercy For Animals for many years, but Nathan’s
+                book gave me an even deeper appreciation for the life-saving
+                work they do. This is an inspiring book by a beautiful man about
+                a profoundly important topic. Read it. Your heart will thank
+                you."
+              </p>
+              <p class="text-left">
+                John Robbins, Author of <i>Diet for a New America</i> and
+                President of the Food Revolution Network
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide -->
+
+      <div class="imagerotatoritem imagerotatorheight">
+        <div
+          class="circle circle--large"
+          style="
+            background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2017/06/emily-2.jpg');
+          "
+        ></div>
+        <div class="circle-descrip circle-descrip--large">
+          <div class="inner">
+            <div class="innercontent">
+              <p>
+                "Anytime you think that one person can’t make a difference in
+                this world, pick up this book and read Nathan’s story! He will
+                prove you wrong and inspire you to make this world a better
+                place!."
+              </p>
+              <p class="text-left">
+                Emily Deschanel, Actress from <i>Bones</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide -->
+
+      <div class="imagerotatoritem imagerotatorheight">
+        <div
+          class="circle circle--large"
+          style="
+            background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2017/08/evanna.jpg');
+          "
+        ></div>
+        <div class="circle-descrip circle-descrip--large">
+          <div class="inner">
+            <div class="innercontent">
+              <p>
+                "<small
+                  >This book is a glimpse of the awe-inspiring bravery, passion
+                  and compassion that is fueling the anti-violence, pro-kindness
+                  fight for animal rights. And it is an utterly heartfelt,
+                  honest tribute by a true animal friend and activist to the
+                  countless colorful individuals Nathan saved from misery, and
+                  the millions more who suffer and die in darkness.</small
+                >"
+              </p>
+              <p class="text-left">
+                Evanna Lynch, Actress from <i>Harry Potter</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide -->
+
+      <div class="imagerotatoritem imagerotatorheight">
+        <div
+          class="circle circle--large"
+          style="
+            background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2017/08/jeffreymasson.jpg');
+          "
+        ></div>
+        <div class="circle-descrip circle-descrip--large">
+          <div class="inner">
+            <div class="innercontent">
+              <p>
+                "<i>Mercy For Animals</i> is a superb and compelling book from
+                start to finish! I was riveted and inspired by Nathan's true
+                life story and how a small grassroots organization became a
+                leading international powerhouse!"
+              </p>
+              <p class="text-left">
+                Jeffrey Masson, Author of
+                <i
+                  >Beasts: What Animals Can Teach Us About the Origins of Good
+                  and Evil</i
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide -->
+
+      <div class="imagerotatoritem imagerotatorheight">
+        <div
+          class="circle circle--large"
+          style="
+            background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2017/06/marco-2.jpg');
+          "
+        ></div>
+        <div class="circle-descrip circle-descrip--large">
+          <div class="inner">
+            <div class="innercontent">
+              <p>
+                "My heart breaks for animals on factory farms, but I’m filled
+                with hope by people like Nathan Runkle and everyone at Mercy For
+                Animals. Thank you for making the world a kinder place."
+              </p>
+              <p class="text-left">
+                Marco Antonio Regil, TV Host of Spanish versions of
+                <i>Family Feud</i> and <i>The Price is Right</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide -->
+    </div>
+  </div>
+</section>
+
+<script>
+  jQuery(document).ready(function ($) {
+    $(".praise-slider").slick({
+      dots: false,
+      nextArrow: '<i class="fa fa-chevron-right"></i>',
+      prevArrow: '<i class="fa fa-chevron-left"></i>',
+    });
+  });
+</script>
+
+<section class="section--large">
+  <div class="container text-center">
+    <div class="book-review">
+      <h4>Order now on these platforms:</h4>
+      <div class="book-providers-large">
+        <a href="https://itunes.apple.com/us/book/mercy-for-animals/id1202668330?mt=11" target="_blank" class="wider" rel="noopener noreferrer"><img
+            src="https://mfa.cachefly.net/mfa/images/uploads/2017/06/ibooks-large.jpg"
+        /></a>
+        <a href="https://play.google.com/store/books/details/Nathan_Runkle_Mercy_For_Animals?id=xcIPDgAAQBAJ" target="_blank" class="wider" rel="noopener noreferrer"><img
+            src="https://mfa.cachefly.net/mfa/images/uploads/2017/06/googleplay-large.jpg"
+        /></a>
+        <a href="https://www.amazon.com/dp/0399574050/ref=cm_sw_r_cp_dp_T1_v6Oozb8C5054G" target="_blank" class="amazon wider" rel="noopener noreferrer"><img
+            src="https://mfa.cachefly.net/mfa/images/uploads/2017/06/amazon-large.jpg"
+        /></a>
+        <br />
+        <a href="https://www.amazon.com/dp/B01MSF3KPC/ref=cm_sw_r_cp_dp_T2_Q-Oozb9TPSYVE" target="_blank" rel="noopener noreferrer"><img
+            src="https://mfa.cachefly.net/mfa/images/uploads/2017/06/kindle-large.png"
+        /></a>
+        <a href="https://www.barnesandnoble.com/w/mercy-for-animals-nathan-runkle/1125684517?ean=9780399574054" target="_blank" class="barnes-and-noble-lg" rel="noopener noreferrer"><img
+            src="https://mfa.cachefly.net/mfa/images/uploads/2017/06/barnes_and_noble-lg.png"
+        /></a>
+        <a href="http://www.booksamillion.com/p/Mercy-Animals/Nathan-Runkle/9780399574054?id=6970102871767" target="_blank" class="bam" rel="noopener noreferrer"><img
+            src="https://mfa.cachefly.net/mfa/images/uploads/2017/06/bam-large.jpg"
+        /></a>
+        <a href="https://www.kobo.com/us/en/ebook/mercy-for-animals" target="_blank" rel="noopener noreferrer"><img
+            src="https://mfa.cachefly.net/mfa/images/uploads/2017/06/kobo-large.jpg"
+        /></a>
+        <a href="https://www.indiebound.org/book/9780399574054" target="_blank" rel="noopener noreferrer"><img
+            src="https://mfa.cachefly.net/mfa/images/uploads/2017/06/indiebound-large.jpg"
+        /></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--CONTENT-END-->

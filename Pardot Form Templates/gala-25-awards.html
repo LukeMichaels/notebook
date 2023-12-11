@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="https://go.mercyforanimals.org" >
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="%%description%%"/>
+    <title>%%title%%</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KS5TDMK');</script>
+    <!-- End Google Tag Manager -->
+    <!-- MWD Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TC7H6LZ');</script>
+    <!-- End Google Tag Manager -->
+    <style>
+    </style>
+  </head>
+  <body>
+    %%content%%
+    <script type="text/javascript">
+     jQuery(document).ready(function($){
+        $(".form-field.pd-text.required :input,.form-field.pd-select.required select,.form-field.pd-textarea.required textarea").each(function (index, elem) {
+          var el = $(elem);
+          var eId = el.attr("id");
+          if (!eId) {
+            return;
+          }
+          el.prop('required', true);
+          var label = $(elem).parents("form").find("label[for="+eId+"]").length == 1;
+        });
+        setTimeout(function () {
+          $('.form-field[data-class=error]').first().find('input,textarea,select').first().focus();
+        }, 1000);
+
+        });
+        var theElements = document.querySelectorAll("#pardot-form select");
+        for(var i=0; i<theElements.length; i++) {
+          theElements[i].children[1].setAttribute('selected', ''); // makes the first pardot field default selected
+      }
+     </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.contentWindow.min.js" integrity="sha256-EH+7IdRixWtW5tdBwMkTXL+HvW5tAqV4of/HbAZ7nEc=" crossorigin="anonymous"></script>
+  </body>
+</html>

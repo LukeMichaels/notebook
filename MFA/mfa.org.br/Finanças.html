@@ -1,0 +1,529 @@
+<style>
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(themes/mfa/images/overlay.png);
+    background-size: cover;
+  }
+</style>
+
+<section id="hero" class="hero--parallax">
+  <div class="parallax__bg" data-anchor-target="#hero"
+    style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2019/02/1200x630/rb-hero-calf2-3.jpg); background-position: 47% ​19%">
+  </div>
+  <div class="parallax__bg" data-anchor-target="#hero"
+    style="position:absolute;top:0px;left:0px;background-image:url(themes/mfa/images/overlay.png)">
+    <div class="parallax__container">
+      <div class="parallax__content" data-top="opacity: 0.5" data-100-top="opacity: 1" data-anchor-target="h1">
+        <h1>Finanças<h5>Suas doações salvando os animais</h5>
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--CONTENT-START-->
+<style>
+  .inverted-triangle:before {
+    margin-top: -11px;
+  }
+
+  .inverted-triangle:after {
+    margin-top: -11px;
+  }
+
+  #financialsContainer {
+    display: inline-block;
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  .financialLinksContainer a:hover {
+    text-decoration: underline;
+  }
+
+  #financialsGraph {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 40px;
+  }
+
+  #financialsLegend {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  #financialsLegend,
+  #financialsLegend2 {
+    text-align: left;
+  }
+
+  #financialsLegend ul,
+  #financialsLegend2 ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  #financialsLegend li,
+  #financialsLegend2 li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 14px;
+    padding-left: 30px;
+    line-height: 21px;
+    margin: 6px 0;
+  }
+</style>
+<style>
+  #financialsLegend li:before,
+  #financialsLegend2 li:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #aaaaaa;
+    background: #bbbbbb;
+    width: 19px;
+    height: 19px;
+    box-sizing: content-box;
+  }
+
+  .legend1:before {
+    border: 1px solid #D9DADB !important;
+    background: #E7E7E8 !important;
+  }
+
+  .legend2:before {
+    border: 1px solid #C8C9CB !important;
+    background: #D1D2D4 !important;
+  }
+
+  .legend3:before {
+    border: 1px solid #7AD0F3 !important;
+    background: #73CEF4 !important;
+  }
+
+  .legend4:before {
+    border: 1px solid #53B9E8 !important;
+    background: #4AB6E8 !important;
+  }
+
+  .legend5:before {
+    border: 1px solid #31A8DE !important;
+    background: #129FDA !important;
+  }
+
+  .legend6:before {
+    border: 1px solid #0E98D2 !important;
+    background: #0590CA !important;
+  }
+
+  .legend7:before {
+    border: 1px solid #0E98D2 !important;
+    background: #1d6392 !important;
+  }
+
+  .legend8:before {
+    border: 1px solid #31A8DE !important;
+    background: #31628e !important;
+  }
+
+  .legend9:before {
+    border: 1px solid #0E98D2 !important;
+    background: #56aeda !important;
+  }
+
+  .legend10:before {
+    border: 1px solid #0E98D2 !important;
+    background: #e7e7e8 !important;
+  }
+</style>
+<style>
+  .programsGroup {
+    position: relative;
+    margin: 14px 0 !important;
+  }
+
+  .programsGroup:before {
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -12px;
+    right: -12px;
+    border: 3px solid #D1D2D4;
+    border-radius: 18px;
+    padding: 0px 6px;
+  }
+
+  .programsGroup:after {
+    content: '';
+    position: absolute;
+    right: -18px;
+    top: -4px;
+    color: #BCBDC0;
+    text-transform: uppercase;
+    font-size: 16px;
+    width: 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .financials .btn {
+    font-size: 28px;
+    margin: 20px 20px 0 20px;
+  }
+
+  .financials .btn--unselected {
+    background-color: #ffffff !important;
+    color: #464646 !important;
+  }
+</style>
+<style>
+  #financialsButtons {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #financialsDetails {
+    font-weight: 100;
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+
+  .financialLinksContainer .container {
+    max-width: 700px;
+    text-align: center;
+  }
+
+  .financialLinks {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 49%;
+  }
+
+  .interstitial--circle .circle-descrip {
+    height: auto;
+  }
+</style>
+<style>
+  @media only screen and (max-width: 979px) and (min-width: 767px) {
+    .interstitial--circle .circle-descrip {
+      width: 48%;
+    }
+  }
+</style>
+<style>
+  @media only screen and (max-width:767px) {
+
+    #financialsGraph {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+
+    #financialsContainer {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .financials .btn {
+      font-size: 20px;
+      margin: 20px 10px 0 10px;
+    }
+
+    .financialLinks {
+      display: block;
+      margin: 0 auto;
+      height: auto;
+    }
+  }
+</style>
+<style>
+  @media only screen and (max-width:600px) {
+    .programsGroup:before {
+      display: none;
+    }
+  }
+</style>
+<style>
+  /* :::::::::: hero */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 535px;
+    color: #FFFFFF;
+    background: url('https://mfa.cachefly.net/mfa/images/uploads/2018/03/hero-financials-br.png') no-repeat;
+
+    background-size: cover;
+  }
+
+  .hero .copy-wrap {
+    margin: auto;
+    text-align: center;
+  }
+
+  .hero h1 {
+    width: 100%;
+    margin: 0 auto 15px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Gotham Pro", "Gotham A", "Gotham B", Gotham, Helvetica, "Helvetica Neue", Arial, sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  .hero .copy {
+    width: 100%;
+  }
+
+  .hero .copy .line {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1060px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  h5 {
+    color: #FFFFFF;
+  }
+</style>
+
+<!--
+<section class="hero">
+  <div class="row">
+    <div class="copy-wrap">
+      <h1>Finanças</h1>
+      <div class="copy">
+        <h5>Suas doações salvando os animais</h5>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+<section class="interstitial section--large interstitial--circle ">
+  <div class="container">
+    <div class="circle-descrip left">
+      <div class="inner">
+        <div class="innercontent">
+          <h3 class="mb30 mobile-text-center">Ajudando o Maior Número de Animais</h3>
+          <p>Nossos programas ajudam a poupar milhões de animais por ano de uma vida de sofrimento. Com o
+            nosso compromisso de beneficiar o maior número de animais através de programas mais eficazes e
+            com a melhor relação custo x benefício, você pode se assegurar de que a sua doação vai gerar
+            muito impacto.</p>
+        </div>
+      </div>
+    </div>
+    <div class="circle circle--xlrg"
+      style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2015/05/Hen-and-chicks-supported-by-the-life-saving-work-of-Mercy-For-Animals.png);">
+    </div>
+  </div>
+</section>
+
+<section class="interstitial section--large bg-gray financials">
+  <div class="container text-center">
+    <h3 class="mb30">Como Investimos as Doações</h3>
+    <p>Todas as doações que recebemos são diretamente investidas na missão da MFA. Confira abaixo o detalhamento dos
+      gastos por área.</p>
+    <div id='financialsContainer'>
+      <canvas id="financialsGraph" width="280" height="280" onfirstvisible="selectFinancialsYear(2021)"></canvas>
+      <div id="financialsLegend">
+        <h3 id="yearTitle" class="text-blue"></h3>
+        <ul class='programsGroup' style="list-style: none; text-align: left">
+          <li class='legend3'>CAMPANHAS DE EDUCAÇÃO PRÓ-VEGANISMO: 23%</li>
+          <li class='legend4'>CAMPANHAS CORPORATIVAS E GOVERNAMENTAIS: 37%</li>
+          <li class='legend5'>INVESTIGAÇÕES SECRETAS: 9%</li>
+          <li class='legend6'>DEPARTAMENTO JURÍDICO: 6%</li>
+        </ul>
+        <ul style="list-style: none; text-align: left">
+          <li class='legend1'>ADMINISTRATIVO: 17%</li>
+          <li class='legend2'>ESFORÇOS DE ARRECADAÇÃO: 8%</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="interstitial section--large financials">
+  <div class="container text-center">
+    <h3 class="mb30">Como a Mercy For Animals Capta Seus Recursos No Brasil
+    </h3>
+    <p style="padding-bottom: 20px;">Como uma organização sem fins lucrativos, praticamente todas as doações vêm de
+      apoiadores individuais ou entidades filantrópicas. Menos de 4% de todas as doações vêm de empresas, e a
+      Mercy For Animals tem e sempre teve como política nunca aceitar doações provenientes de exploração animal.
+    </p>
+    <div id='financialsContainer2'>
+      <canvas id="financialsGraph2" width="280" height="280"
+        onfirstvisible="selectFinancialsYear2(20212)"></canvas>
+      <div id="financialsLegend2">
+        <!--<div style="text-align: center"><img src="https://mfa.cachefly.net/mfa/images/uploads/2018/03/pie-chart-updated.png" width="50%" height="auto"></div>-->
+        <h3 id="yearTitle2" class="text-blue">2021</h3>
+        <ul class='programsGroup'>
+          <li class='legend8'>RECURSOS PROVENIENTES DE NOSSA MATRIZ NOS ESTADOS UNIDOS: 96,71%</li>
+          <li class='legend9'>DOAÇÕES DE PESSOAS FÍSICAS E JURÍDICAS: 3,29%</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<section class="interstitial section--large inverted-triangle financialLinksContainer">
+  <div class="container">
+    <h3>Resultados 2021</h3>
+    <p class="mb50">
+      Confira <a href="https://mercyforanimals.org/2021-year-in-review/">aqui</a> os resultados com os impactos do ano de 2021.
+    </p>
+    <div class='financialLinks'>
+      <h4><b>Anos Anteriores</b></h4>
+      <ul>
+        <li><a href="https://mercyforanimals.org.br/2020-retrospectiva/">2020 Em Números</a></li>
+        <li><a href="https://mercyforanimals.org.br/2019-br/">2019 Em Números</a></li>
+        <li><a href="https://mercyforanimals.org.br/2018-em-numeros-no-brasil/">2018 Em Números</a></li>
+      </ul>
+    </div>
+    <div class='financialLinks'>
+      <h4><b>Outros Documentos</b></h4>
+      <ul>
+        <li><a href="https://mercyforanimals.org.br/estatuto/">Nosso Estatuto</a></li>
+        <li><a href="https://mercyforanimals.org.br/politica-antiassedio-e-antidiscriminacao/">Política
+            Antiassédio E Antidiscriminação</a>
+        </li>
+        <li><a href="https://mercyforanimals.org.br/politica-de-privacidade/">Política De Privacidade</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== -->
+<!--  RECOGNITION SLIDER  -->
+<!-- ==================== -->
+<section class="flexslider flexslider--large flexslider--show-paging flexslider--recognition mb5">
+  <ul class="slides">
+    <li class="slide"
+      style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2019/02/rb-recognition-overlay2.jpg);">
+      <div class="container--constrain block-center">
+        <div class="container text-center">
+          <div class="slide__content">
+            <img src="https://mfa.cachefly.net/mfa/images/uploads/2018/05/selo-a-no-tamanho-lg.png"
+              alt="Selo a No Tamaho" width="30%">
+            <h5 class="alt text-white">Mercy For Animals foi aprovada no processo de certificação do
+              Instituto Doar com conceito A!</h5>
+
+            <p class="larger">A partir de maio de 2018, nossa organização passa a contar com o <a
+                href="http://www.mercyforanimals.org.br/selo-doar" style="color: #fff"><u>Selo
+                  Doar</u></a>, que visa incentivar, legitimar e destacar o profissionalismo e a
+              transparência nas organizações não-governamentais brasileiras.</p>
+          </div>
+        </div>
+      </div>
+    </li>
+    <!--   <li class="slide" style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2018/05/selo-cows.jpg); background-position: center top">
+      <div class="container--constrain block-center">
+      <div class="container text-center">
+        <div class="slide__content">
+          <img src="https://mfa.cachefly.net/mfa/images/uploads/2015/04/vegnewslogo.jpg" alt="A Mercy For Animals é a primeira organização a ser nomeada 'Organização do Ano' duas vezes na VegNews magazine" style="border-radius:6px">
+          <h5 class="alt text-white">A Mercy For Animals foi eleita a ONG favorita das pessoas pela revista <i>VegNews</i> na premiação em 2016, que contou com o voto de mais de 1,7 milhão de pessoas. A <i>VegNews</i> é uma das mais importantes publicações contendo  notícias sobre o Veganismo do mundo. </h5>
+          <p class="larger">O sucesso da Mercy For Animals tem sido estrondoso, acelerando o processo de transformação da sociedade pelo fim da crueldade contra os animais.</p>
+        </div>
+      </div>
+      </div>
+    </li> -->
+  </ul>
+</section>
+
+
+<script type='text/javascript'>
+  // Order:
+  // admin, development, education, corporate outreach, investigations, legal, comms
+  var yearFinancials = {
+    '2017': { graph: [20, 6, 34, 22, 11, 7] },
+    '2018': { graph: [19, 6, 18, 39, 7, 11] },
+    '20182': { graph: [96.67, 3.33] },
+    '2019': { graph: [15, 10, 20, 40, 9, 6] },
+    '20192': { graph: [96.57, 3.43] },
+    '2020': { graph: [15, 3, 21, 46, 9, 6] },
+    '20202': { graph: [97.42, 2.58] },
+    '2021': { graph: [17, 8, 23, 37, 9, 6] },
+    '20212': { graph: [96.71, 3.29] },
+  };
+
+  window.selectFinancialsYear2 = function (year, chart) {
+    var financialsChart2 = PieChart.init(
+      'financialsGraph2', [
+      { color: '#3b628a', fontColor: '#ffffff', radius: 130, offsetX: 0, offsetY: 0 },
+      { color: '#56aeda', fontColor: '#ffffff', radius: 120, offsetX: 0, offsetY: 0 },
+    ]
+    );
+    //document.getElementById('yearTitle2').innerHTML = year;
+
+    if (yearFinancials[year].expenses) {
+      removeElementClass('financialsDetails', 'hidden');
+      document.getElementById('financialPercentExpenses2').innerHTML = yearFinancials[year].expenses + '%';
+      document.getElementById('financialPercentRevenue2').innerHTML = yearFinancials[year].revenue + '%';
+
+    } else {
+      addElementClass('financialsDetails', 'hidden');
+    }
+
+    addElementClass('btn2017', 'btn--unselected');
+    removeElementClass('btn' + year, 'btn--unselected');
+
+    financialsChart2.animateGraph(yearFinancials[year].graph);
+  }
+
+  window.selectFinancialsYear = function (year) {
+    var financialsChart = PieChart.init(
+      'financialsGraph', [
+      { color: '#E7E7E8', fontColor: '#a7a9ac', radius: 120, offsetX: 0, offsetY: 0 },
+      { color: '#D1D2D4', fontColor: '#ffffff', radius: 130, offsetX: 0, offsetY: 0 },
+      { color: '#73CEF4', fontColor: '#ffffff', radius: 139, offsetX: 0, offsetY: 0 },
+      { color: '#4AB6E8', fontColor: '#ffffff', radius: 139, offsetX: 0, offsetY: 0 },
+      { color: '#129FDA', fontColor: '#ffffff', radius: 139, offsetX: 0, offsetY: 0 },
+      { color: '#0590CA', fontColor: '#ffffff', radius: 139, offsetX: 0, offsetY: 0 },
+      { color: '#1d6392', fontColor: '#ffffff', radius: 139, offsetX: 0, offsetY: 0 },
+    ]
+    );
+
+    document.getElementById('yearTitle').innerHTML = year;
+
+    if (yearFinancials[year].expenses) {
+      console.log(yearFinancials[year].expenses);
+      removeElementClass('financialsDetails', 'hidden');
+      document.getElementById('financialPercentExpenses').innerHTML = yearFinancials[year].expenses + '%';
+      document.getElementById('financialPercentRevenue').innerHTML = yearFinancials[year].revenue + '%';
+
+    } else {
+      addElementClass('financialsDetails', 'hidden');
+    }
+
+    addElementClass('btn2017', 'btn--unselected');
+    removeElementClass('btn' + year, 'btn--unselected');
+
+    financialsChart.animateGraph(yearFinancials[year].graph);
+  }
+</script>
+<!--CONTENT-END-->

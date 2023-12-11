@@ -1,0 +1,73 @@
+<style type='text/css'>
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(themes/mfa/images/overlay.png);
+    background-size: cover;
+  }
+</style>
+
+<section id="hero" class="hero--parallax hero--about">
+  <div class="parallax__bg" data-center="background-position: 50.000% 0px;"
+    data-top-bottom="background-position: 50.000% -100px;" data-anchor-target="#hero"
+    style="background-image:url(https://mfa.cachefly.net/mfa/images/uploads/2019/08/1200x630/contact-us-v2-4.jpg)">
+  </div>
+  <div class="parallax__bg" data-center="background-position: 50.000% 0px;"
+    data-top-bottom="background-position: 50.000% -100px;" data-anchor-target="#hero"
+    style="position:absolute;top:0px;left:0px;background-image:url(themes/mfa/images/overlay.png)">
+    <div class="parallax__container">
+      <div class="parallax__content" data-top="opacity: 0.5" data-100-top="opacity: 1" data-anchor-target="h1">
+        <h1>Estudo de Caso: Compromisso em Ação <h5>Cadastre-se para receber o relatório completo com as estratégias da Accor para avançar em seu compromisso e dizer não ao confinamento de galinhas em gaiolas em sua cadeia de suprimentos.</h5>
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="interstitial section--large bg-blue mt30">
+  <div class="container text-center">
+    <p>Mais de 150 empresas brasileiras se posicionaram publicamente e disseram não ao confinamento de galinhas em gaiolas em suas cadeias de suprimentos. Algumas delas estão adotando estratégias inovadoras, sustentáveis e eficientes para avançar nessa pauta.
+      Baixe o estudo de caso Compromisso em Ação e entenda como a líder hoteleira Accor está avançando em seu compromisso para não trabalhar com ovos de galinhas confinadas em gaiolas até 2025.</p>
+    <p>You’ve got questions, we’ve got answers. Wondering how to make a donation? Or become a volunteer? Ask away.</p>
+  </div>
+</section>
+
+<section class="section--large newsletter-signup">
+  <div class="container text-center">
+    <h4 class="mb30">
+      <i class='fa fa-envelope-o' style='font-size:1.2em;vertical-align:top'></i> Envie um e-mail
+    </h4>
+    <div class="form-content">
+      <iframe id="form_iframe" style="width: 1px; min-width: 100%; border: 0;" src="https://go.mercyforanimals.org/l/939853/2023-01-03/3bxmk" title="accessibility improvement - need Title for form"></iframe>
+    </div><!-- .form-content -->
+    <p class='text-center mt30'>Você também pode nos encontrar no <a
+        href="mailto:Informacoes@MercyForAnimals.org">Informacoes@MercyForAnimals.org</a>.
+    </p>
+    <p>Ressaltamos que não podemos fornecer assistência jurídica ao público.</p>
+    <p>Caso tenha interesse em alguma vaga, pedimos que candidate-se através do formulário disponível no anúncio da mesma. Pedidos de candidatura e currículos enviados por e-mail serão ignorados e excluídos de nossa base de dados.</p>
+  </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.min.js" async></script>
+<script>
+  jQuery(document).ready(function($){
+    /* iframe re-size */
+    function loop_iframe_resize() {
+      if (!window.iFrameResize) {
+        setTimeout(function(){
+          loop_iframe_resize();
+        }, 1000);
+        return;
+      }
+      var host = (window.location.hostname||'').replace('www.', '');
+      var domains = ['https://mymfa.mercyforanimals.org', 'https://give.mercyforanimals.org','https://act.mercyforanimals.org', 'https://go.mercyforanimals.org'];
+      ['https://', 'https://www.', 'https://act.', 'https://act.www.', 'https://go.', 'https://go.www.'].forEach(function(prefix){
+        domains.push( prefix + host );
+      });
+      iFrameResize({ checkOrigin: domains, log: false }, '#form_iframe');
+    }
+    loop_iframe_resize();
+  });
+</script>

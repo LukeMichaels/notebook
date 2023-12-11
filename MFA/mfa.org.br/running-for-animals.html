@@ -1,0 +1,1141 @@
+<!--CONTENT-START-->
+<style>
+  @import url("https://cloud.typography.com/6738896/6053212/css/fonts.css");
+  /* @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap'); */
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans+Narrow:wght@400;700&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Sofia+Sans+Extra+Condensed:wght@700&display=swap'); */
+
+  .font-pt-sans-narrow {
+    font-family: 'PT Sans Narrow', sans-serif;
+  }
+  /* .font-sofia-sans {
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  } */
+  .font-bebas-neue {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  /* reset */
+  .page {
+    font-family: "Gotham A", "Gotham B", "Gotham Pro", Montserrat, Raleway,
+    -apple-system, "system-ui", "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", sans-serif;
+    line-height: 1.5;
+  }
+  /* Undo a strict rule. */
+  @media only screen and (max-width: 767px) {
+    p {
+      font-size: inherit;
+    }
+    p.size-20 {
+      font-size: 1rem;
+    }
+  }
+  h1, h2, h3, h4, h5, h6, p, strong, em, b, i:not(.fa):not(.fas):not(.fab):not(.far), ul, ol, li, a, div, span, input, button, .action-button, .arrow-button, div.desc {
+    font-family: inherit;
+    line-height: inherit;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+  }
+  a {
+    text-decoration: underline;
+  }
+  a:hover {
+    color: #055cd9;
+  }
+  .size-20, p.size-20 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  @media (min-width: 768px) {
+    .size-20, p.size-20 {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+  li {
+    margin-bottom: 1rem;
+  }
+
+  .page .mfa-header-hero_bg-xs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .page .mfa-header-hero_content-xs {
+    top: 0;
+    border-radius: 0;
+    max-width: 960px;
+    background: #0f1223;
+    background: linear-gradient(90deg, rgba(47,56,107,0.7) 0%, rgba(15,18,35,1) 100%);
+    color: #fff !important;
+    width: 100%;
+    padding: 60px 30px;
+  }
+
+  .page .mfa-header-hero_bg-md .mfa-header-hero_overlay {
+    background: linear-gradient(90deg,rgba(7, 8, 15, 0.0) 30%,rgba(7, 8, 15, 0.50) 70%,rgba(7, 8, 15, 0.75) 100%) !important;
+  }
+  .page .mfa-header-hero_content-md {
+    margin: 0 50px 0 auto;
+  }
+  @media (min-width: 1366px) {
+    .page .mfa-header-hero_content-md {
+      margin: 0 100px 0 auto;
+    }
+  }
+  @media (min-width: 1720px) {
+    .page .mfa-header-hero_content-md {
+      margin: 0 180px 0 auto;
+    }
+  }
+
+  .page .mfa-header-hero--layout-2022 .mfa-header-hero_content-md,
+  .page .mfa-header-hero--layout-2022 .mfa-header-hero_content-md .mfa-header-hero_heading,
+  .page .mfa-header-hero--layout-2022 .mfa-header-hero_content-md .mfa-header-hero_subheading {
+    text-align: right;
+  }
+
+  .page .rfa-cta-button {
+    margin-top: 10px;
+    display: inline-block;
+    background: #0666f2 !important;
+    color: #fff !important;
+    padding: 16px 24px;
+    text-decoration: none !important;
+    font-size: 1.1rem;
+    line-height: 1;
+    font-weight: 700;
+    border-radius: 100px;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .page .rfa-cta-button.animate {
+      animation: custom-cta-pulse 1500ms infinite;
+    }
+  }
+  @keyframes custom-cta-pulse {
+    0% { box-shadow: #0666f2FF 0 0 0 0px; }
+    75% { box-shadow: #0666f200 0 0 0 0.8rem; }
+    100% { box-shadow: #0666f200 0 0 0 0.8rem; }
+  }
+
+  /* Hero */
+  .page .mfa-header-hero_heading-image {
+    max-width: 340px;
+  }
+  .page .mfa-header-hero_heading-image-md {
+    margin-bottom: 20px;
+  }
+  .page .rfa-cta-button:hover {
+    background-color: #055cd9 !important;
+    color: #fff !important;
+  }
+  .page .mfa-header-hero_button {
+    display: inline-block;
+    border-color: #0666f2 !important;
+    background: #0666f2 !important;
+    color: #fff !important;
+    padding: 16px 24px;
+    text-decoration: none !important;
+    font-size: 1.1rem;
+    line-height: 1;
+    font-weight: 700;
+    border-radius: 100px;
+  }
+  .page .mfa-header-hero_button:hover {
+    border-color: #055cd9 !important;
+    background-color: #055cd9 !important;
+    color: #fff !important;
+  }
+
+  /* Testimony */
+  .testimony-slider-small,
+  .testimony-slider-small .testimony__photo {
+    height: 200px;
+  }
+
+  .testimony-slider-small .testimony__photo {
+    background-size: cover;
+  }
+
+  .slick-arrow {
+    z-index: 1;
+  }
+
+  /* #hero.hero.v2 {
+    height: auto;
+    padding: 0 0 53.34% 0;
+    background-size: contain;
+    background-image: url('https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/03/running-for-animals-hero.png');
+    background-repeat: no-repeat;
+    background-color: #000000;
+  } */
+
+  #hero.hero.v2 .hero-content-v2 {
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+
+  .call-to-action-v2 {
+    background: none;
+  }
+
+  .call-to-action-v2,
+  .logos a,
+  .kit img,
+  .video-section-v2 iframe {
+    display: block;
+  }
+
+  .hero-content-v2 {
+    text-align: left;
+  }
+
+  .call-to-action-v2 h3 {
+    font-size: 24px;
+  }
+
+  #hero h1 {
+    font-size: 21px;
+  }
+
+  #hero h1,
+  .bold-a h3,
+  .bold-a h4 {
+    font-weight: normal;
+  }
+
+  .bold-a a {
+    font-weight: bold;
+  }
+
+  .call-to-action-v2 img {
+    max-width: 250px;
+  }
+
+  hr {
+    margin: 30px 0;
+  }
+
+  a.submit-btn {
+    background-color: #055BD9;
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    padding: 20px;
+  }
+
+  /*
+  #hero .parallax__bg:not(:first-child) {
+    background-image: none !important;
+  }
+
+  #hero .parallax__bg {
+    background-position: left !important;
+  }
+  */
+
+  .banner h3 {
+    margin-bottom: 0;
+    padding: 40px 6.5%;
+    color: #FFF;
+    background-color: #F99338;
+    text-align: center;
+  }
+
+  .banner .arrow-wrap {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 25px solid #F99338;
+  }
+
+  .fas,
+  .fa-users {
+    font-size: 3em;
+  }
+
+  .orange-accent {
+    color: #F99338;
+  }
+
+  .fa.fa-star {
+    font-size: 1em;
+    padding-right: 1em;
+  }
+
+  .flex-center ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .run-icon {
+    width: 150px;
+  }
+
+  .runner-container .span4,
+  .logos .span4 {
+    padding: 0 5%;
+  }
+
+  /*.runner-container img,
+  .logos img,
+  img.full-width*/
+  img {
+    width: 100%;
+  }
+
+  .prata img {
+    max-width: 200px;
+  }
+
+  .bronze img {
+    max-width: 150px;
+  }
+
+  .apoio img {
+    max-width: 100px;
+  }
+
+  .banner.bg-blue h3 {
+    background-color: #055BD9;
+  }
+
+  .banner.bg-blue .arrow-down {
+    border-top-color: #055BD9;
+  }
+
+  .prize h2 {
+    padding: 30px 0;
+  }
+
+  .prize a:hover {
+    text-decoration: none !important;
+  }
+
+  .prize a {
+    font-weight: bold;
+  }
+
+  /*.kit .span6:first-child {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }*/
+
+  .width-two-thirds p {
+    margin-bottom: 0;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .kit-info {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .kit-info .span6 {
+      padding: 0 2%;
+    }
+
+    .width-two-thirds {
+      margin: 0 auto;
+      width: 66%;
+    }
+
+    .flex-center {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .logos .flex-center {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .flex-center ul {
+      margin-top: 30px;
+    }
+
+    .natureza p {
+      padding: 0 5%;
+    }
+
+    .runner-container .span4 img {
+      height: 270px;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: top;
+      object-position: top;
+    }
+
+    .prize.span6 {
+      padding: 0 2%;
+    }
+
+    .prize p {
+      min-height: 65px;
+    }
+
+    .first-prize,
+    .prize .container-slider {
+      margin: 0 auto;
+      width: 80%;
+    }
+
+    /*.kit .span6:first-child {
+      padding-left: 6.5%;
+    }*/
+
+    .apoio .logo-img {
+      width: 24%;
+    }
+  }
+
+  @media only screen and (min-width: 500px) and (max-width: 767px) {
+    section.action-center {
+      padding-top: 80px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+
+    .logos .span4:not(:last-child) {
+      margin-bottom: 50px;
+    }
+
+    .gradient-overlay {
+      background-color: rgba(0, 0, 0, .5);
+    }
+
+    .logo-img.mb30:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    .width-two-thirds {
+      margin-top: 30px;
+    }
+
+    /*.kit-info .span6:first-child {
+      margin-bottom: 30px;
+    }*/
+  }
+
+  @media only screen and (max-width: 489px) {
+    .panel .panel__inner--left {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+</style>
+
+[mfa_header_hero
+  layout='layout-2022'
+
+  background_image_url='https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/03/rfa-hero-mobile.jpg'
+  background_position_x=34
+  background_image_md_url='https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/03/rfa-hero-desktop.jpg'
+  background_position_md_x=30
+  overlay_color='rgba(7, 8, 15, 0.75)'
+
+  heading_image_url='https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/03/running-for-animals-3ed-logo.png'
+  heading_image_width=300
+  heading_image_md_url='https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/03/running-for-animals-3ed-logo.png'
+  heading_image_md_width=470
+  heading_text_sr_only='yes'
+  heading_text='3ª Running For Animals Rio de Janeiro'
+  subheading_text='<div style="padding-top: 1rem"><div class="font-pt-sans-narrow" style="display: inline-block; text-transform: none; font-weight: 700; padding: 0; font-size: 130%; line-height: 1;">PELA PRIMEIRA VEZ EM FORMATO PRESENCIAL E VIRTUAL. CORRA DE ONDE ESTIVER NO DIA</div><div class="font-bebas-neue" style="display: block; text-transform: none; font-weight: 700; padding: 0; color: #8fc002; font-size: 400%; line-height: 1; margin: 4px 0 4px 0;">2 DE JULHO</div></div><div class="font-pt-sans-narrow" style="font-size: 90%; line-height: 1; text-transform: none;">Valor arrecadado será revertido em prol dos animais.</div>'
+
+  text_color='#000'
+  text_md_color='#fff'
+  button_bg_color='#0666f2'
+  button_text_color='#ffffff'
+  button_border_color='#0666f2'
+  button_hover_text_color='#ffffff'
+  button_hover_bg_color='#055cd9'
+  button_hover_border_color='#055cd9'
+/]
+
+<!--=========== Hero section ===========-->
+<!-- <section id="hero" class="hero v2 section--p80">
+  <!--<div class="gradient-overlay"></div>-- >
+  <div class="call-to-action-v2">
+    <div class="hero-content-v2 container mini-grid span6">
+      <!--<img class="mb30" src="https://mfa.cachefly.net/mfa/images/uploads/2019/07/rfa-full-logo.png" />
+      <h3 class="toUpper">Participe e salve os animais! 100% do valor das inscrições, será doado para a Mercy For Animals.</h3>
+      <h1 class="toUpper">Reserve a data 6 de Outubro. PREPARE-SE PARA 3KM DE CAMINHADA E 5KM DE CORRIDA</h1>-- >
+    </div>
+  </div>
+</section> -->
+
+<!--=========== Description ===========-->
+<section class="section--p80">
+  <div class="container text-left mini-grid">
+    <!--<i class="fas fa-running orange-accent mb30"></i>-->
+    <div class="text-center">
+      <img class="mb30" style="width: 150px;" src="https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/03/brand-running-for-animals-2023.png" />
+    </div>
+
+    <h2 class="text-left mb30" style="text-transform: none; font-size: 1.5rem" >
+      Participe da Running For Animals, uma corrida pelos animais.
+    </h2>
+
+    <p class="size-20 text-left">
+      A Mercy For Animals no Brasil realizará, no dia 2 de julho, a terceira edição da Running For Animals. Pela primeira vez em formato híbrido, presencial e virtual, o evento contemplará corrida (5 Km e 10 Km) e caminhada (3 Km).
+    </p>
+    <p class="size-20 text-left">
+      O evento presencial acontecerá no Recreio dos Bandeirantes, no Rio de Janeiro. Quem estiver em outro estado ou não puder ir ao local, pode se inscrever na modalidade virtual, receber o kit de atleta e participar no dia, de onde estiver.
+    </p>
+    <p class="size-20 text-left">
+      O objetivo do evento é oferecer uma experiência de superação, saúde e, principalmente, fortalecer laços para promover a defesa animal e do meio ambiente.
+    </p>
+    <p class="size-20 text-left">
+      Os recursos arrecadados serão usados exclusivamente nas atividades da MFA.
+    </p>
+    <p class="size-20 text-left">
+      Para saber mais e participar acesse o site abaixo e faça a sua inscrição.
+    </p>
+
+    <p class="text-center mb30">
+      <a class="rfa-cta-button animate" href="https://www.ticketsports.com.br/e/running-for-animals-2023-35870" target="_blank" rel="noopener">Inscrições abertas</a>
+    </p>
+  </div>
+  <!--container-->
+</section>
+
+<!--============== Results video and slider ====================-->
+<!--<section class="banner bg-blue bold-a">
+  <h3>Confira a classificação dos atletas <a href="http://www.temporecorde.com.br/resultado-detalhe/94/running-for-animals">aqui</a>.</h3>
+</section>
+<section class="bold-a">
+  <div class="testimony-slider-small">
+      <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/WF2A7985.JPG); background-position: top;"></div>
+      <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/MNUN8143.JPG); background-position: top;"></div>
+      <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/MNUN7906.JPG); background-position: top;"></div>
+    <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/MNUN7895.JPG); background-position: top;"></div>
+    <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/MNUN7876.JPG); background-position: top;"></div>
+    <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/MNUN7855.JPG); background-position: top;"></div>
+    <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/IMG_9780.JPG); background-position: top;"></div>
+    <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/IMG_9747.JPG); background-position: top;"></div>
+    <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/DJI_0609.JPG); background-position: top;"></div>
+    <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/WF2A8600.JPG); background-position: top;"></div>
+    <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/WF2A8460.JPG); background-position: top;"></div>
+    <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/WF2A8379.JPG); background-position: top;"></div>
+    <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/WF2A8112.JPG); background-position: top;"></div>
+    <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/WF2A7984.JPG); background-position: top;"></div>
+    <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/MNUN8127.JPG); background-position: top;"></div>
+    <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/MNUN8114.JPG); background-position: top;"></div>
+    <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/MNUN8091.JPG); background-position: top;"></div>
+    <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/MNUN8042.JPG); background-position: top;"></div>
+    <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/MNUN7761.JPG); background-position: top;"></div>
+    <div class="testimony__photo" style="background-image:url(https://mfa.cachefly.net/mfa/images/runningForAnimalsSmall/MNUN7734.JPG); background-position: top;"></div>
+  </div>
+  <div class="container text-center pt30 pb30">
+    <p>Confira todas as fotos <a href="https://drive.google.com/drive/folders/1-UEyviWz6AC8YgpwjsXFanmiWv6TDjmL?usp=sharing">aqui</a>.</p>
+  </div>
+</section>-->
+
+<section class="banner bg-blue">
+  <h3>CONFIRA A ÚLTIMA EDIÇÃO DA RUNNING FOR ANIMALS</h3>
+</section>
+<section class="video-section-v2 bg-img">
+  <iframe data-aspect-ratio=".5625" src="https://www.youtube.com/embed/CRcl8e5cLlY" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""
+    id="widget2"></iframe>
+</section>
+
+<!--============== Kit Info ====================-->
+<section class="banner bg-blue">
+  <h3>INSCREVA-SE AGORA</h3>
+</section>
+<section class="section--p80 bg-gray">
+  <div class="container">
+    <div class="row kit-info m0">
+      <div class="span6">
+        <!--<p class="orange-accent bold toUpper size-20">ENTREGA DE KIT:</p>-->
+        <!--<p>Todos os ATLETAS receberão um kit composto por: Camiseta da Prova/ Sacolinha/Squeeze/ Número do atleta e Brindes.</p>
+          <p>A entrega do kit de participação será realizada nos dias 4 e 5 de Outubro
+de 2019, no Restaurante Plant Made - SP , situado na Praça Vilaboim, 111– Higienópolis – São Paulo – SP, CEP: 01241 010.</p>
+          <p>Os kits deverão ser retirados pelos ATLETAS das 10h às 21h.</p>-->
+        <p style="color: #0666f2; font-weight: 700; text-transform: uppercase" class="size-20 text-center">
+          2º LOTE ATÉ DIA 31/05
+        </p>
+
+        <p class="text-center">
+          <a class="rfa-cta-button" href="https://www.ticketsports.com.br/e/running-for-animals-2023-35870" target="_blank" rel="noopener">Inscrições abertas</a>
+        </p>
+
+        <!-- <p class="text-center">
+          <a class="rfa-cta-button" href="https://www.ticketsports.com.br/e/running-for-animals-2023-35870" target="_blank" rel="noopener">1º lote até dia 30/04</a>
+        </p> -->
+        <!--<p>No momento da inscrição, você decidirá como vai receber o seu kit.</p>
+          <p>Existem 2 maneiras:</p>
+          <ul>
+            <li>Receber pelos Correios no endereço que preferir (frete pago pelo atleta);</li>
+            <li>Retirar em São Paulo próximo à data da corrida. O local será definido em breve</li>
+          </ul>-->
+      </div>
+    </div>
+    <!--row-->
+  </div>
+  <!--contaiiner-->
+</section>
+
+<!--=========== Banner section ===========-->
+<section class="banner">
+  <h3>Realização e Organização</h3>
+  <div class="arrow-wrap">
+    <div class="arrow-down"></div>
+  </div>
+</section>
+
+<!--=========== List section ===========-->
+<section class="section--p80 bg-gray" style="padding-top: 40px">
+  <div class="container text-center mini-grid">
+    <div style="display: flex; max-width: 600px; justify-content: space-between; align-items: center; margin: 0 auto;">
+      <div style="flex-basis: 50%"><img width="278" style="max-width: 100%" src="https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/03/brand-mfa-vert-000.png" alt="Mercy For Animals"></div>
+      <div style="flex-basis: 50%"><img width="350" style="max-width: 100%" src="https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/03/brand-fr-from-rio.png" alt="FR From Rio Produções e Eventos"></div>
+    </div>
+    <p class="mb30 bold size-20">
+      A corrida acontecerá em parceria com a assessoria especializada From Rio! Venha se movimentar e ajudar os animais!
+    </p>
+    <!--<div class="flex-center">
+      <ul class="span4 text-left">
+        <li class="bold"><i class="fa fa-star orange-accent"></i>DIVERSÃO</li>
+        <li class="bold"><i class="fa fa-star orange-accent"></i>LAZER</li>
+        <li class="bold"><i class="fa fa-star orange-accent"></i>ENTRETENIMENTO</li>
+      </ul>
+      <ul class="span4 text-left">
+        <li class="bold"><i class="fa fa-star orange-accent"></i>COMIDAS </li>
+        <li class="bold"><i class="fa fa-star orange-accent"></i>CONSCIENTIZAÇÃO</li>
+        <li class="bold"><i class="fa fa-star orange-accent"></i>INFORMAÇÃO</li>
+      </ul>
+    </div>
+    <p class="pt50 clear">Gostaríamos de lembrar que é proibida a entrada de animais domésticos no parque Horto Florestal. Agradecemos sua compreensão.</p>-->
+  </div>
+  <!--container-->
+</section>
+
+
+
+<!--=========== Signup section ===========-->
+<section class="section--p80">
+  <div class="container text-center mini-grid">
+    <i class="fa fa-users orange-accent mb30"></i>
+    <h4>Venha para a 3º edição da Running For Animals!</h4>
+    <p>Inscrições abertas - 2º lote até dia 31/05</p>
+    <p class="text-center">
+      <a class="rfa-cta-button" href="https://www.ticketsports.com.br/e/running-for-animals-2023-35870" target="_blank" rel="noopener">Inscreva-se agora</a>
+    </p>
+    <!-- <h4 class="mb30 toUpper">VEM COM A GENTE NESSA MISSÃO?</h4>
+    <p class="bold orange-accent">UNIDOS PELOS ANIMAIS!</p> -->
+    <!--<p class="bold">INSCRIÇÕES ABERTAS!</p>
+    <p>Acesse o link abaixo para realizar a sua inscrição, participar da Running For Animals e ajudar os animais. Corra, as inscrições são limitadas!</p>-->
+    <!--<em>Inscrições abertas em breve!</em>-->
+    <!-- <a class="submit-btn mt30" href="https://www.desfrutefest.com.br/corrida" target="_blank" rel="noopener noreferrer">QUERO ME INSCREVER</a> -->
+    <!-- <em>Inscrições encerradas.</em> -->
+  </div>
+</section>
+
+<!--=========== Kit section ===========-->
+<section class="kit">
+  <div class="flex-center" style="max-width: 1440px; margin-left: auto; margin-right: auto;">
+    <div class="span6">
+      <p class="text-center bold size-20">
+        KIT BÁSICO DO ATLETA
+      </p>
+      <img src="https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/03/running-for-animals-2023-kit-basico.jpg">
+      <!--<p class="bold">Devido aos prazos do fornecedor, apenas garantimos o tamanho solicitado da camiseta em inscrições feitas até 02/09.</p>-->
+    </div>
+    <!--span6-->
+    <div class="span6">
+      <p class="text-center bold size-20">
+        KIT COMPLETO DO ATLETA
+      </p>
+      <img
+        src="https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/03/running-for-animals-2023-kit-completo.jpg">
+    </div>
+  </div>
+
+  <div class="container mini-grid" style="padding-top: 40px; padding-bottom: 80px;">
+    <p class="size-20">
+      Seu traje esportivo está garantido!
+    </p>
+    <ul class="size-20">
+      <li>
+        Kit Básico: camiseta, medalha, número de identificação e chip.
+      </li>
+      <li>
+        Kit Completo: camiseta, medalha, número de identificação, chip, sacochila e viseira.
+      </li>
+    </ul>
+    <p class="size-20">
+      Além disso, teremos troféus e prêmios finais para quem ficar nas primeiras colocações de cada categoria.*
+    </p>
+    <p style="font-size: 1rem">
+      <em>
+        *Válido apenas para modalidade presencial. Atletas virtuais também não receberão número de identificação e chip.
+      </em>
+    </p>
+  </div>
+</section>
+
+<!--=========== Banner section ===========-->
+<!--<section class="banner bg-blue">
+  <h3>Premiação</h3>
+  <div class="arrow-wrap">
+    <div class="arrow-down"></div>
+  </div>
+</section>-->
+
+<!--=========== Prize section ===========-->
+<!--<section class="pt50 bg-gray">
+  <div class="container">
+    <div class="prize first-prize text-center">
+      <h3 class="mb30 orange-accent">1º lugar</h3>
+      <p class="mb30">Um final de semana com acompanhante no quarto luxo no <a href="https://www.hotelserradaestrela.com.br/pt-br">Hotel Serra da Estrela</a> em Campos do Jordão</p>
+    </div>
+    <div class="container-slider prize-slider pb80">
+      <div id="image-slider" class="slider-wrap">
+        <div class="slider-img" style="background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2019/08/serra_hotel.jpg');"></div>
+        <div class="slider-img" style="background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2019/08/serra_hotel_2.jpg');"></div>
+      </div>
+    </div>
+    <div class="prize text-center span6 pb80">
+      <h3 class="mb30 orange-accent">1º ao 3º lugar</h3>
+      <p class="mb30">Um jantar com acompanhante no restaurante <a href="https://www.matthewkenneycuisine.com/plantmade-sao-paulo">PLANT MADE</a> e kit de produtos <a href="https://www.instagram.com/mundobalai/">BALAI</a>.</p>
+      <img class="mb30" src="https://mfa.cachefly.net/mfa/images/uploads/2019/08/vegan_meal.jpg" alt="comida">
+      <img src="https://mfa.cachefly.net/mfa/images/uploads/2019/09/1-LUGAR-.jpg" alt="kid de produtos Balai" />
+    </div>
+    <div class="prize text-center span6 pb80">
+      <h3 class="mb30 orange-accent">1º ao 5º lugar</h3>
+      <p class="mb30">Kit de produtos <a href="https://www.wvegan.com.br/wvegan/">W Vegan</a> e <a href="https://www.instagram.com/piatan.natural/">Piatan</a>.</p>
+      <img class="mb30" src="https://mfa.cachefly.net/mfa/images/uploads/2019/08/wvegan.jpg" alt="W Vegan produtos" />
+      <img src="https://mfa.cachefly.net/mfa/images/uploads/2019/09/running-for-animals-produto.jpg" alt="Piatan produtos" />
+    </div>
+  </div>
+</section>-->
+
+<!--=========== Slider sections ===========-->
+<!--
+<section class="image-slider article">
+  <div class="container-slider">
+    <div id="image-slider" class="slider-wrap">
+      <div class="slider-img" style="background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2019/07/nature2.jpg');"></div>
+      <div class="slider-img" style="background-image: url('https://mfa.cachefly.net/mfa/images/uploads/2019/07/nature.jpg');"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section--p80 natureza">
+  <div class="container">
+    <h4 class="text-center mb30">VENHA CORRER EM CONTATO COM A NATUREZA</h4>
+    <div class="span6">
+      <p><span class="bold">Running For Animals</span> será realizada no Horto Florestal, localizado em área urbana, na zona norte da cidade de São Paulo e os participantes terão o privilégio de desfrutar de áreas restritas do Horto Florestal.</p>
+    </div>
+    <div class="span6">
+      <p>Criado em 1986, o Horto possui 187 hectares de área, sendo 35 destinados ao público. O parque possui uma rica representatividade de Mata Atlântica, algo raro na capital paulista, além de áreas de lazer, lagos e bicas. Entre animais a serem observados no Horto destacam-se tucanos, maritacas, esquilos e capivaras.</p>
+    </div>
+  </div>
+</section>
+-->
+
+<!--=========== Blue/white fact section ===========-->
+<!-- <section class="panel action-center bg-gray" style="margin-bottom: 0;">
+  <div class="span6 bg-blue panel__abs panel__abs--left mobile-hide"></div>
+  <div class="container">
+    <div class="span6 panel__inner panel__inner--left text-white bg-blue">
+      <h4 class="mb30">VOCÊ SABIA?</h4>
+      <p>Ao longo dos últimos 40 anos, o número total de pássaros, anfíbios, mamíferos e répteis que habitam os
+        ecossistemas do mundo reduziu cerca de 60%.
+      <p>
+    </div>
+    <div class="span6 panel__inner panel__inner--right">
+      <p>O principal fator por trás dessa queda é a demanda por alimentos; mais especificamente, a <span
+          class="bold">produção em escala industrial de carnes e derivados de animal.</span> Mais de 80% das
+        terras utilizadas na agricultura são destinadas à criação de animais para consumo, mas fornecem apenas
+        18% das calorias do mundo.</p>
+    </div>
+  </div>
+</section> -->
+
+<!--=========== Runners section ===========-->
+<!--<section class="section--p80 runners">
+  <div class="container">
+    <h4 class="text-center pb50">EU VOU! Conheça alguns dos participantes que vão vestir a camisa pelos animais e correr com a gente!</h4>
+    <div class="runner-container mt30">
+      <div class="row">
+        <div class="span4 mb30 text-center">
+          <img src="https://mfa.cachefly.net/mfa/images/uploads/2019/08/carol.jpg" alt="Carol Destro">
+          <h5 class="bold mb0">Carol Destro</h5>
+          <p class="orange-accent bold">Influenciadora</p>
+          <p>"Incrível a oportunidade de reunir pessoas pela causa animal e ambiental. Com certeza será um grande evento!"</p>
+        </div>
+        <div class="span4 mb30 text-center">
+          <img src="https://mfa.cachefly.net/mfa/images/uploads/2019/07/paru.jpg" alt="Paru">
+          <h5 class="bold mb0">Paru</h5>
+          <p class="orange-accent bold">Atleta e Influenciador</p>
+          <p>"Imenso prazer em ser atleta e participar deste momento! Parabéns a Mercy For Animals por essa iniciativa! Estarei lá!"</p>
+        </div>
+        <div class="span4 mb30 text-center">
+          <img src="https://mfa.cachefly.net/mfa/images/uploads/2019/07/lari.jpg" alt="Lari Maluf">
+          <h5 class="bold mb0">Lari Maluf</h5>
+          <p class="orange-accent bold">Influenciadora</p>
+          <p>"Esporte, natureza e veganismo juntos, um dia perfeito para ajudar os animais!"</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span4 mb30 text-center">
+          <img src="https://mfa.cachefly.net/mfa/images/uploads/2019/07/alana-rox.jpg" alt="Alana Rox">
+          <h5 class="bold mb0">Alana Rox</h5>
+          <p class="orange-accent bold">Apresentadora e Autora</p>
+          <p>"Numa corrida existe a urgência de chegar e a democracia de sermos todos iguais. Vou correr pela direito à liberdade de todos os animais. Correremos porque eles têm pressa."</p>
+        </div>
+        <div class="span4 mb30 text-center">
+          <img src="https://mfa.cachefly.net/mfa/images/uploads/2019/07/ivan.jpg" alt="Ivan Di Simoni">
+          <h5 class="bold mb0">Ivan Di Simoni</h5>
+          <p class="orange-accent  bold">Influenciador</p>
+          <p>"Uma corrida pela compaixão. Vamos juntos correr pelos animais."</p>
+        </div>
+        <div class="span4 mb30 text-center">
+          <img src="https://mfa.cachefly.net/mfa/images/uploads/2019/07/Alessandra-Luglio.jpg" alt="Alessandra Luglio">
+          <h5 class="bold mb0">Alessandra Luglio</h5>
+          <p class="orange-accent bold">Nutricionista e Consultora</p>
+          <p>"Uma corrida que une o amor que sinto pelo esporte e pelos animais, é maravilhoso!"
+  </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span4 mb30 text-center">
+          <img src="https://mfa.cachefly.net/mfa/images/uploads/2019/08/Andrea.jpg" alt="Andrea Fabrete">
+          <h5 class="bold mb0">Andrea Fabrete</h5>
+          <p class="orange-accent bold">Influenciadora</p>
+          <p>"O veganismo me levou para o esporte e mudou minha vida! Levar a causa animal a todas as pessoas por meio do esporte é um sonho!"</p>
+        </div>
+        <div class="span4 mb30 text-center">
+          <img src="https://mfa.cachefly.net/mfa/images/uploads/2019/08/japinha.jpg" alt="Ricardo Di Roberto">
+          <h5 class="bold mb0">Ricardo Di Roberto</h5>
+          <p class="orange-accent  bold">Músico (baterista do CPM 22)</p>
+          <p>"Vou correr pelos animais, porque penso que eles merecem nossa compaixão e ajuda."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+
+<!-- =========== Award Section =========== -->
+<style>
+  .running-for-animals-rewards {
+    padding: 0 20px 70px 20px;
+    color: #FFFFFF;
+    background-color: #F99438;
+  }
+  .running-for-animals-rewards .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 355px;
+    height: 177.5px;
+    padding: 10px 0 0 0;
+    margin: 0 auto 0;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 177.5px;
+    border-bottom-right-radius: 177.5px;
+  }
+  .running-for-animals-rewards .top img {
+    display: block;
+    width: 60px;
+    height: 55px;
+    margin: 0 auto 20px;
+  }
+  .running-for-animals-rewards .top h2 {
+    color: #F99438;
+    text-transform: uppercase;
+    font-size: 1.75em;
+    font-weight: 700;
+    margin: 0 auto 0;
+  }
+  .running-for-animals-rewards .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px 50px;
+    max-width: 1830px;
+    margin: 70px auto 0;
+  }
+  @media (max-width: 650px) {
+    .running-for-animals-rewards .row {
+      flex-direction: column;
+    }
+  }
+  .running-for-animals-rewards .row img {
+    object-fit: contain;
+    width: 30%;
+    height: auto;
+    max-width: 722px;
+  }
+  @media (max-width: 650px) {
+    .running-for-animals-rewards .row img {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+  .running-for-animals-rewards .row .text {
+    width: 60%;
+    max-width: 485px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  @media (max-width: 650px) {
+    .running-for-animals-rewards .row .text {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .running-for-animals-rewards .row .text h3 {
+    margin: 0 0 20px 0;
+    color: #FFFFFF;
+    text-transform: none;
+    font-size: 1.75em;
+    font-weight: 700;
+  }
+  .running-for-animals-rewards .row .text p {
+    margin-bottom: 40px;
+  }
+  .running-for-animals-rewards .row .text ul {
+    padding-left: 0;
+    margin-bottom: 40px;
+    list-style: none;
+  }
+  .running-for-animals-rewards .row .text  li {
+    margin-bottom: 5px;
+  }
+</style>
+<section class="running-for-animals-rewards">
+  <div class="top">
+    <img src="https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/05/star.png" aria-hidden="true">
+    <h2>PREMIAÇÃO</h2>
+  </div>
+  <div class="row">
+    <img src="https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/05/castle.png" aria-hidden="true">
+    <div class="text">
+      <h3>2 diárias</h3>
+      <p>com um acompanhante no <strong>HOTEL SERRA DA ESTRELA</strong> para o primeiro colocado em cada uma das categorias:</p>
+      <ul>
+        <li>Corrida 5 km - Feminino</li>
+        <li>Corrida 5 km - Masculino</li>
+        <li>Corrida 5 km - Não Binário</li>
+        <li>Corrida 10 km - Feminino</li>
+        <li>Corrida 10 km - Masculino</li>
+        <li>Corrida 10 km - Não Binário</li>
+      </ul>
+    </div><!-- .text -->
+  </div><!-- .row -->
+  <div class="row">
+    <img src="https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/05/naveia.png" aria-hidden="true">
+    <div class="text">
+      <h3>1 Assinatura de leite NAVEIA</h3>
+      <p>(12 litros/mês Naveia Original) em cada uma das categorias abaixo:</p>
+      <ul>
+        <li>Corrida 5 km - Feminino</li>
+        <li>Corrida 5 km - Masculino</li>
+        <li>Corrida 5 km - Não Binário</li>
+        <li>Corrida 10 km - Feminino</li>
+        <li>Corrida 10 km - Masculino</li>
+        <li>Corrida 10 km - Não Binário</li>
+      </ul>
+      <ul>
+        <li>Tempo de assinatura:</li>
+        <li>Primeiro lugar: 6 meses</li>
+        <li>Segundo lugar: 3 meses</li>
+        <li>Terceiro lugar: 1 mês</li>
+      </ul>
+      <p><strong>+ um kit NAVEIA completão com ecobag + camisa + meia + toda linha de produtos da marca pros três primeiros colocados de cada categoria.</strong></p>
+    </div><!-- .text -->
+  </div><!-- .row -->
+</section>
+
+
+<!--=========== Partners section ===========-->
+<section class="section--p80 bg-gray">
+  <div class="container mini-grid">
+    <h3 class="mb30 text-center">
+      EMPRESAS PATROCINADORAS
+    </h3>
+    <p class="size-20">
+      Conheça as empresas patrocinadoras que estão viabilizando a realização da Running For Animals.
+    </p>
+  </div>
+  <!--mini-grid-->
+  <style>
+    .sponsorship-size-100 img {
+      max-width: 300px;
+      width: 300px;
+      height: 300px;
+      object-fit: contain;
+    }
+    .sponsorship-size-90 img {
+      max-width: 250px;
+      width: 250px;
+      height: 250px;
+      object-fit: contain;
+    }
+    .sponsorship-size-80 img {
+      max-width: 200px;
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+    }
+    .sponsorship-size-70 img {
+      max-width: 150px;
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+    }
+  </style>
+  <div class="container logos text-center pt50">
+    <h5 style="color: #0666f2; font-weight: 700">MASTER</h5>
+    <div class="flex-center sponsorship-size-100">
+      <div class="logo-img mb30">
+        <img src="https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/03/brand-naveia.png" alt="NAVEIA">
+      </div>
+    </div>
+    <hr class="divide--large divide--light">
+  </div>
+  <div class="container logos text-center pt50">
+    <h5 style="color: #0666f2; font-weight: 700">OURO</h5>
+    <div class="pb50 pt50 flex-center sponsorship-size-90">
+      <div class="logo-img mb30">
+        <img src="https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/04/rfa3-brand-vegan-pharma.png" alt="Vegan Pharma">
+      </div>
+    </div>
+    <hr class="divide--large divide--light">
+  </div>
+  <div class="container logos text-center pt50">
+    <h5 style="color: #0666f2; font-weight: 700">PRATA</h5>
+    <div class="pb50 pt50 flex-center sponsorship-size-80">
+      <div class="logo-img mb30">
+        <img src="https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/05/logo-vida-veg-002f1d.png" alt="Vida Veg">
+      </div>
+      <div class="logo-img mb30">
+        <img src="https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/05/SIMPLE_ORGANIC_LOGO_PRETA_200x.png" alt="Simple Organic">
+      </div>
+    </div>
+    <hr class="divide--large divide--light">
+  </div>
+  <div class="container logos text-center pt50">
+    <h5 style="color: #0666f2; font-weight: 700">APOIO</h5>
+    <div class="pb50 pt50 flex-center sponsorship-size-70" style="display: flex; flex-direction: row; justify-content: center">
+      <div class="logo-img mb30" style="margin: 0 20px 40px;">
+        <img src="https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/04/brand-hotel-serra-da-estrela-campos-do-jordao-sp.png" alt="Hotel Serra da Estrela Campos do Jordão SP">
+      </div>
+      <div class="logo-img mb30" style="margin: 0 20px 40px;">
+        <img src="https://file-cdn.mercyforanimals.org/mercy4animals.wpengine.com/sites/518/2023/04/brand-veg-run-brasil.png" alt="Veg Run Brasil">
+      </div>
+    </div>
+    <!--pb50 pt50-->
+  </div>
+  <!--container-->
+  <!-- <div class="container logos text-center pt50">
+    <h5 style="color: #0666f2; font-weight: 700">OURO</h5>
+    <div class="pb50 pt50 flex-center bronze">
+      <div class="logo-img mb30">
+        <img src="https://storage.googleapis.com/file-cdn.mercyforanimals.org/mfa/images/serra_OURO.png" alt="Hotel Serra Da Estrela Logo">
+      </div>
+      <div class="logo-img mb30">
+        <img src="https://storage.googleapis.com/file-cdn.mercyforanimals.org/mfa/images/alquimia_OURO.png" alt="Alquimia Logo">
+      </div>
+    </div>
+    <hr class="divide--large divide--light">
+  </div> -->
+  <!--container-->
+  <!-- <div class="container logos text-center pt50">
+    <h5 style="color: #0666f2; font-weight: 700">PRATA</h5>
+    <div class="pb50 pt50 flex-center bronze">
+      <div class="logo-img mb30">
+        <img src="https://storage.googleapis.com/file-cdn.mercyforanimals.org/mfa/images/green-kitchen-logo.jpg" alt="Green Kitchen Logo">
+      </div>
+    </div>
+    <hr class="divide--large divide--light">
+  </div> -->
+  <!--container-->
+  <!-- <div class="container logos text-center pt50">
+    <h5 style="color: #0666f2; font-weight: 700">APOIO</h5>
+    <div class="pt50 flex-center apoio">
+      <div class="logo-img mb30">
+        <img src="https://storage.googleapis.com/file-cdn.mercyforanimals.org/mfa/images/Desfrute-Logo-alta.png" alt="Desfrute Logo">
+      </div>
+      <div class="logo-img mb30">
+        <img src="https://storage.googleapis.com/file-cdn.mercyforanimals.org/mfa/images/VEGRUN-logo.png" alt="Veg Run Logo">
+      </div>
+    </div>
+    <div class="width-two-thirds">
+      <p>Apoio: Parque Estadual Alberto Löfgren</p>
+      <p>Secretaria de Infraestrutura e Meio Ambiente - Governo do Estado de São Paulo, destinado ao uso da população em geral.</p>
+      <p>R. do Horto, 931</p>
+      <p><a href="http://www.saopaulo.sp.gov.br/conhecasp/parques-e-reservas-naturais/horto-florestal/">http://www.saopaulo.sp.gov.br/conhecasp/parques-e-reservas-naturais/horto-florestal</a></p>
+    </div>
+  </div> -->
+  <!--container-->
+</section>
+
+<!--=========== What we do section ===========-->
+<section class="section--p80">
+  <div class="container text-center mini-grid">
+    <img class="heart-icon-v2 section-icon-v2 mb30"
+      src="https://mfa.cachefly.net/mfa/images/uploads/2019/02/orange-heart.png" />
+    <h3 class="mb30 toUpper">
+      SOBRE A MERCY FOR ANIMALS NO BRASIL
+    </h3>
+    <!-- <p class="size-20 text-left">
+      A visão da Mercy For Animals é um mundo em que os animais são respeitados, protegidos e livres para perseguirem seus próprios interesses. Nós existimos para acabar a exploração de animais para alimentação. Dedicamos nossos esforços para erradicar o atual sistema alimentar e substituí-lo por um que seja não apenas gentil com os animais, mas essencial para o futuro do nosso planeta e para todos que o compartilham.
+
+    </p>
+    <p class="size-20 text-left">
+      Fundada em 1999 nos Estados Unidos, a Mercy For Animals, tem sede em Los Angeles (EUA) e já atua no Brasil há 7 anos, além de operar também no Canadá, na Índia e nas regiões da Ásia e da América Latina.
+    </p> -->
+
+    <p class="size-20 text-left">
+      No Brasil desde 2015, a Mercy For Animals se consolidou como uma importante referência em proteção animal no país. Com a visão de construir um mundo em que os animais são respeitados, protegidos e livres para perseguirem seus próprios interesses, a MFA se dedica a erradicar o atual sistema alimentar e substituí-lo por um que seja não apenas gentil com os animais, mas essencial para o futuro do nosso planeta e para todos que o compartilham. Conheça mais sobre a MFA no site ou em seus canais digitais.
+    </p>
+
+    <img class="full-width mt30" src="https://mfa.cachefly.net/mfa/images/uploads/2019/07/mfa-brazil.jpg" alt="Mercy For Animals no Brasil">
+  </div>
+</section>
+<!-- <script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+
+    $('.testimony-slider-small').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      dots: true,
+
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        }
+      ]
+    });
+
+  });
+</script> -->
+<!--CONTENT-END-->
